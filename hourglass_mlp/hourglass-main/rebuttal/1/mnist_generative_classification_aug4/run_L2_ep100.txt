@@ -1,0 +1,2142 @@
+==========================================
+Starting experiments with run_id=1
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-5
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+cuda:2
+cuda:2
+Set W_in to non-trianable
+cuda:2
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,835,712
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_4835712/latent784_hidden1150_1150/lr5e-05_run1
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,221,056
+Trainable parameters: 4,221,056
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_4221056/latent784_hidden1150_1150/lr5e-05_run1
+Created train split with 50000 samples
+Created train split with 50000 samples
+Created eval split with 10000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+cuda:2
+Initialize Win to Identity matrix
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,221,056
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_4221056/latent784_hidden1150_1150/lr5e-05_run1
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,221,056
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_4221056/latent784_hidden1150_1150/lr5e-05_run1
+Created train split with 50000 samples
+Created train split with 50000 samples
+Created eval split with 10000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,835,712
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_4835712/latent784_hidden1150_1150/lr5e-05_run1
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+      [BEST @ epoch 5] eval loss: 0.005330
+[conventional (4.22M/4.84M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.004424 | Eval Loss: 0.005330 | PSNR: 22.8928 | SSIM: 0.9405
+      [BEST @ epoch 5] eval loss: 0.006861
+[conventional (4.22M/4.22M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.004632 | Eval Loss: 0.006861 | PSNR: 21.7817 | SSIM: 0.9293
+      [BEST @ epoch 5] eval loss: 0.004857
+[conventional (4.84M/4.84M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.003880 | Eval Loss: 0.004857 | PSNR: 23.3659 | SSIM: 0.9445
+      [BEST @ epoch 5] eval loss: 0.006792
+[conventional (4.22M/4.84M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.004589 | Eval Loss: 0.006792 | PSNR: 21.8304 | SSIM: 0.9315
+      [BEST @ epoch 5] eval loss: 0.005102
+[conventional (4.84M/4.84M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.003921 | Eval Loss: 0.005102 | PSNR: 23.1269 | SSIM: 0.9437
+      [BEST @ epoch 10] eval loss: 0.004776
+[conventional (4.22M/4.84M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.002595 | Eval Loss: 0.004776 | PSNR: 23.3773 | SSIM: 0.9489
+      [BEST @ epoch 10] eval loss: 0.006195
+[conventional (4.22M/4.22M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.002701 | Eval Loss: 0.006195 | PSNR: 22.2629 | SSIM: 0.9411
+      [BEST @ epoch 10] eval loss: 0.006119
+[conventional (4.22M/4.84M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.002641 | Eval Loss: 0.006119 | PSNR: 22.3266 | SSIM: 0.9423
+      [BEST @ epoch 10] eval loss: 0.004208
+[conventional (4.84M/4.84M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.002190 | Eval Loss: 0.004208 | PSNR: 24.0128 | SSIM: 0.9548
+      [BEST @ epoch 10] eval loss: 0.004181
+[conventional (4.84M/4.84M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.002232 | Eval Loss: 0.004181 | PSNR: 24.0296 | SSIM: 0.9547
+      [BEST @ epoch 15] eval loss: 0.004422
+[conventional (4.22M/4.84M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.001710 | Eval Loss: 0.004422 | PSNR: 23.7584 | SSIM: 0.9568
+      [BEST @ epoch 15] eval loss: 0.005526
+[conventional (4.22M/4.22M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.001793 | Eval Loss: 0.005526 | PSNR: 22.8050 | SSIM: 0.9509
+      [BEST @ epoch 15] eval loss: 0.005656
+[conventional (4.22M/4.84M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.001758 | Eval Loss: 0.005656 | PSNR: 22.6744 | SSIM: 0.9501
+      [BEST @ epoch 15] eval loss: 0.003815
+[conventional (4.84M/4.84M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.001393 | Eval Loss: 0.003815 | PSNR: 24.4948 | SSIM: 0.9629
+      [BEST @ epoch 15] eval loss: 0.004009
+[conventional (4.84M/4.84M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.001422 | Eval Loss: 0.004009 | PSNR: 24.2492 | SSIM: 0.9622
+[conventional (4.22M/4.84M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.001219 | Eval Loss: 0.004459 | PSNR: 23.7713 | SSIM: 0.9580
+[conventional (4.22M/4.22M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.001274 | Eval Loss: 0.005713 | PSNR: 22.6792 | SSIM: 0.9511
+      [BEST @ epoch 20] eval loss: 0.005614
+[conventional (4.22M/4.84M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.001260 | Eval Loss: 0.005614 | PSNR: 22.7313 | SSIM: 0.9517
+      [BEST @ epoch 20] eval loss: 0.003749
+[conventional (4.84M/4.84M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.000966 | Eval Loss: 0.003749 | PSNR: 24.6218 | SSIM: 0.9653
+      [BEST @ epoch 20] eval loss: 0.003762
+[conventional (4.84M/4.84M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.000978 | Eval Loss: 0.003762 | PSNR: 24.6053 | SSIM: 0.9636
+      [BEST @ epoch 25] eval loss: 0.003869
+[conventional (4.22M/4.84M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.000960 | Eval Loss: 0.003869 | PSNR: 24.3811 | SSIM: 0.9640
+[conventional (4.22M/4.22M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.000988 | Eval Loss: 0.005791 | PSNR: 22.5757 | SSIM: 0.9526
+[conventional (4.22M/4.84M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.000963 | Eval Loss: 0.005673 | PSNR: 22.6891 | SSIM: 0.9538
+      [BEST @ epoch 25] eval loss: 0.003624
+[conventional (4.84M/4.84M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.000760 | Eval Loss: 0.003624 | PSNR: 24.7713 | SSIM: 0.9677
+      [BEST @ epoch 25] eval loss: 0.003486
+[conventional (4.84M/4.84M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.000761 | Eval Loss: 0.003486 | PSNR: 24.8503 | SSIM: 0.9686
+      [BEST @ epoch 30] eval loss: 0.003851
+[conventional (4.22M/4.84M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.000755 | Eval Loss: 0.003851 | PSNR: 24.4101 | SSIM: 0.9647
+      [BEST @ epoch 30] eval loss: 0.005593
+[conventional (4.22M/4.84M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.000776 | Eval Loss: 0.005593 | PSNR: 22.7775 | SSIM: 0.9545
+[conventional (4.22M/4.22M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.000778 | Eval Loss: 0.005536 | PSNR: 22.7885 | SSIM: 0.9541
+      [BEST @ epoch 30] eval loss: 0.003560
+[conventional (4.84M/4.84M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.000592 | Eval Loss: 0.003560 | PSNR: 24.8428 | SSIM: 0.9677
+      [BEST @ epoch 30] eval loss: 0.003358
+[conventional (4.84M/4.84M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.000597 | Eval Loss: 0.003358 | PSNR: 25.1052 | SSIM: 0.9694
+      [BEST @ epoch 35] eval loss: 0.003804
+[conventional (4.22M/4.84M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.000632 | Eval Loss: 0.003804 | PSNR: 24.4460 | SSIM: 0.9646
+      [BEST @ epoch 35] eval loss: 0.005143
+[conventional (4.22M/4.84M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.000642 | Eval Loss: 0.005143 | PSNR: 23.1590 | SSIM: 0.9581
+      [BEST @ epoch 35] eval loss: 0.005156
+[conventional (4.22M/4.22M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.000640 | Eval Loss: 0.005156 | PSNR: 23.1412 | SSIM: 0.9584
+      [BEST @ epoch 35] eval loss: 0.003481
+[conventional (4.84M/4.84M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.000444 | Eval Loss: 0.003481 | PSNR: 24.9550 | SSIM: 0.9685
+[conventional (4.84M/4.84M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.000463 | Eval Loss: 0.003638 | PSNR: 24.7872 | SSIM: 0.9679
+[conventional (4.22M/4.84M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.000513 | Eval Loss: 0.003980 | PSNR: 24.3285 | SSIM: 0.9656
+[conventional (4.22M/4.84M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.000536 | Eval Loss: 0.005407 | PSNR: 22.9873 | SSIM: 0.9578
+[conventional (4.22M/4.22M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.000549 | Eval Loss: 0.005389 | PSNR: 22.9646 | SSIM: 0.9575
+[conventional (4.84M/4.84M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.000392 | Eval Loss: 0.003834 | PSNR: 24.5439 | SSIM: 0.9676
+[conventional (4.84M/4.84M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.000392 | Eval Loss: 0.003521 | PSNR: 24.9099 | SSIM: 0.9698
+      [BEST @ epoch 45] eval loss: 0.003732
+[conventional (4.22M/4.84M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.000454 | Eval Loss: 0.003732 | PSNR: 24.5591 | SSIM: 0.9661
+[conventional (4.22M/4.22M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.000469 | Eval Loss: 0.005571 | PSNR: 22.7758 | SSIM: 0.9567
+[conventional (4.22M/4.84M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.000457 | Eval Loss: 0.005508 | PSNR: 22.8571 | SSIM: 0.9571
+      [BEST @ epoch 45] eval loss: 0.003282
+[conventional (4.84M/4.84M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.000343 | Eval Loss: 0.003282 | PSNR: 25.2991 | SSIM: 0.9718
+      [BEST @ epoch 45] eval loss: 0.003280
+[conventional (4.84M/4.84M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.000327 | Eval Loss: 0.003280 | PSNR: 25.2559 | SSIM: 0.9721
+      [BEST @ epoch 50] eval loss: 0.003458
+[conventional (4.22M/4.84M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.000382 | Eval Loss: 0.003458 | PSNR: 24.9501 | SSIM: 0.9695
+      [BEST @ epoch 50] eval loss: 0.005039
+[conventional (4.22M/4.84M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.000403 | Eval Loss: 0.005039 | PSNR: 23.2461 | SSIM: 0.9606
+[conventional (4.22M/4.22M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.000407 | Eval Loss: 0.005169 | PSNR: 23.1297 | SSIM: 0.9599
+[conventional (4.84M/4.84M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.000265 | Eval Loss: 0.003358 | PSNR: 25.2222 | SSIM: 0.9719
+      [BEST @ epoch 50] eval loss: 0.003239
+[conventional (4.84M/4.84M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.000275 | Eval Loss: 0.003239 | PSNR: 25.3359 | SSIM: 0.9722
+[conventional (4.22M/4.84M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.000331 | Eval Loss: 0.003720 | PSNR: 24.6125 | SSIM: 0.9679
+[conventional (4.22M/4.22M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.000351 | Eval Loss: 0.005214 | PSNR: 23.1076 | SSIM: 0.9601
+[conventional (4.22M/4.84M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.000346 | Eval Loss: 0.005078 | PSNR: 23.2179 | SSIM: 0.9607
+[conventional (4.84M/4.84M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.000236 | Eval Loss: 0.003378 | PSNR: 25.1342 | SSIM: 0.9718
+[conventional (4.84M/4.84M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.000212 | Eval Loss: 0.003267 | PSNR: 25.3086 | SSIM: 0.9727
+[conventional (4.22M/4.84M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.000286 | Eval Loss: 0.003551 | PSNR: 24.8513 | SSIM: 0.9699
+      [BEST @ epoch 60] eval loss: 0.004843
+[conventional (4.22M/4.84M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.000307 | Eval Loss: 0.004843 | PSNR: 23.4631 | SSIM: 0.9629
+      [BEST @ epoch 60] eval loss: 0.005065
+[conventional (4.22M/4.22M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.000313 | Eval Loss: 0.005065 | PSNR: 23.2380 | SSIM: 0.9613
+      [BEST @ epoch 60] eval loss: 0.003204
+[conventional (4.84M/4.84M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.000208 | Eval Loss: 0.003204 | PSNR: 25.4184 | SSIM: 0.9736
+      [BEST @ epoch 60] eval loss: 0.003213
+[conventional (4.84M/4.84M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.000192 | Eval Loss: 0.003213 | PSNR: 25.4220 | SSIM: 0.9735
+      [BEST @ epoch 65] eval loss: 0.003312
+[conventional (4.22M/4.84M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.000250 | Eval Loss: 0.003312 | PSNR: 25.1529 | SSIM: 0.9719
+[conventional (4.22M/4.84M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.000272 | Eval Loss: 0.005085 | PSNR: 23.1867 | SSIM: 0.9611
+      [BEST @ epoch 65] eval loss: 0.004985
+[conventional (4.22M/4.22M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.000277 | Eval Loss: 0.004985 | PSNR: 23.3536 | SSIM: 0.9624
+      [BEST @ epoch 65] eval loss: 0.003116
+[conventional (4.84M/4.84M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.000177 | Eval Loss: 0.003116 | PSNR: 25.4895 | SSIM: 0.9742
+      [BEST @ epoch 65] eval loss: 0.003152
+[conventional (4.84M/4.84M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.000172 | Eval Loss: 0.003152 | PSNR: 25.5137 | SSIM: 0.9739
+[conventional (4.22M/4.84M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.000227 | Eval Loss: 0.003481 | PSNR: 24.9468 | SSIM: 0.9710
+[conventional (4.22M/4.22M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.000249 | Eval Loss: 0.005225 | PSNR: 23.1073 | SSIM: 0.9611
+[conventional (4.22M/4.84M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.000252 | Eval Loss: 0.005145 | PSNR: 23.1852 | SSIM: 0.9616
+[conventional (4.84M/4.84M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.000158 | Eval Loss: 0.003333 | PSNR: 25.1724 | SSIM: 0.9730
+      [BEST @ epoch 70] eval loss: 0.003141
+[conventional (4.84M/4.84M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.000157 | Eval Loss: 0.003141 | PSNR: 25.4899 | SSIM: 0.9749
+[conventional (4.22M/4.84M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.000201 | Eval Loss: 0.003429 | PSNR: 25.0218 | SSIM: 0.9715
+[conventional (4.22M/4.84M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.000221 | Eval Loss: 0.004881 | PSNR: 23.3940 | SSIM: 0.9634
+[conventional (4.22M/4.22M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.000224 | Eval Loss: 0.005000 | PSNR: 23.2960 | SSIM: 0.9623
+      [BEST @ epoch 75] eval loss: 0.003078
+[conventional (4.84M/4.84M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.000129 | Eval Loss: 0.003078 | PSNR: 25.5942 | SSIM: 0.9753
+      [BEST @ epoch 75] eval loss: 0.003031
+[conventional (4.84M/4.84M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.000129 | Eval Loss: 0.003031 | PSNR: 25.6404 | SSIM: 0.9755
+      [BEST @ epoch 80] eval loss: 0.003303
+[conventional (4.22M/4.84M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.000180 | Eval Loss: 0.003303 | PSNR: 25.2088 | SSIM: 0.9725
+      [BEST @ epoch 80] eval loss: 0.004736
+[conventional (4.22M/4.84M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.000201 | Eval Loss: 0.004736 | PSNR: 23.5639 | SSIM: 0.9639
+      [BEST @ epoch 80] eval loss: 0.004819
+[conventional (4.22M/4.22M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.000200 | Eval Loss: 0.004819 | PSNR: 23.4890 | SSIM: 0.9638
+[conventional (4.84M/4.84M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.000117 | Eval Loss: 0.003136 | PSNR: 25.5065 | SSIM: 0.9747
+[conventional (4.84M/4.84M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.000114 | Eval Loss: 0.003066 | PSNR: 25.6409 | SSIM: 0.9753
+[conventional (4.22M/4.84M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.000167 | Eval Loss: 0.003389 | PSNR: 25.0685 | SSIM: 0.9720
+[conventional (4.22M/4.84M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.000185 | Eval Loss: 0.004981 | PSNR: 23.3240 | SSIM: 0.9626
+[conventional (4.22M/4.22M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.000187 | Eval Loss: 0.004970 | PSNR: 23.3543 | SSIM: 0.9631
+[conventional (4.84M/4.84M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.000102 | Eval Loss: 0.003160 | PSNR: 25.4448 | SSIM: 0.9746
+[conventional (4.22M/4.84M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.000152 | Eval Loss: 0.003388 | PSNR: 25.0591 | SSIM: 0.9721
+[conventional (4.84M/4.84M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.000099 | Eval Loss: 0.003138 | PSNR: 25.5216 | SSIM: 0.9751
+      [BEST @ epoch 90] eval loss: 0.004491
+[conventional (4.22M/4.84M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.000173 | Eval Loss: 0.004491 | PSNR: 23.8305 | SSIM: 0.9652
+      [BEST @ epoch 90] eval loss: 0.004452
+[conventional (4.22M/4.22M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.000174 | Eval Loss: 0.004452 | PSNR: 23.8478 | SSIM: 0.9656
+[conventional (4.84M/4.84M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.000090 | Eval Loss: 0.003148 | PSNR: 25.4795 | SSIM: 0.9748
+      [BEST @ epoch 95] eval loss: 0.003296
+[conventional (4.22M/4.84M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.000141 | Eval Loss: 0.003296 | PSNR: 25.2033 | SSIM: 0.9731
+[conventional (4.84M/4.84M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.000088 | Eval Loss: 0.003094 | PSNR: 25.5817 | SSIM: 0.9754
+[conventional (4.22M/4.84M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.000162 | Eval Loss: 0.004858 | PSNR: 23.3823 | SSIM: 0.9639
+[conventional (4.22M/4.22M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.000160 | Eval Loss: 0.004891 | PSNR: 23.4035 | SSIM: 0.9640
+      [BEST @ epoch 95] eval loss: 0.003027
+[conventional (4.84M/4.84M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.000082 | Eval Loss: 0.003027 | PSNR: 25.6490 | SSIM: 0.9761
+      [BEST @ epoch 100] eval loss: 0.003284
+[conventional (4.22M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000132 | Eval Loss: 0.003284 | PSNR: 25.2253 | SSIM: 0.9730
+
+[INFO] Using best model @ epoch 100, test loss: 0.003415 | PSNR: 26.4152 | SSIM: 0.9727
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_4221056/latent784_hidden1150_1150/lr5e-05_run1/experiment_summary.json
+      [BEST @ epoch 95] eval loss: 0.002941
+[conventional (4.84M/4.84M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.000080 | Eval Loss: 0.002941 | PSNR: 25.8474 | SSIM: 0.9768
+[conventional (4.22M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000152 | Eval Loss: 0.004504 | PSNR: 23.8071 | SSIM: 0.9660
+
+[INFO] Using best model @ epoch 90, test loss: 0.004486 | PSNR: 24.7192 | SSIM: 0.9649
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_4221056/latent784_hidden1150_1150/lr5e-05_run1/experiment_summary.json
+[conventional (4.22M/4.22M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000152 | Eval Loss: 0.004525 | PSNR: 23.7790 | SSIM: 0.9660
+
+[INFO] Using best model @ epoch 90, test loss: 0.004501 | PSNR: 24.7298 | SSIM: 0.9654
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_4221056/latent784_hidden1150_1150/lr5e-05_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.003021
+[conventional (4.84M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000075 | Eval Loss: 0.003021 | PSNR: 25.6569 | SSIM: 0.9761
+
+[INFO] Using best model @ epoch 100, test loss: 0.002876 | PSNR: 27.4012 | SSIM: 0.9767
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_4835712/latent784_hidden1150_1150/lr5e-05_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.002934
+[conventional (4.84M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000074 | Eval Loss: 0.002934 | PSNR: 25.8524 | SSIM: 0.9768
+
+[INFO] Using best model @ epoch 100, test loss: 0.002987 | PSNR: 27.4592 | SSIM: 0.9763
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_4835712/latent784_hidden1150_1150/lr5e-05_run1/experiment_summary.json
+==========================================
+Starting experiments with run_id=1
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=1e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+cuda:2
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,221,056
+Trainable parameters: 4,221,056
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_4221056/latent784_hidden1150_1150/lr0.0001_run1
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,835,712
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_4835712/latent784_hidden1150_1150/lr0.0001_run1
+cuda:2
+Set W_in to non-trianable
+Created train split with 50000 samples
+cuda:2
+Initialize Win to Identity matrix
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+cuda:2
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,221,056
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_4221056/latent784_hidden1150_1150/lr0.0001_run1
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,835,712
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_4835712/latent784_hidden1150_1150/lr0.0001_run1
+Created train split with 50000 samples
+Created train split with 50000 samples
+Created eval split with 10000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,221,056
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_4221056/latent784_hidden1150_1150/lr0.0001_run1
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+      [BEST @ epoch 5] eval loss: 0.004974
+[conventional (4.22M/4.84M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.003852 | Eval Loss: 0.004974 | PSNR: 23.2091 | SSIM: 0.9405
+      [BEST @ epoch 5] eval loss: 0.004536
+[conventional (4.84M/4.84M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.003556 | Eval Loss: 0.004536 | PSNR: 23.6381 | SSIM: 0.9472
+      [BEST @ epoch 5] eval loss: 0.006202
+[conventional (4.22M/4.22M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.003801 | Eval Loss: 0.006202 | PSNR: 22.2305 | SSIM: 0.9376
+      [BEST @ epoch 5] eval loss: 0.006174
+[conventional (4.22M/4.84M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.003821 | Eval Loss: 0.006174 | PSNR: 22.2579 | SSIM: 0.9373
+      [BEST @ epoch 5] eval loss: 0.004543
+[conventional (4.84M/4.84M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.003580 | Eval Loss: 0.004543 | PSNR: 23.6341 | SSIM: 0.9465
+      [BEST @ epoch 10] eval loss: 0.004276
+[conventional (4.22M/4.84M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.002222 | Eval Loss: 0.004276 | PSNR: 23.8803 | SSIM: 0.9526
+      [BEST @ epoch 10] eval loss: 0.005871
+[conventional (4.22M/4.84M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.002153 | Eval Loss: 0.005871 | PSNR: 22.4938 | SSIM: 0.9454
+      [BEST @ epoch 10] eval loss: 0.003759
+[conventional (4.84M/4.84M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.002042 | Eval Loss: 0.003759 | PSNR: 24.5015 | SSIM: 0.9580
+      [BEST @ epoch 10] eval loss: 0.005640
+[conventional (4.22M/4.22M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.002138 | Eval Loss: 0.005640 | PSNR: 22.6618 | SSIM: 0.9470
+      [BEST @ epoch 10] eval loss: 0.003817
+[conventional (4.84M/4.84M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.002055 | Eval Loss: 0.003817 | PSNR: 24.4495 | SSIM: 0.9584
+      [BEST @ epoch 15] eval loss: 0.003857
+[conventional (4.22M/4.84M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.001461 | Eval Loss: 0.003857 | PSNR: 24.3767 | SSIM: 0.9623
+      [BEST @ epoch 15] eval loss: 0.005203
+[conventional (4.22M/4.22M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.001404 | Eval Loss: 0.005203 | PSNR: 23.0787 | SSIM: 0.9543
+      [BEST @ epoch 15] eval loss: 0.005186
+[conventional (4.22M/4.84M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.001406 | Eval Loss: 0.005186 | PSNR: 23.0913 | SSIM: 0.9555
+      [BEST @ epoch 15] eval loss: 0.003626
+[conventional (4.84M/4.84M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.001357 | Eval Loss: 0.003626 | PSNR: 24.6673 | SSIM: 0.9645
+      [BEST @ epoch 15] eval loss: 0.003694
+[conventional (4.84M/4.84M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.001331 | Eval Loss: 0.003694 | PSNR: 24.6144 | SSIM: 0.9648
+      [BEST @ epoch 20] eval loss: 0.003779
+[conventional (4.22M/4.84M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.001029 | Eval Loss: 0.003779 | PSNR: 24.5216 | SSIM: 0.9632
+      [BEST @ epoch 20] eval loss: 0.005093
+[conventional (4.22M/4.22M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.001019 | Eval Loss: 0.005093 | PSNR: 23.1551 | SSIM: 0.9560
+      [BEST @ epoch 20] eval loss: 0.003364
+[conventional (4.84M/4.84M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.000956 | Eval Loss: 0.003364 | PSNR: 25.0980 | SSIM: 0.9666
+[conventional (4.22M/4.84M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.001016 | Eval Loss: 0.005281 | PSNR: 23.0083 | SSIM: 0.9554
+      [BEST @ epoch 20] eval loss: 0.003606
+[conventional (4.84M/4.84M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.000950 | Eval Loss: 0.003606 | PSNR: 24.7569 | SSIM: 0.9653
+      [BEST @ epoch 25] eval loss: 0.003553
+[conventional (4.22M/4.84M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.000839 | Eval Loss: 0.003553 | PSNR: 24.8354 | SSIM: 0.9651
+[conventional (4.22M/4.22M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.000802 | Eval Loss: 0.005169 | PSNR: 23.1185 | SSIM: 0.9568
+      [BEST @ epoch 25] eval loss: 0.003151
+[conventional (4.84M/4.84M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.000780 | Eval Loss: 0.003151 | PSNR: 25.4150 | SSIM: 0.9696
+[conventional (4.22M/4.84M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.000809 | Eval Loss: 0.005204 | PSNR: 23.0864 | SSIM: 0.9568
+      [BEST @ epoch 25] eval loss: 0.003157
+[conventional (4.84M/4.84M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.000771 | Eval Loss: 0.003157 | PSNR: 25.3707 | SSIM: 0.9700
+      [BEST @ epoch 30] eval loss: 0.003427
+[conventional (4.22M/4.84M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.000663 | Eval Loss: 0.003427 | PSNR: 25.0093 | SSIM: 0.9662
+      [BEST @ epoch 30] eval loss: 0.004912
+[conventional (4.22M/4.22M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.000651 | Eval Loss: 0.004912 | PSNR: 23.3251 | SSIM: 0.9594
+      [BEST @ epoch 30] eval loss: 0.002987
+[conventional (4.84M/4.84M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.000614 | Eval Loss: 0.002987 | PSNR: 25.6156 | SSIM: 0.9709
+[conventional (4.84M/4.84M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.000600 | Eval Loss: 0.003173 | PSNR: 25.3903 | SSIM: 0.9697
+      [BEST @ epoch 30] eval loss: 0.004982
+[conventional (4.22M/4.84M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.000647 | Eval Loss: 0.004982 | PSNR: 23.2751 | SSIM: 0.9595
+      [BEST @ epoch 35] eval loss: 0.003403
+[conventional (4.22M/4.84M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.000554 | Eval Loss: 0.003403 | PSNR: 25.0068 | SSIM: 0.9679
+      [BEST @ epoch 35] eval loss: 0.004617
+[conventional (4.22M/4.22M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.000527 | Eval Loss: 0.004617 | PSNR: 23.6254 | SSIM: 0.9621
+[conventional (4.84M/4.84M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.000504 | Eval Loss: 0.003307 | PSNR: 25.1913 | SSIM: 0.9684
+      [BEST @ epoch 35] eval loss: 0.003143
+[conventional (4.84M/4.84M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.000479 | Eval Loss: 0.003143 | PSNR: 25.4093 | SSIM: 0.9714
+      [BEST @ epoch 35] eval loss: 0.004675
+[conventional (4.22M/4.84M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.000539 | Eval Loss: 0.004675 | PSNR: 23.5779 | SSIM: 0.9615
+[conventional (4.22M/4.22M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.000452 | Eval Loss: 0.005138 | PSNR: 23.1549 | SSIM: 0.9592
+[conventional (4.22M/4.84M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.000454 | Eval Loss: 0.003499 | PSNR: 24.9046 | SSIM: 0.9679
+      [BEST @ epoch 40] eval loss: 0.003045
+[conventional (4.84M/4.84M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.000422 | Eval Loss: 0.003045 | PSNR: 25.5454 | SSIM: 0.9723
+[conventional (4.84M/4.84M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.000423 | Eval Loss: 0.003181 | PSNR: 25.3031 | SSIM: 0.9708
+[conventional (4.22M/4.84M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.000458 | Eval Loss: 0.004836 | PSNR: 23.5007 | SSIM: 0.9615
+[conventional (4.22M/4.22M)] Epoch: 45/100 | LR: 0.000055 | Train Loss: 0.000381 | Eval Loss: 0.004895 | PSNR: 23.3831 | SSIM: 0.9619
+      [BEST @ epoch 45] eval loss: 0.003312
+[conventional (4.22M/4.84M)] Epoch: 45/100 | LR: 0.000055 | Train Loss: 0.000421 | Eval Loss: 0.003312 | PSNR: 25.1546 | SSIM: 0.9694
+[conventional (4.84M/4.84M)] Epoch: 45/100 | LR: 0.000055 | Train Loss: 0.000355 | Eval Loss: 0.003180 | PSNR: 25.3626 | SSIM: 0.9711
+[conventional (4.84M/4.84M)] Epoch: 45/100 | LR: 0.000055 | Train Loss: 0.000357 | Eval Loss: 0.003163 | PSNR: 25.4132 | SSIM: 0.9713
+[conventional (4.22M/4.84M)] Epoch: 45/100 | LR: 0.000055 | Train Loss: 0.000389 | Eval Loss: 0.005069 | PSNR: 23.2118 | SSIM: 0.9594
+[conventional (4.22M/4.22M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.000326 | Eval Loss: 0.004675 | PSNR: 23.5350 | SSIM: 0.9630
+      [BEST @ epoch 50] eval loss: 0.003287
+[conventional (4.22M/4.84M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.000329 | Eval Loss: 0.003287 | PSNR: 25.2105 | SSIM: 0.9712
+      [BEST @ epoch 50] eval loss: 0.002922
+[conventional (4.84M/4.84M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.000288 | Eval Loss: 0.002922 | PSNR: 25.7986 | SSIM: 0.9738
+      [BEST @ epoch 50] eval loss: 0.004548
+[conventional (4.22M/4.84M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.000330 | Eval Loss: 0.004548 | PSNR: 23.7237 | SSIM: 0.9642
+      [BEST @ epoch 50] eval loss: 0.002886
+[conventional (4.84M/4.84M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.000291 | Eval Loss: 0.002886 | PSNR: 25.8442 | SSIM: 0.9741
+      [BEST @ epoch 55] eval loss: 0.004601
+[conventional (4.22M/4.22M)] Epoch: 55/100 | LR: 0.000045 | Train Loss: 0.000279 | Eval Loss: 0.004601 | PSNR: 23.6279 | SSIM: 0.9640
+[conventional (4.22M/4.84M)] Epoch: 55/100 | LR: 0.000045 | Train Loss: 0.000288 | Eval Loss: 0.003312 | PSNR: 25.1569 | SSIM: 0.9705
+[conventional (4.84M/4.84M)] Epoch: 55/100 | LR: 0.000045 | Train Loss: 0.000230 | Eval Loss: 0.003059 | PSNR: 25.6156 | SSIM: 0.9739
+[conventional (4.22M/4.84M)] Epoch: 55/100 | LR: 0.000045 | Train Loss: 0.000283 | Eval Loss: 0.004602 | PSNR: 23.6483 | SSIM: 0.9639
+[conventional (4.84M/4.84M)] Epoch: 55/100 | LR: 0.000045 | Train Loss: 0.000256 | Eval Loss: 0.002905 | PSNR: 25.8579 | SSIM: 0.9744
+      [BEST @ epoch 60] eval loss: 0.004539
+[conventional (4.22M/4.22M)] Epoch: 60/100 | LR: 0.000040 | Train Loss: 0.000248 | Eval Loss: 0.004539 | PSNR: 23.7087 | SSIM: 0.9654
+      [BEST @ epoch 60] eval loss: 0.003280
+[conventional (4.22M/4.84M)] Epoch: 60/100 | LR: 0.000040 | Train Loss: 0.000251 | Eval Loss: 0.003280 | PSNR: 25.2736 | SSIM: 0.9724
+      [BEST @ epoch 60] eval loss: 0.002844
+[conventional (4.84M/4.84M)] Epoch: 60/100 | LR: 0.000040 | Train Loss: 0.000208 | Eval Loss: 0.002844 | PSNR: 25.9215 | SSIM: 0.9751
+[conventional (4.84M/4.84M)] Epoch: 60/100 | LR: 0.000040 | Train Loss: 0.000185 | Eval Loss: 0.002923 | PSNR: 25.8150 | SSIM: 0.9752
+[conventional (4.22M/4.84M)] Epoch: 60/100 | LR: 0.000040 | Train Loss: 0.000251 | Eval Loss: 0.004552 | PSNR: 23.7142 | SSIM: 0.9651
+[conventional (4.22M/4.22M)] Epoch: 65/100 | LR: 0.000035 | Train Loss: 0.000207 | Eval Loss: 0.004577 | PSNR: 23.6396 | SSIM: 0.9656
+      [BEST @ epoch 65] eval loss: 0.003134
+[conventional (4.22M/4.84M)] Epoch: 65/100 | LR: 0.000035 | Train Loss: 0.000213 | Eval Loss: 0.003134 | PSNR: 25.4450 | SSIM: 0.9734
+      [BEST @ epoch 65] eval loss: 0.002701
+[conventional (4.84M/4.84M)] Epoch: 65/100 | LR: 0.000035 | Train Loss: 0.000164 | Eval Loss: 0.002701 | PSNR: 26.1898 | SSIM: 0.9767
+      [BEST @ epoch 65] eval loss: 0.002788
+[conventional (4.84M/4.84M)] Epoch: 65/100 | LR: 0.000035 | Train Loss: 0.000152 | Eval Loss: 0.002788 | PSNR: 26.0290 | SSIM: 0.9767
+[conventional (4.22M/4.84M)] Epoch: 65/100 | LR: 0.000035 | Train Loss: 0.000215 | Eval Loss: 0.004620 | PSNR: 23.6806 | SSIM: 0.9655
+[conventional (4.22M/4.22M)] Epoch: 70/100 | LR: 0.000030 | Train Loss: 0.000193 | Eval Loss: 0.004693 | PSNR: 23.5694 | SSIM: 0.9651
+      [BEST @ epoch 70] eval loss: 0.003097
+[conventional (4.22M/4.84M)] Epoch: 70/100 | LR: 0.000030 | Train Loss: 0.000196 | Eval Loss: 0.003097 | PSNR: 25.5056 | SSIM: 0.9740
+[conventional (4.84M/4.84M)] Epoch: 70/100 | LR: 0.000030 | Train Loss: 0.000151 | Eval Loss: 0.002820 | PSNR: 25.9684 | SSIM: 0.9765
+[conventional (4.84M/4.84M)] Epoch: 70/100 | LR: 0.000030 | Train Loss: 0.000161 | Eval Loss: 0.002770 | PSNR: 26.0705 | SSIM: 0.9765
+[conventional (4.22M/4.84M)] Epoch: 70/100 | LR: 0.000030 | Train Loss: 0.000192 | Eval Loss: 0.004773 | PSNR: 23.5139 | SSIM: 0.9647
+      [BEST @ epoch 75] eval loss: 0.004429
+[conventional (4.22M/4.22M)] Epoch: 75/100 | LR: 0.000025 | Train Loss: 0.000164 | Eval Loss: 0.004429 | PSNR: 23.8040 | SSIM: 0.9667
+      [BEST @ epoch 75] eval loss: 0.003087
+[conventional (4.22M/4.84M)] Epoch: 75/100 | LR: 0.000025 | Train Loss: 0.000174 | Eval Loss: 0.003087 | PSNR: 25.5629 | SSIM: 0.9743
+      [BEST @ epoch 75] eval loss: 0.002787
+[conventional (4.84M/4.84M)] Epoch: 75/100 | LR: 0.000025 | Train Loss: 0.000117 | Eval Loss: 0.002787 | PSNR: 26.1298 | SSIM: 0.9770
+      [BEST @ epoch 75] eval loss: 0.002690
+[conventional (4.84M/4.84M)] Epoch: 75/100 | LR: 0.000025 | Train Loss: 0.000129 | Eval Loss: 0.002690 | PSNR: 26.2131 | SSIM: 0.9775
+[conventional (4.22M/4.84M)] Epoch: 75/100 | LR: 0.000025 | Train Loss: 0.000166 | Eval Loss: 0.004613 | PSNR: 23.6606 | SSIM: 0.9657
+      [BEST @ epoch 80] eval loss: 0.004339
+[conventional (4.22M/4.22M)] Epoch: 80/100 | LR: 0.000020 | Train Loss: 0.000144 | Eval Loss: 0.004339 | PSNR: 23.9262 | SSIM: 0.9673
+      [BEST @ epoch 80] eval loss: 0.003031
+[conventional (4.22M/4.84M)] Epoch: 80/100 | LR: 0.000020 | Train Loss: 0.000148 | Eval Loss: 0.003031 | PSNR: 25.6610 | SSIM: 0.9747
+[conventional (4.84M/4.84M)] Epoch: 80/100 | LR: 0.000020 | Train Loss: 0.000102 | Eval Loss: 0.002810 | PSNR: 26.0820 | SSIM: 0.9769
+      [BEST @ epoch 80] eval loss: 0.002668
+[conventional (4.84M/4.84M)] Epoch: 80/100 | LR: 0.000020 | Train Loss: 0.000109 | Eval Loss: 0.002668 | PSNR: 26.2888 | SSIM: 0.9774
+      [BEST @ epoch 80] eval loss: 0.004420
+[conventional (4.22M/4.84M)] Epoch: 80/100 | LR: 0.000020 | Train Loss: 0.000147 | Eval Loss: 0.004420 | PSNR: 23.8512 | SSIM: 0.9669
+[conventional (4.22M/4.22M)] Epoch: 85/100 | LR: 0.000015 | Train Loss: 0.000129 | Eval Loss: 0.004517 | PSNR: 23.7386 | SSIM: 0.9662
+[conventional (4.22M/4.84M)] Epoch: 85/100 | LR: 0.000015 | Train Loss: 0.000131 | Eval Loss: 0.003099 | PSNR: 25.4867 | SSIM: 0.9741
+      [BEST @ epoch 85] eval loss: 0.002772
+[conventional (4.84M/4.84M)] Epoch: 85/100 | LR: 0.000015 | Train Loss: 0.000090 | Eval Loss: 0.002772 | PSNR: 26.0976 | SSIM: 0.9771
+[conventional (4.84M/4.84M)] Epoch: 85/100 | LR: 0.000015 | Train Loss: 0.000094 | Eval Loss: 0.002759 | PSNR: 26.1120 | SSIM: 0.9771
+[conventional (4.22M/4.84M)] Epoch: 85/100 | LR: 0.000015 | Train Loss: 0.000132 | Eval Loss: 0.004518 | PSNR: 23.7696 | SSIM: 0.9662
+      [BEST @ epoch 90] eval loss: 0.004069
+[conventional (4.22M/4.22M)] Epoch: 90/100 | LR: 0.000010 | Train Loss: 0.000114 | Eval Loss: 0.004069 | PSNR: 24.2539 | SSIM: 0.9692
+[conventional (4.22M/4.84M)] Epoch: 90/100 | LR: 0.000010 | Train Loss: 0.000116 | Eval Loss: 0.003048 | PSNR: 25.6082 | SSIM: 0.9749
+      [BEST @ epoch 90] eval loss: 0.002756
+[conventional (4.84M/4.84M)] Epoch: 90/100 | LR: 0.000010 | Train Loss: 0.000075 | Eval Loss: 0.002756 | PSNR: 26.1558 | SSIM: 0.9776
+[conventional (4.84M/4.84M)] Epoch: 90/100 | LR: 0.000010 | Train Loss: 0.000080 | Eval Loss: 0.002701 | PSNR: 26.1957 | SSIM: 0.9778
+      [BEST @ epoch 90] eval loss: 0.004069
+[conventional (4.22M/4.84M)] Epoch: 90/100 | LR: 0.000010 | Train Loss: 0.000115 | Eval Loss: 0.004069 | PSNR: 24.2455 | SSIM: 0.9691
+[conventional (4.22M/4.22M)] Epoch: 95/100 | LR: 0.000005 | Train Loss: 0.000104 | Eval Loss: 0.004475 | PSNR: 23.7669 | SSIM: 0.9674
+      [BEST @ epoch 95] eval loss: 0.002954
+[conventional (4.22M/4.84M)] Epoch: 95/100 | LR: 0.000005 | Train Loss: 0.000104 | Eval Loss: 0.002954 | PSNR: 25.7289 | SSIM: 0.9760
+      [BEST @ epoch 95] eval loss: 0.002716
+[conventional (4.84M/4.84M)] Epoch: 95/100 | LR: 0.000005 | Train Loss: 0.000068 | Eval Loss: 0.002716 | PSNR: 26.2438 | SSIM: 0.9782
+      [BEST @ epoch 95] eval loss: 0.002629
+[conventional (4.84M/4.84M)] Epoch: 95/100 | LR: 0.000005 | Train Loss: 0.000071 | Eval Loss: 0.002629 | PSNR: 26.3458 | SSIM: 0.9784
+[conventional (4.22M/4.84M)] Epoch: 95/100 | LR: 0.000005 | Train Loss: 0.000106 | Eval Loss: 0.004381 | PSNR: 23.8765 | SSIM: 0.9678
+[conventional (4.22M/4.22M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000096 | Eval Loss: 0.004109 | PSNR: 24.1785 | SSIM: 0.9693
+
+[INFO] Using best model @ epoch 90, test loss: 0.003939 | PSNR: 25.4731 | SSIM: 0.9699
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_4221056/latent784_hidden1150_1150/lr0.0001_run1/experiment_summary.json
+[conventional (4.22M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000096 | Eval Loss: 0.002980 | PSNR: 25.6924 | SSIM: 0.9757
+
+[INFO] Using best model @ epoch 95, test loss: 0.002881 | PSNR: 27.2226 | SSIM: 0.9763
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_4221056/latent784_hidden1150_1150/lr0.0001_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.002705
+[conventional (4.84M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000061 | Eval Loss: 0.002705 | PSNR: 26.2751 | SSIM: 0.9783
+
+[INFO] Using best model @ epoch 100, test loss: 0.002649 | PSNR: 28.1051 | SSIM: 0.9784
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_4835712/latent784_hidden1150_1150/lr0.0001_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.002620
+[conventional (4.84M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000065 | Eval Loss: 0.002620 | PSNR: 26.3693 | SSIM: 0.9786
+
+[INFO] Using best model @ epoch 100, test loss: 0.002595 | PSNR: 27.9142 | SSIM: 0.9787
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_4835712/latent784_hidden1150_1150/lr0.0001_run1/experiment_summary.json
+[conventional (4.22M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000097 | Eval Loss: 0.004131 | PSNR: 24.2219 | SSIM: 0.9695
+
+[INFO] Using best model @ epoch 90, test loss: 0.003859 | PSNR: 25.5716 | SSIM: 0.9705
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_4221056/latent784_hidden1150_1150/lr0.0001_run1/experiment_summary.json
+==========================================
+Starting experiments with run_id=1
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+cuda:2
+Set W_in to non-trianable
+cuda:2
+Initialize Win to Identity matrix
+cuda:2
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,835,712
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_4835712/latent784_hidden1150_1150/lr0.0005_run1
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+cuda:2
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,221,056
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_4221056/latent784_hidden1150_1150/lr0.0005_run1
+Created train split with 50000 samples
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,835,712
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_4835712/latent784_hidden1150_1150/lr0.0005_run1
+Created eval split with 10000 samples
+Created train split with 50000 samples
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,221,056
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_4221056/latent784_hidden1150_1150/lr0.0005_run1
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,221,056
+Trainable parameters: 4,221,056
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_4221056/latent784_hidden1150_1150/lr0.0005_run1
+Created train split with 50000 samples
+Created eval split with 10000 samples
+Created train split with 50000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+      [BEST @ epoch 5] eval loss: 0.005012
+[conventional (4.22M/4.84M)] Epoch: 5/100 | LR: 0.000475 | Train Loss: 0.004103 | Eval Loss: 0.005012 | PSNR: 23.1228 | SSIM: 0.9428
+      [BEST @ epoch 5] eval loss: 0.005597
+[conventional (4.22M/4.22M)] Epoch: 5/100 | LR: 0.000475 | Train Loss: 0.003737 | Eval Loss: 0.005597 | PSNR: 22.6845 | SSIM: 0.9415
+      [BEST @ epoch 5] eval loss: 0.004731
+[conventional (4.84M/4.84M)] Epoch: 5/100 | LR: 0.000475 | Train Loss: 0.004200 | Eval Loss: 0.004731 | PSNR: 23.4008 | SSIM: 0.9465
+      [BEST @ epoch 5] eval loss: 0.005655
+[conventional (4.22M/4.84M)] Epoch: 5/100 | LR: 0.000475 | Train Loss: 0.003779 | Eval Loss: 0.005655 | PSNR: 22.6239 | SSIM: 0.9428
+      [BEST @ epoch 5] eval loss: 0.004945
+[conventional (4.84M/4.84M)] Epoch: 5/100 | LR: 0.000475 | Train Loss: 0.004269 | Eval Loss: 0.004945 | PSNR: 23.2101 | SSIM: 0.9461
+      [BEST @ epoch 10] eval loss: 0.004296
+[conventional (4.22M/4.84M)] Epoch: 10/100 | LR: 0.000450 | Train Loss: 0.002500 | Eval Loss: 0.004296 | PSNR: 23.8594 | SSIM: 0.9540
+      [BEST @ epoch 10] eval loss: 0.005277
+[conventional (4.22M/4.84M)] Epoch: 10/100 | LR: 0.000450 | Train Loss: 0.002251 | Eval Loss: 0.005277 | PSNR: 22.9517 | SSIM: 0.9505
+      [BEST @ epoch 10] eval loss: 0.005301
+[conventional (4.22M/4.22M)] Epoch: 10/100 | LR: 0.000450 | Train Loss: 0.002203 | Eval Loss: 0.005301 | PSNR: 22.8999 | SSIM: 0.9507
+      [BEST @ epoch 10] eval loss: 0.004091
+[conventional (4.84M/4.84M)] Epoch: 10/100 | LR: 0.000450 | Train Loss: 0.002674 | Eval Loss: 0.004091 | PSNR: 24.0805 | SSIM: 0.9546
+      [BEST @ epoch 10] eval loss: 0.003801
+[conventional (4.84M/4.84M)] Epoch: 10/100 | LR: 0.000450 | Train Loss: 0.002759 | Eval Loss: 0.003801 | PSNR: 24.4281 | SSIM: 0.9572
+      [BEST @ epoch 15] eval loss: 0.003839
+[conventional (4.22M/4.84M)] Epoch: 15/100 | LR: 0.000425 | Train Loss: 0.001707 | Eval Loss: 0.003839 | PSNR: 24.3813 | SSIM: 0.9617
+      [BEST @ epoch 15] eval loss: 0.004649
+[conventional (4.22M/4.22M)] Epoch: 15/100 | LR: 0.000425 | Train Loss: 0.001493 | Eval Loss: 0.004649 | PSNR: 23.5727 | SSIM: 0.9573
+      [BEST @ epoch 15] eval loss: 0.004704
+[conventional (4.22M/4.84M)] Epoch: 15/100 | LR: 0.000425 | Train Loss: 0.001539 | Eval Loss: 0.004704 | PSNR: 23.4952 | SSIM: 0.9572
+      [BEST @ epoch 15] eval loss: 0.003784
+[conventional (4.84M/4.84M)] Epoch: 15/100 | LR: 0.000425 | Train Loss: 0.001868 | Eval Loss: 0.003784 | PSNR: 24.4795 | SSIM: 0.9604
+      [BEST @ epoch 15] eval loss: 0.003678
+[conventional (4.84M/4.84M)] Epoch: 15/100 | LR: 0.000425 | Train Loss: 0.001949 | Eval Loss: 0.003678 | PSNR: 24.6140 | SSIM: 0.9615
+[conventional (4.22M/4.84M)] Epoch: 20/100 | LR: 0.000400 | Train Loss: 0.001297 | Eval Loss: 0.003903 | PSNR: 24.2959 | SSIM: 0.9570
+[conventional (4.22M/4.22M)] Epoch: 20/100 | LR: 0.000400 | Train Loss: 0.001127 | Eval Loss: 0.004669 | PSNR: 23.5541 | SSIM: 0.9557
+[conventional (4.22M/4.84M)] Epoch: 20/100 | LR: 0.000400 | Train Loss: 0.001166 | Eval Loss: 0.004729 | PSNR: 23.4680 | SSIM: 0.9548
+      [BEST @ epoch 20] eval loss: 0.003486
+[conventional (4.84M/4.84M)] Epoch: 20/100 | LR: 0.000400 | Train Loss: 0.001361 | Eval Loss: 0.003486 | PSNR: 24.8495 | SSIM: 0.9623
+      [BEST @ epoch 20] eval loss: 0.003545
+[conventional (4.84M/4.84M)] Epoch: 20/100 | LR: 0.000400 | Train Loss: 0.001478 | Eval Loss: 0.003545 | PSNR: 24.8137 | SSIM: 0.9608
+      [BEST @ epoch 25] eval loss: 0.003282
+[conventional (4.22M/4.84M)] Epoch: 25/100 | LR: 0.000375 | Train Loss: 0.001045 | Eval Loss: 0.003282 | PSNR: 25.0893 | SSIM: 0.9664
+[conventional (4.22M/4.22M)] Epoch: 25/100 | LR: 0.000375 | Train Loss: 0.000923 | Eval Loss: 0.004698 | PSNR: 23.4931 | SSIM: 0.9591
+      [BEST @ epoch 25] eval loss: 0.004560
+[conventional (4.22M/4.84M)] Epoch: 25/100 | LR: 0.000375 | Train Loss: 0.000913 | Eval Loss: 0.004560 | PSNR: 23.6511 | SSIM: 0.9602
+      [BEST @ epoch 25] eval loss: 0.003121
+[conventional (4.84M/4.84M)] Epoch: 25/100 | LR: 0.000375 | Train Loss: 0.001123 | Eval Loss: 0.003121 | PSNR: 25.3317 | SSIM: 0.9676
+      [BEST @ epoch 25] eval loss: 0.003077
+[conventional (4.84M/4.84M)] Epoch: 25/100 | LR: 0.000375 | Train Loss: 0.001201 | Eval Loss: 0.003077 | PSNR: 25.4297 | SSIM: 0.9686
+[conventional (4.22M/4.84M)] Epoch: 30/100 | LR: 0.000350 | Train Loss: 0.000835 | Eval Loss: 0.003289 | PSNR: 25.1171 | SSIM: 0.9633
+      [BEST @ epoch 30] eval loss: 0.004514
+[conventional (4.22M/4.22M)] Epoch: 30/100 | LR: 0.000350 | Train Loss: 0.000726 | Eval Loss: 0.004514 | PSNR: 23.6916 | SSIM: 0.9605
+      [BEST @ epoch 30] eval loss: 0.004548
+[conventional (4.22M/4.84M)] Epoch: 30/100 | LR: 0.000350 | Train Loss: 0.000749 | Eval Loss: 0.004548 | PSNR: 23.6555 | SSIM: 0.9594
+      [BEST @ epoch 30] eval loss: 0.003054
+[conventional (4.84M/4.84M)] Epoch: 30/100 | LR: 0.000350 | Train Loss: 0.000888 | Eval Loss: 0.003054 | PSNR: 25.4908 | SSIM: 0.9666
+      [BEST @ epoch 30] eval loss: 0.002946
+[conventional (4.84M/4.84M)] Epoch: 30/100 | LR: 0.000350 | Train Loss: 0.000965 | Eval Loss: 0.002946 | PSNR: 25.7090 | SSIM: 0.9679
+      [BEST @ epoch 35] eval loss: 0.003180
+[conventional (4.22M/4.84M)] Epoch: 35/100 | LR: 0.000325 | Train Loss: 0.000684 | Eval Loss: 0.003180 | PSNR: 25.2795 | SSIM: 0.9676
+      [BEST @ epoch 35] eval loss: 0.004132
+[conventional (4.22M/4.22M)] Epoch: 35/100 | LR: 0.000325 | Train Loss: 0.000623 | Eval Loss: 0.004132 | PSNR: 24.1070 | SSIM: 0.9637
+      [BEST @ epoch 35] eval loss: 0.004368
+[conventional (4.22M/4.84M)] Epoch: 35/100 | LR: 0.000325 | Train Loss: 0.000598 | Eval Loss: 0.004368 | PSNR: 23.8702 | SSIM: 0.9625
+[conventional (4.84M/4.84M)] Epoch: 35/100 | LR: 0.000325 | Train Loss: 0.000727 | Eval Loss: 0.003119 | PSNR: 25.3145 | SSIM: 0.9686
+[conventional (4.84M/4.84M)] Epoch: 35/100 | LR: 0.000325 | Train Loss: 0.000792 | Eval Loss: 0.003091 | PSNR: 25.3989 | SSIM: 0.9665
+[conventional (4.22M/4.84M)] Epoch: 40/100 | LR: 0.000300 | Train Loss: 0.000593 | Eval Loss: 0.003211 | PSNR: 25.2064 | SSIM: 0.9673
+[conventional (4.22M/4.22M)] Epoch: 40/100 | LR: 0.000300 | Train Loss: 0.000516 | Eval Loss: 0.004438 | PSNR: 23.8185 | SSIM: 0.9609
+      [BEST @ epoch 40] eval loss: 0.004295
+[conventional (4.22M/4.84M)] Epoch: 40/100 | LR: 0.000300 | Train Loss: 0.000531 | Eval Loss: 0.004295 | PSNR: 23.9775 | SSIM: 0.9630
+      [BEST @ epoch 40] eval loss: 0.002983
+[conventional (4.84M/4.84M)] Epoch: 40/100 | LR: 0.000300 | Train Loss: 0.000626 | Eval Loss: 0.002983 | PSNR: 25.5993 | SSIM: 0.9695
+[conventional (4.84M/4.84M)] Epoch: 40/100 | LR: 0.000300 | Train Loss: 0.000661 | Eval Loss: 0.002965 | PSNR: 25.6355 | SSIM: 0.9683
+      [BEST @ epoch 45] eval loss: 0.003135
+[conventional (4.22M/4.84M)] Epoch: 45/100 | LR: 0.000275 | Train Loss: 0.000537 | Eval Loss: 0.003135 | PSNR: 25.3125 | SSIM: 0.9682
+[conventional (4.22M/4.22M)] Epoch: 45/100 | LR: 0.000275 | Train Loss: 0.000442 | Eval Loss: 0.004528 | PSNR: 23.6935 | SSIM: 0.9611
+[conventional (4.22M/4.84M)] Epoch: 45/100 | LR: 0.000275 | Train Loss: 0.000449 | Eval Loss: 0.004559 | PSNR: 23.6939 | SSIM: 0.9597
+      [BEST @ epoch 45] eval loss: 0.002899
+[conventional (4.84M/4.84M)] Epoch: 45/100 | LR: 0.000275 | Train Loss: 0.000554 | Eval Loss: 0.002899 | PSNR: 25.7516 | SSIM: 0.9698
+      [BEST @ epoch 45] eval loss: 0.002903
+[conventional (4.84M/4.84M)] Epoch: 45/100 | LR: 0.000275 | Train Loss: 0.000597 | Eval Loss: 0.002903 | PSNR: 25.6995 | SSIM: 0.9694
+[conventional (4.22M/4.84M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.000414 | Eval Loss: 0.003166 | PSNR: 25.3639 | SSIM: 0.9690
+      [BEST @ epoch 50] eval loss: 0.004107
+[conventional (4.22M/4.22M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.000378 | Eval Loss: 0.004107 | PSNR: 24.0823 | SSIM: 0.9650
+      [BEST @ epoch 50] eval loss: 0.004182
+[conventional (4.22M/4.84M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.000373 | Eval Loss: 0.004182 | PSNR: 24.0483 | SSIM: 0.9644
+      [BEST @ epoch 50] eval loss: 0.002824
+[conventional (4.84M/4.84M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.000433 | Eval Loss: 0.002824 | PSNR: 25.8411 | SSIM: 0.9726
+      [BEST @ epoch 50] eval loss: 0.002680
+[conventional (4.84M/4.84M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.000481 | Eval Loss: 0.002680 | PSNR: 26.1457 | SSIM: 0.9728
+      [BEST @ epoch 55] eval loss: 0.003099
+[conventional (4.22M/4.84M)] Epoch: 55/100 | LR: 0.000225 | Train Loss: 0.000379 | Eval Loss: 0.003099 | PSNR: 25.4074 | SSIM: 0.9698
+      [BEST @ epoch 55] eval loss: 0.003986
+[conventional (4.22M/4.22M)] Epoch: 55/100 | LR: 0.000225 | Train Loss: 0.000318 | Eval Loss: 0.003986 | PSNR: 24.2994 | SSIM: 0.9666
+[conventional (4.22M/4.84M)] Epoch: 55/100 | LR: 0.000225 | Train Loss: 0.000307 | Eval Loss: 0.004429 | PSNR: 23.8004 | SSIM: 0.9628
+[conventional (4.84M/4.84M)] Epoch: 55/100 | LR: 0.000225 | Train Loss: 0.000376 | Eval Loss: 0.002892 | PSNR: 25.7509 | SSIM: 0.9714
+[conventional (4.84M/4.84M)] Epoch: 55/100 | LR: 0.000225 | Train Loss: 0.000405 | Eval Loss: 0.002915 | PSNR: 25.7689 | SSIM: 0.9712
+[conventional (4.22M/4.22M)] Epoch: 60/100 | LR: 0.000200 | Train Loss: 0.000285 | Eval Loss: 0.004032 | PSNR: 24.2632 | SSIM: 0.9673
+      [BEST @ epoch 60] eval loss: 0.002928
+[conventional (4.22M/4.84M)] Epoch: 60/100 | LR: 0.000200 | Train Loss: 0.000290 | Eval Loss: 0.002928 | PSNR: 25.7649 | SSIM: 0.9725
+      [BEST @ epoch 60] eval loss: 0.003866
+[conventional (4.22M/4.84M)] Epoch: 60/100 | LR: 0.000200 | Train Loss: 0.000271 | Eval Loss: 0.003866 | PSNR: 24.4474 | SSIM: 0.9676
+      [BEST @ epoch 60] eval loss: 0.002737
+[conventional (4.84M/4.84M)] Epoch: 60/100 | LR: 0.000200 | Train Loss: 0.000300 | Eval Loss: 0.002737 | PSNR: 26.0880 | SSIM: 0.9745
+[conventional (4.84M/4.84M)] Epoch: 60/100 | LR: 0.000200 | Train Loss: 0.000346 | Eval Loss: 0.002720 | PSNR: 26.1711 | SSIM: 0.9726
+      [BEST @ epoch 65] eval loss: 0.003935
+[conventional (4.22M/4.22M)] Epoch: 65/100 | LR: 0.000175 | Train Loss: 0.000225 | Eval Loss: 0.003935 | PSNR: 24.3406 | SSIM: 0.9685
+      [BEST @ epoch 65] eval loss: 0.002785
+[conventional (4.22M/4.84M)] Epoch: 65/100 | LR: 0.000175 | Train Loss: 0.000267 | Eval Loss: 0.002785 | PSNR: 25.9165 | SSIM: 0.9743
+[conventional (4.22M/4.84M)] Epoch: 65/100 | LR: 0.000175 | Train Loss: 0.000230 | Eval Loss: 0.004122 | PSNR: 24.1186 | SSIM: 0.9666
+[conventional (4.84M/4.84M)] Epoch: 65/100 | LR: 0.000175 | Train Loss: 0.000282 | Eval Loss: 0.002753 | PSNR: 26.0261 | SSIM: 0.9743
+      [BEST @ epoch 65] eval loss: 0.002487
+[conventional (4.84M/4.84M)] Epoch: 65/100 | LR: 0.000175 | Train Loss: 0.000296 | Eval Loss: 0.002487 | PSNR: 26.5551 | SSIM: 0.9758
+[conventional (4.22M/4.84M)] Epoch: 70/100 | LR: 0.000150 | Train Loss: 0.000239 | Eval Loss: 0.002869 | PSNR: 25.8181 | SSIM: 0.9736
+[conventional (4.22M/4.22M)] Epoch: 70/100 | LR: 0.000150 | Train Loss: 0.000196 | Eval Loss: 0.004057 | PSNR: 24.2193 | SSIM: 0.9681
+[conventional (4.22M/4.84M)] Epoch: 70/100 | LR: 0.000150 | Train Loss: 0.000202 | Eval Loss: 0.004268 | PSNR: 23.9873 | SSIM: 0.9667
+      [BEST @ epoch 70] eval loss: 0.002638
+[conventional (4.84M/4.84M)] Epoch: 70/100 | LR: 0.000150 | Train Loss: 0.000223 | Eval Loss: 0.002638 | PSNR: 26.2539 | SSIM: 0.9760
+[conventional (4.84M/4.84M)] Epoch: 70/100 | LR: 0.000150 | Train Loss: 0.000251 | Eval Loss: 0.002605 | PSNR: 26.3691 | SSIM: 0.9758
+[conventional (4.22M/4.84M)] Epoch: 75/100 | LR: 0.000125 | Train Loss: 0.000178 | Eval Loss: 0.002792 | PSNR: 25.9204 | SSIM: 0.9750
+      [BEST @ epoch 75] eval loss: 0.003797
+[conventional (4.22M/4.22M)] Epoch: 75/100 | LR: 0.000125 | Train Loss: 0.000172 | Eval Loss: 0.003797 | PSNR: 24.5216 | SSIM: 0.9701
+[conventional (4.22M/4.84M)] Epoch: 75/100 | LR: 0.000125 | Train Loss: 0.000166 | Eval Loss: 0.003878 | PSNR: 24.4638 | SSIM: 0.9696
+      [BEST @ epoch 75] eval loss: 0.002612
+[conventional (4.84M/4.84M)] Epoch: 75/100 | LR: 0.000125 | Train Loss: 0.000186 | Eval Loss: 0.002612 | PSNR: 26.2554 | SSIM: 0.9758
+[conventional (4.84M/4.84M)] Epoch: 75/100 | LR: 0.000125 | Train Loss: 0.000206 | Eval Loss: 0.002513 | PSNR: 26.5550 | SSIM: 0.9766
+[conventional (4.22M/4.84M)] Epoch: 80/100 | LR: 0.000100 | Train Loss: 0.000152 | Eval Loss: 0.002860 | PSNR: 25.8309 | SSIM: 0.9745
+      [BEST @ epoch 80] eval loss: 0.003732
+[conventional (4.22M/4.22M)] Epoch: 80/100 | LR: 0.000100 | Train Loss: 0.000135 | Eval Loss: 0.003732 | PSNR: 24.6048 | SSIM: 0.9706
+      [BEST @ epoch 80] eval loss: 0.003849
+[conventional (4.22M/4.84M)] Epoch: 80/100 | LR: 0.000100 | Train Loss: 0.000142 | Eval Loss: 0.003849 | PSNR: 24.4844 | SSIM: 0.9703
+[conventional (4.84M/4.84M)] Epoch: 80/100 | LR: 0.000100 | Train Loss: 0.000160 | Eval Loss: 0.002655 | PSNR: 26.2484 | SSIM: 0.9767
+[conventional (4.84M/4.84M)] Epoch: 80/100 | LR: 0.000100 | Train Loss: 0.000166 | Eval Loss: 0.002532 | PSNR: 26.5575 | SSIM: 0.9767
+[conventional (4.22M/4.84M)] Epoch: 85/100 | LR: 0.000075 | Train Loss: 0.000131 | Eval Loss: 0.002868 | PSNR: 25.8227 | SSIM: 0.9754
+[conventional (4.22M/4.22M)] Epoch: 85/100 | LR: 0.000075 | Train Loss: 0.000117 | Eval Loss: 0.003868 | PSNR: 24.4462 | SSIM: 0.9699
+[conventional (4.22M/4.84M)] Epoch: 85/100 | LR: 0.000075 | Train Loss: 0.000117 | Eval Loss: 0.004002 | PSNR: 24.3260 | SSIM: 0.9690
+[conventional (4.84M/4.84M)] Epoch: 85/100 | LR: 0.000075 | Train Loss: 0.000129 | Eval Loss: 0.002635 | PSNR: 26.2178 | SSIM: 0.9772
+[conventional (4.84M/4.84M)] Epoch: 85/100 | LR: 0.000075 | Train Loss: 0.000143 | Eval Loss: 0.002533 | PSNR: 26.5555 | SSIM: 0.9773
+[conventional (4.22M/4.84M)] Epoch: 90/100 | LR: 0.000050 | Train Loss: 0.000108 | Eval Loss: 0.002892 | PSNR: 25.8317 | SSIM: 0.9755
+      [BEST @ epoch 90] eval loss: 0.003580
+[conventional (4.22M/4.22M)] Epoch: 90/100 | LR: 0.000050 | Train Loss: 0.000097 | Eval Loss: 0.003580 | PSNR: 24.8331 | SSIM: 0.9722
+      [BEST @ epoch 90] eval loss: 0.003685
+[conventional (4.22M/4.84M)] Epoch: 90/100 | LR: 0.000050 | Train Loss: 0.000096 | Eval Loss: 0.003685 | PSNR: 24.6902 | SSIM: 0.9712
+[conventional (4.84M/4.84M)] Epoch: 90/100 | LR: 0.000050 | Train Loss: 0.000105 | Eval Loss: 0.002646 | PSNR: 26.2534 | SSIM: 0.9774
+      [BEST @ epoch 95] eval loss: 0.002763
+[conventional (4.22M/4.84M)] Epoch: 95/100 | LR: 0.000025 | Train Loss: 0.000090 | Eval Loss: 0.002763 | PSNR: 26.0202 | SSIM: 0.9769
+      [BEST @ epoch 90] eval loss: 0.002475
+[conventional (4.84M/4.84M)] Epoch: 90/100 | LR: 0.000050 | Train Loss: 0.000117 | Eval Loss: 0.002475 | PSNR: 26.6492 | SSIM: 0.9781
+[conventional (4.22M/4.22M)] Epoch: 95/100 | LR: 0.000025 | Train Loss: 0.000081 | Eval Loss: 0.003891 | PSNR: 24.4097 | SSIM: 0.9711
+[conventional (4.22M/4.84M)] Epoch: 95/100 | LR: 0.000025 | Train Loss: 0.000082 | Eval Loss: 0.003945 | PSNR: 24.3143 | SSIM: 0.9705
+      [BEST @ epoch 95] eval loss: 0.002515
+[conventional (4.84M/4.84M)] Epoch: 95/100 | LR: 0.000025 | Train Loss: 0.000087 | Eval Loss: 0.002515 | PSNR: 26.5327 | SSIM: 0.9790
+      [BEST @ epoch 100] eval loss: 0.002758
+[conventional (4.22M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000076 | Eval Loss: 0.002758 | PSNR: 26.0441 | SSIM: 0.9769
+
+[INFO] Using best model @ epoch 100, test loss: 0.002815 | PSNR: 27.2284 | SSIM: 0.9768
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_4221056/latent784_hidden1150_1150/lr0.0005_run1/experiment_summary.json
+[conventional (4.22M/4.22M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000071 | Eval Loss: 0.003702 | PSNR: 24.6906 | SSIM: 0.9721
+
+[INFO] Using best model @ epoch 90, test loss: 0.003563 | PSNR: 25.9624 | SSIM: 0.9723
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_4221056/latent784_hidden1150_1150/lr0.0005_run1/experiment_summary.json
+      [BEST @ epoch 95] eval loss: 0.002418
+[conventional (4.84M/4.84M)] Epoch: 95/100 | LR: 0.000025 | Train Loss: 0.000098 | Eval Loss: 0.002418 | PSNR: 26.8315 | SSIM: 0.9792
+[conventional (4.22M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000070 | Eval Loss: 0.003766 | PSNR: 24.5888 | SSIM: 0.9716
+
+[INFO] Using best model @ epoch 90, test loss: 0.003701 | PSNR: 25.7984 | SSIM: 0.9712
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_4221056/latent784_hidden1150_1150/lr0.0005_run1/experiment_summary.json
+[conventional (4.84M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000074 | Eval Loss: 0.002546 | PSNR: 26.4833 | SSIM: 0.9791
+
+[INFO] Using best model @ epoch 95, test loss: 0.002369 | PSNR: 28.3144 | SSIM: 0.9796
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_4835712/latent784_hidden1150_1150/lr0.0005_run1/experiment_summary.json
+[conventional (4.84M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000083 | Eval Loss: 0.002429 | PSNR: 26.8205 | SSIM: 0.9793
+
+[INFO] Using best model @ epoch 95, test loss: 0.002421 | PSNR: 28.1618 | SSIM: 0.9792
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_4835712/latent784_hidden1150_1150/lr0.0005_run1/experiment_summary.json
+==========================================
+Starting experiments with run_id=1
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+Initialize Win to Identity matrix
+cuda:2
+cuda:2
+cuda:2
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,835,712
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_4835712/latent784_hidden1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_4835712/latent784_hidden1150_1150/lr0.0005_run1] already exist and contains summary json file!
+cuda:2
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,221,056
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_4221056/latent784_hidden1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_4221056/latent784_hidden1150_1150/lr0.0005_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,221,056
+Trainable parameters: 4,221,056
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_4221056/latent784_hidden1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+    main()
+Total parameters: 4,835,712
+Trainable parameters: 4,835,712
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_4835712/latent784_hidden1150_1150/lr0.0005_run1
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_4221056/latent784_hidden1150_1150/lr0.0005_run1] already exist and contains summary json file!
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_4835712/latent784_hidden1150_1150/lr0.0005_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,221,056
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_4221056/latent784_hidden1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_4221056/latent784_hidden1150_1150/lr0.0005_run1] already exist and contains summary json file!
+==========================================
+Completed run_id=1
+==========================================
+==========================================
+Starting experiments with run_id=2
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-5
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+cuda:2
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+cuda:2
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,835,712
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_4835712/latent784_hidden1150_1150/lr5e-05_run2
+Set W_in to non-trianable
+cuda:2
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,221,056
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_4221056/latent784_hidden1150_1150/lr5e-05_run2
+Created train split with 50000 samples
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+Created eval split with 10000 samples
+cuda:2
+Initialize Win to Identity matrix
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,221,056
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_4221056/latent784_hidden1150_1150/lr5e-05_run2
+Created train split with 50000 samples
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,221,056
+Trainable parameters: 4,221,056
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_4221056/latent784_hidden1150_1150/lr5e-05_run2
+Created eval split with 10000 samples
+Created train split with 50000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,835,712
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_4835712/latent784_hidden1150_1150/lr5e-05_run2
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+      [BEST @ epoch 5] eval loss: 0.006875
+[conventional (4.22M/4.22M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.004608 | Eval Loss: 0.006875 | PSNR: 21.7647 | SSIM: 0.9279
+      [BEST @ epoch 5] eval loss: 0.006882
+[conventional (4.22M/4.84M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.004603 | Eval Loss: 0.006882 | PSNR: 21.7674 | SSIM: 0.9282
+      [BEST @ epoch 5] eval loss: 0.005521
+[conventional (4.22M/4.84M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.004482 | Eval Loss: 0.005521 | PSNR: 22.7329 | SSIM: 0.9360
+      [BEST @ epoch 5] eval loss: 0.005026
+[conventional (4.84M/4.84M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.003872 | Eval Loss: 0.005026 | PSNR: 23.1737 | SSIM: 0.9411
+      [BEST @ epoch 5] eval loss: 0.005092
+[conventional (4.84M/4.84M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.003915 | Eval Loss: 0.005092 | PSNR: 23.1274 | SSIM: 0.9426
+      [BEST @ epoch 10] eval loss: 0.006191
+[conventional (4.22M/4.22M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.002669 | Eval Loss: 0.006191 | PSNR: 22.2674 | SSIM: 0.9436
+      [BEST @ epoch 10] eval loss: 0.004629
+[conventional (4.22M/4.84M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.002610 | Eval Loss: 0.004629 | PSNR: 23.5765 | SSIM: 0.9520
+      [BEST @ epoch 10] eval loss: 0.006113
+[conventional (4.22M/4.84M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.002664 | Eval Loss: 0.006113 | PSNR: 22.3317 | SSIM: 0.9446
+      [BEST @ epoch 10] eval loss: 0.004159
+[conventional (4.84M/4.84M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.002139 | Eval Loss: 0.004159 | PSNR: 24.0704 | SSIM: 0.9570
+      [BEST @ epoch 10] eval loss: 0.004018
+[conventional (4.84M/4.84M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.002180 | Eval Loss: 0.004018 | PSNR: 24.2629 | SSIM: 0.9582
+      [BEST @ epoch 15] eval loss: 0.005752
+[conventional (4.22M/4.22M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.001762 | Eval Loss: 0.005752 | PSNR: 22.5938 | SSIM: 0.9495
+      [BEST @ epoch 15] eval loss: 0.005542
+[conventional (4.22M/4.84M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.001773 | Eval Loss: 0.005542 | PSNR: 22.7944 | SSIM: 0.9505
+      [BEST @ epoch 15] eval loss: 0.004291
+[conventional (4.22M/4.84M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.001742 | Eval Loss: 0.004291 | PSNR: 23.9494 | SSIM: 0.9582
+      [BEST @ epoch 15] eval loss: 0.003788
+[conventional (4.84M/4.84M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.001392 | Eval Loss: 0.003788 | PSNR: 24.5571 | SSIM: 0.9632
+      [BEST @ epoch 15] eval loss: 0.003750
+[conventional (4.84M/4.84M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.001421 | Eval Loss: 0.003750 | PSNR: 24.5891 | SSIM: 0.9634
+[conventional (4.22M/4.22M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.001274 | Eval Loss: 0.005773 | PSNR: 22.5999 | SSIM: 0.9498
+[conventional (4.22M/4.84M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.001273 | Eval Loss: 0.005910 | PSNR: 22.4974 | SSIM: 0.9481
+      [BEST @ epoch 20] eval loss: 0.004197
+[conventional (4.22M/4.84M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.001246 | Eval Loss: 0.004197 | PSNR: 24.0610 | SSIM: 0.9580
+      [BEST @ epoch 20] eval loss: 0.003715
+[conventional (4.84M/4.84M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.000967 | Eval Loss: 0.003715 | PSNR: 24.6495 | SSIM: 0.9636
+      [BEST @ epoch 20] eval loss: 0.003676
+[conventional (4.84M/4.84M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.001010 | Eval Loss: 0.003676 | PSNR: 24.6782 | SSIM: 0.9646
+      [BEST @ epoch 25] eval loss: 0.005352
+[conventional (4.22M/4.22M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.000970 | Eval Loss: 0.005352 | PSNR: 22.9504 | SSIM: 0.9528
+      [BEST @ epoch 25] eval loss: 0.005302
+[conventional (4.22M/4.84M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.000957 | Eval Loss: 0.005302 | PSNR: 23.0257 | SSIM: 0.9544
+      [BEST @ epoch 25] eval loss: 0.003952
+[conventional (4.22M/4.84M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.000943 | Eval Loss: 0.003952 | PSNR: 24.3512 | SSIM: 0.9629
+      [BEST @ epoch 25] eval loss: 0.003631
+[conventional (4.84M/4.84M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.000762 | Eval Loss: 0.003631 | PSNR: 24.7477 | SSIM: 0.9667
+      [BEST @ epoch 25] eval loss: 0.003666
+[conventional (4.84M/4.84M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.000696 | Eval Loss: 0.003666 | PSNR: 24.7359 | SSIM: 0.9660
+      [BEST @ epoch 30] eval loss: 0.005113
+[conventional (4.22M/4.22M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.000786 | Eval Loss: 0.005113 | PSNR: 23.1480 | SSIM: 0.9578
+      [BEST @ epoch 30] eval loss: 0.005288
+[conventional (4.22M/4.84M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.000782 | Eval Loss: 0.005288 | PSNR: 23.0567 | SSIM: 0.9569
+      [BEST @ epoch 30] eval loss: 0.003777
+[conventional (4.22M/4.84M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.000773 | Eval Loss: 0.003777 | PSNR: 24.5618 | SSIM: 0.9652
+      [BEST @ epoch 30] eval loss: 0.003407
+[conventional (4.84M/4.84M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.000613 | Eval Loss: 0.003407 | PSNR: 25.0530 | SSIM: 0.9693
+      [BEST @ epoch 30] eval loss: 0.003326
+[conventional (4.84M/4.84M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.000571 | Eval Loss: 0.003326 | PSNR: 25.2342 | SSIM: 0.9703
+[conventional (4.22M/4.22M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.000660 | Eval Loss: 0.005265 | PSNR: 23.0284 | SSIM: 0.9578
+      [BEST @ epoch 35] eval loss: 0.005124
+[conventional (4.22M/4.84M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.000671 | Eval Loss: 0.005124 | PSNR: 23.1520 | SSIM: 0.9585
+      [BEST @ epoch 35] eval loss: 0.003765
+[conventional (4.22M/4.84M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.000624 | Eval Loss: 0.003765 | PSNR: 24.6043 | SSIM: 0.9667
+[conventional (4.84M/4.84M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.000478 | Eval Loss: 0.003434 | PSNR: 25.0280 | SSIM: 0.9700
+[conventional (4.84M/4.84M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.000455 | Eval Loss: 0.003407 | PSNR: 25.1541 | SSIM: 0.9703
+[conventional (4.22M/4.22M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.000555 | Eval Loss: 0.005405 | PSNR: 22.9024 | SSIM: 0.9569
+[conventional (4.22M/4.84M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.000546 | Eval Loss: 0.005459 | PSNR: 22.8932 | SSIM: 0.9573
+      [BEST @ epoch 40] eval loss: 0.003524
+[conventional (4.22M/4.84M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.000536 | Eval Loss: 0.003524 | PSNR: 24.8495 | SSIM: 0.9677
+      [BEST @ epoch 40] eval loss: 0.003406
+[conventional (4.84M/4.84M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.000395 | Eval Loss: 0.003406 | PSNR: 24.9937 | SSIM: 0.9706
+[conventional (4.84M/4.84M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.000393 | Eval Loss: 0.003338 | PSNR: 25.1340 | SSIM: 0.9702
+[conventional (4.22M/4.22M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.000460 | Eval Loss: 0.005266 | PSNR: 23.0109 | SSIM: 0.9585
+[conventional (4.22M/4.84M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.000461 | Eval Loss: 0.005162 | PSNR: 23.1382 | SSIM: 0.9591
+[conventional (4.22M/4.84M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.000446 | Eval Loss: 0.003554 | PSNR: 24.8517 | SSIM: 0.9691
+      [BEST @ epoch 45] eval loss: 0.003229
+[conventional (4.84M/4.84M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.000338 | Eval Loss: 0.003229 | PSNR: 25.3275 | SSIM: 0.9721
+      [BEST @ epoch 45] eval loss: 0.003245
+[conventional (4.84M/4.84M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.000329 | Eval Loss: 0.003245 | PSNR: 25.3521 | SSIM: 0.9715
+[conventional (4.22M/4.84M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.000396 | Eval Loss: 0.005461 | PSNR: 22.9066 | SSIM: 0.9572
+[conventional (4.22M/4.22M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.000403 | Eval Loss: 0.005299 | PSNR: 22.9699 | SSIM: 0.9582
+[conventional (4.22M/4.84M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.000394 | Eval Loss: 0.003706 | PSNR: 24.6809 | SSIM: 0.9680
+[conventional (4.84M/4.84M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.000285 | Eval Loss: 0.003483 | PSNR: 24.9430 | SSIM: 0.9708
+[conventional (4.84M/4.84M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.000289 | Eval Loss: 0.003263 | PSNR: 25.2940 | SSIM: 0.9723
+[conventional (4.22M/4.84M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.000362 | Eval Loss: 0.005716 | PSNR: 22.7176 | SSIM: 0.9569
+[conventional (4.22M/4.22M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.000360 | Eval Loss: 0.005604 | PSNR: 22.7583 | SSIM: 0.9572
+      [BEST @ epoch 55] eval loss: 0.003516
+[conventional (4.22M/4.84M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.000346 | Eval Loss: 0.003516 | PSNR: 24.8736 | SSIM: 0.9694
+[conventional (4.84M/4.84M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.000246 | Eval Loss: 0.003432 | PSNR: 25.0249 | SSIM: 0.9716
+      [BEST @ epoch 55] eval loss: 0.003220
+[conventional (4.84M/4.84M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.000244 | Eval Loss: 0.003220 | PSNR: 25.3795 | SSIM: 0.9729
+      [BEST @ epoch 60] eval loss: 0.004983
+[conventional (4.22M/4.84M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.000316 | Eval Loss: 0.004983 | PSNR: 23.2874 | SSIM: 0.9605
+[conventional (4.22M/4.22M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.000323 | Eval Loss: 0.005189 | PSNR: 23.1207 | SSIM: 0.9594
+      [BEST @ epoch 60] eval loss: 0.003490
+[conventional (4.22M/4.84M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.000296 | Eval Loss: 0.003490 | PSNR: 24.9715 | SSIM: 0.9697
+[conventional (4.84M/4.84M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.000198 | Eval Loss: 0.003304 | PSNR: 25.2691 | SSIM: 0.9727
+      [BEST @ epoch 60] eval loss: 0.003177
+[conventional (4.84M/4.84M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.000203 | Eval Loss: 0.003177 | PSNR: 25.4941 | SSIM: 0.9730
+[conventional (4.22M/4.84M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.000284 | Eval Loss: 0.005206 | PSNR: 23.1061 | SSIM: 0.9606
+[conventional (4.22M/4.22M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.000287 | Eval Loss: 0.005194 | PSNR: 23.1063 | SSIM: 0.9609
+[conventional (4.22M/4.84M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.000266 | Eval Loss: 0.003547 | PSNR: 24.9264 | SSIM: 0.9702
+      [BEST @ epoch 65] eval loss: 0.003117
+[conventional (4.84M/4.84M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.000180 | Eval Loss: 0.003117 | PSNR: 25.5873 | SSIM: 0.9750
+[conventional (4.84M/4.84M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.000169 | Eval Loss: 0.003183 | PSNR: 25.4954 | SSIM: 0.9738
+      [BEST @ epoch 70] eval loss: 0.004878
+[conventional (4.22M/4.84M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.000243 | Eval Loss: 0.004878 | PSNR: 23.4168 | SSIM: 0.9625
+      [BEST @ epoch 70] eval loss: 0.005050
+[conventional (4.22M/4.22M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.000254 | Eval Loss: 0.005050 | PSNR: 23.2280 | SSIM: 0.9617
+[conventional (4.22M/4.84M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.000232 | Eval Loss: 0.003585 | PSNR: 24.8127 | SSIM: 0.9702
+[conventional (4.84M/4.84M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.000153 | Eval Loss: 0.003174 | PSNR: 25.5395 | SSIM: 0.9746
+      [BEST @ epoch 70] eval loss: 0.003014
+[conventional (4.84M/4.84M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.000145 | Eval Loss: 0.003014 | PSNR: 25.7302 | SSIM: 0.9753
+[conventional (4.22M/4.84M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.000222 | Eval Loss: 0.004897 | PSNR: 23.3919 | SSIM: 0.9628
+      [BEST @ epoch 75] eval loss: 0.004956
+[conventional (4.22M/4.22M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.000225 | Eval Loss: 0.004956 | PSNR: 23.2966 | SSIM: 0.9629
+      [BEST @ epoch 75] eval loss: 0.003326
+[conventional (4.22M/4.84M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.000204 | Eval Loss: 0.003326 | PSNR: 25.2075 | SSIM: 0.9724
+      [BEST @ epoch 75] eval loss: 0.003021
+[conventional (4.84M/4.84M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.000135 | Eval Loss: 0.003021 | PSNR: 25.7049 | SSIM: 0.9757
+[conventional (4.22M/4.84M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.000200 | Eval Loss: 0.005005 | PSNR: 23.3012 | SSIM: 0.9619
+      [BEST @ epoch 75] eval loss: 0.002999
+[conventional (4.84M/4.84M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.000127 | Eval Loss: 0.002999 | PSNR: 25.7484 | SSIM: 0.9755
+[conventional (4.22M/4.22M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.000203 | Eval Loss: 0.005075 | PSNR: 23.2219 | SSIM: 0.9619
+[conventional (4.22M/4.84M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.000181 | Eval Loss: 0.003464 | PSNR: 24.9536 | SSIM: 0.9711
+[conventional (4.84M/4.84M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.000111 | Eval Loss: 0.003148 | PSNR: 25.4816 | SSIM: 0.9746
+[conventional (4.22M/4.84M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.000184 | Eval Loss: 0.004917 | PSNR: 23.4049 | SSIM: 0.9630
+[conventional (4.84M/4.84M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.000109 | Eval Loss: 0.003087 | PSNR: 25.5961 | SSIM: 0.9746
+[conventional (4.22M/4.22M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.000186 | Eval Loss: 0.004984 | PSNR: 23.2587 | SSIM: 0.9624
+      [BEST @ epoch 85] eval loss: 0.003290
+[conventional (4.22M/4.84M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.000166 | Eval Loss: 0.003290 | PSNR: 25.2607 | SSIM: 0.9727
+[conventional (4.84M/4.84M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.000099 | Eval Loss: 0.003072 | PSNR: 25.6476 | SSIM: 0.9753
+[conventional (4.22M/4.84M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.000173 | Eval Loss: 0.005213 | PSNR: 23.1084 | SSIM: 0.9616
+      [BEST @ epoch 85] eval loss: 0.002971
+[conventional (4.84M/4.84M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.000096 | Eval Loss: 0.002971 | PSNR: 25.7890 | SSIM: 0.9757
+[conventional (4.22M/4.22M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.000177 | Eval Loss: 0.005209 | PSNR: 23.0709 | SSIM: 0.9612
+[conventional (4.22M/4.84M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.000154 | Eval Loss: 0.003308 | PSNR: 25.1831 | SSIM: 0.9725
+      [BEST @ epoch 90] eval loss: 0.002997
+[conventional (4.84M/4.84M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.000089 | Eval Loss: 0.002997 | PSNR: 25.7576 | SSIM: 0.9759
+      [BEST @ epoch 95] eval loss: 0.004639
+[conventional (4.22M/4.84M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.000160 | Eval Loss: 0.004639 | PSNR: 23.7090 | SSIM: 0.9651
+      [BEST @ epoch 95] eval loss: 0.004589
+[conventional (4.22M/4.22M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.000163 | Eval Loss: 0.004589 | PSNR: 23.6648 | SSIM: 0.9653
+[conventional (4.22M/4.84M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.000143 | Eval Loss: 0.003315 | PSNR: 25.2150 | SSIM: 0.9726
+      [BEST @ epoch 90] eval loss: 0.002957
+[conventional (4.84M/4.84M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.000088 | Eval Loss: 0.002957 | PSNR: 25.8116 | SSIM: 0.9760
+      [BEST @ epoch 95] eval loss: 0.002984
+[conventional (4.84M/4.84M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.000081 | Eval Loss: 0.002984 | PSNR: 25.8153 | SSIM: 0.9762
+[conventional (4.22M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000153 | Eval Loss: 0.005053 | PSNR: 23.2551 | SSIM: 0.9628
+
+[INFO] Using best model @ epoch 95, test loss: 0.004682 | PSNR: 24.4852 | SSIM: 0.9650
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_4221056/latent784_hidden1150_1150/lr5e-05_run2/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.003265
+[conventional (4.22M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000136 | Eval Loss: 0.003265 | PSNR: 25.2828 | SSIM: 0.9733
+
+[INFO] Using best model @ epoch 100, test loss: 0.003400 | PSNR: 26.2084 | SSIM: 0.9731
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_4221056/latent784_hidden1150_1150/lr5e-05_run2/experiment_summary.json
+[conventional (4.22M/4.22M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000156 | Eval Loss: 0.004992 | PSNR: 23.2706 | SSIM: 0.9632
+
+[INFO] Using best model @ epoch 95, test loss: 0.004607 | PSNR: 24.6247 | SSIM: 0.9653
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_4221056/latent784_hidden1150_1150/lr5e-05_run2/experiment_summary.json
+[conventional (4.84M/4.84M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.000080 | Eval Loss: 0.002967 | PSNR: 25.7796 | SSIM: 0.9760
+[conventional (4.84M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000075 | Eval Loss: 0.003022 | PSNR: 25.7386 | SSIM: 0.9762
+
+[INFO] Using best model @ epoch 95, test loss: 0.002843 | PSNR: 27.2610 | SSIM: 0.9768
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_4835712/latent784_hidden1150_1150/lr5e-05_run2/experiment_summary.json
+[conventional (4.84M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000074 | Eval Loss: 0.002960 | PSNR: 25.7981 | SSIM: 0.9763
+
+[INFO] Using best model @ epoch 90, test loss: 0.002874 | PSNR: 27.3689 | SSIM: 0.9766
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_4835712/latent784_hidden1150_1150/lr5e-05_run2/experiment_summary.json
+==========================================
+Starting experiments with run_id=2
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=1e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,221,056
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_4221056/latent784_hidden1150_1150/lr0.0001_run2
+cuda:2
+Created train split with 50000 samples
+cuda:2
+Created eval split with 10000 samples
+cuda:2
+Initialize Win to Identity matrix
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+cuda:2
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,835,712
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_4835712/latent784_hidden1150_1150/lr0.0001_run2
+Created train split with 50000 samples
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,221,056
+Trainable parameters: 4,221,056
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_4221056/latent784_hidden1150_1150/lr0.0001_run2
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,835,712
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_4835712/latent784_hidden1150_1150/lr0.0001_run2
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+Created train split with 50000 samples
+Created train split with 50000 samples
+Created eval split with 10000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,221,056
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_4221056/latent784_hidden1150_1150/lr0.0001_run2
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+      [BEST @ epoch 5] eval loss: 0.006169
+[conventional (4.22M/4.84M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.003800 | Eval Loss: 0.006169 | PSNR: 22.2691 | SSIM: 0.9361
+      [BEST @ epoch 5] eval loss: 0.005174
+[conventional (4.22M/4.84M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.003916 | Eval Loss: 0.005174 | PSNR: 23.0271 | SSIM: 0.9399
+      [BEST @ epoch 5] eval loss: 0.004532
+[conventional (4.84M/4.84M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.003574 | Eval Loss: 0.004532 | PSNR: 23.6332 | SSIM: 0.9460
+      [BEST @ epoch 5] eval loss: 0.006032
+[conventional (4.22M/4.22M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.003772 | Eval Loss: 0.006032 | PSNR: 22.3739 | SSIM: 0.9376
+      [BEST @ epoch 5] eval loss: 0.004579
+[conventional (4.84M/4.84M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.003537 | Eval Loss: 0.004579 | PSNR: 23.5776 | SSIM: 0.9459
+      [BEST @ epoch 10] eval loss: 0.005520
+[conventional (4.22M/4.84M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.002068 | Eval Loss: 0.005520 | PSNR: 22.8084 | SSIM: 0.9502
+      [BEST @ epoch 10] eval loss: 0.004267
+[conventional (4.22M/4.84M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.002236 | Eval Loss: 0.004267 | PSNR: 23.9082 | SSIM: 0.9562
+      [BEST @ epoch 10] eval loss: 0.003957
+[conventional (4.84M/4.84M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.002001 | Eval Loss: 0.003957 | PSNR: 24.2954 | SSIM: 0.9586
+      [BEST @ epoch 10] eval loss: 0.005382
+[conventional (4.22M/4.22M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.002075 | Eval Loss: 0.005382 | PSNR: 22.9163 | SSIM: 0.9509
+      [BEST @ epoch 10] eval loss: 0.003811
+[conventional (4.84M/4.84M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.001996 | Eval Loss: 0.003811 | PSNR: 24.4657 | SSIM: 0.9605
+      [BEST @ epoch 15] eval loss: 0.004916
+[conventional (4.22M/4.84M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.001396 | Eval Loss: 0.004916 | PSNR: 23.3051 | SSIM: 0.9539
+      [BEST @ epoch 15] eval loss: 0.003827
+[conventional (4.22M/4.84M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.001474 | Eval Loss: 0.003827 | PSNR: 24.4498 | SSIM: 0.9612
+      [BEST @ epoch 15] eval loss: 0.004951
+[conventional (4.22M/4.22M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.001386 | Eval Loss: 0.004951 | PSNR: 23.2862 | SSIM: 0.9541
+      [BEST @ epoch 15] eval loss: 0.003546
+[conventional (4.84M/4.84M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.001362 | Eval Loss: 0.003546 | PSNR: 24.7757 | SSIM: 0.9643
+      [BEST @ epoch 15] eval loss: 0.003374
+[conventional (4.84M/4.84M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.001363 | Eval Loss: 0.003374 | PSNR: 25.0583 | SSIM: 0.9664
+[conventional (4.22M/4.84M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.001034 | Eval Loss: 0.005298 | PSNR: 23.0187 | SSIM: 0.9541
+[conventional (4.22M/4.22M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.001035 | Eval Loss: 0.005014 | PSNR: 23.2316 | SSIM: 0.9560
+      [BEST @ epoch 20] eval loss: 0.003786
+[conventional (4.22M/4.84M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.001088 | Eval Loss: 0.003786 | PSNR: 24.5016 | SSIM: 0.9613
+      [BEST @ epoch 20] eval loss: 0.003330
+[conventional (4.84M/4.84M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.000970 | Eval Loss: 0.003330 | PSNR: 25.1102 | SSIM: 0.9673
+[conventional (4.84M/4.84M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.000981 | Eval Loss: 0.003377 | PSNR: 25.0255 | SSIM: 0.9650
+      [BEST @ epoch 25] eval loss: 0.004744
+[conventional (4.22M/4.84M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.000793 | Eval Loss: 0.004744 | PSNR: 23.5442 | SSIM: 0.9595
+[conventional (4.22M/4.84M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.000833 | Eval Loss: 0.003873 | PSNR: 24.4403 | SSIM: 0.9621
+      [BEST @ epoch 25] eval loss: 0.004640
+[conventional (4.22M/4.22M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.000777 | Eval Loss: 0.004640 | PSNR: 23.6449 | SSIM: 0.9601
+[conventional (4.84M/4.84M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.000748 | Eval Loss: 0.003499 | PSNR: 24.9629 | SSIM: 0.9659
+      [BEST @ epoch 25] eval loss: 0.003181
+[conventional (4.84M/4.84M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.000763 | Eval Loss: 0.003181 | PSNR: 25.3914 | SSIM: 0.9694
+      [BEST @ epoch 30] eval loss: 0.004567
+[conventional (4.22M/4.84M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.000656 | Eval Loss: 0.004567 | PSNR: 23.6485 | SSIM: 0.9619
+      [BEST @ epoch 30] eval loss: 0.003391
+[conventional (4.22M/4.84M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.000679 | Eval Loss: 0.003391 | PSNR: 25.0352 | SSIM: 0.9677
+      [BEST @ epoch 30] eval loss: 0.004564
+[conventional (4.22M/4.22M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.000650 | Eval Loss: 0.004564 | PSNR: 23.6785 | SSIM: 0.9619
+      [BEST @ epoch 30] eval loss: 0.003159
+[conventional (4.84M/4.84M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.000618 | Eval Loss: 0.003159 | PSNR: 25.4417 | SSIM: 0.9712
+      [BEST @ epoch 30] eval loss: 0.003142
+[conventional (4.84M/4.84M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.000607 | Eval Loss: 0.003142 | PSNR: 25.4228 | SSIM: 0.9715
+[conventional (4.22M/4.84M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.000547 | Eval Loss: 0.004593 | PSNR: 23.6845 | SSIM: 0.9627
+[conventional (4.22M/4.84M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.000549 | Eval Loss: 0.003515 | PSNR: 24.8507 | SSIM: 0.9677
+      [BEST @ epoch 35] eval loss: 0.004442
+[conventional (4.22M/4.22M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.000539 | Eval Loss: 0.004442 | PSNR: 23.8262 | SSIM: 0.9634
+      [BEST @ epoch 35] eval loss: 0.002974
+[conventional (4.84M/4.84M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.000500 | Eval Loss: 0.002974 | PSNR: 25.7151 | SSIM: 0.9726
+[conventional (4.84M/4.84M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.000480 | Eval Loss: 0.003148 | PSNR: 25.3965 | SSIM: 0.9711
+[conventional (4.22M/4.84M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.000456 | Eval Loss: 0.004848 | PSNR: 23.4498 | SSIM: 0.9619
+[conventional (4.22M/4.84M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.000494 | Eval Loss: 0.003450 | PSNR: 24.9581 | SSIM: 0.9678
+[conventional (4.22M/4.22M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.000466 | Eval Loss: 0.004801 | PSNR: 23.4645 | SSIM: 0.9615
+      [BEST @ epoch 40] eval loss: 0.002947
+[conventional (4.84M/4.84M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.000422 | Eval Loss: 0.002947 | PSNR: 25.7430 | SSIM: 0.9717
+      [BEST @ epoch 40] eval loss: 0.003023
+[conventional (4.84M/4.84M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.000423 | Eval Loss: 0.003023 | PSNR: 25.5427 | SSIM: 0.9725
+[conventional (4.22M/4.84M)] Epoch: 45/100 | LR: 0.000055 | Train Loss: 0.000388 | Eval Loss: 0.003681 | PSNR: 24.6105 | SSIM: 0.9670
+      [BEST @ epoch 45] eval loss: 0.004514
+[conventional (4.22M/4.84M)] Epoch: 45/100 | LR: 0.000055 | Train Loss: 0.000376 | Eval Loss: 0.004514 | PSNR: 23.7400 | SSIM: 0.9635
+[conventional (4.22M/4.22M)] Epoch: 45/100 | LR: 0.000055 | Train Loss: 0.000378 | Eval Loss: 0.004719 | PSNR: 23.5359 | SSIM: 0.9627
+[conventional (4.84M/4.84M)] Epoch: 45/100 | LR: 0.000055 | Train Loss: 0.000336 | Eval Loss: 0.002955 | PSNR: 25.7374 | SSIM: 0.9728
+[conventional (4.84M/4.84M)] Epoch: 45/100 | LR: 0.000055 | Train Loss: 0.000328 | Eval Loss: 0.003318 | PSNR: 25.1712 | SSIM: 0.9713
+[conventional (4.22M/4.84M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.000344 | Eval Loss: 0.003458 | PSNR: 24.9294 | SSIM: 0.9694
+[conventional (4.22M/4.84M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.000331 | Eval Loss: 0.004632 | PSNR: 23.6120 | SSIM: 0.9635
+[conventional (4.22M/4.22M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.000326 | Eval Loss: 0.004820 | PSNR: 23.4473 | SSIM: 0.9613
+      [BEST @ epoch 50] eval loss: 0.002907
+[conventional (4.84M/4.84M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.000311 | Eval Loss: 0.002907 | PSNR: 25.7918 | SSIM: 0.9729
+[conventional (4.84M/4.84M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.000301 | Eval Loss: 0.003193 | PSNR: 25.3000 | SSIM: 0.9719
+[conventional (4.22M/4.84M)] Epoch: 55/100 | LR: 0.000045 | Train Loss: 0.000304 | Eval Loss: 0.003419 | PSNR: 24.9798 | SSIM: 0.9700
+[conventional (4.22M/4.84M)] Epoch: 55/100 | LR: 0.000045 | Train Loss: 0.000298 | Eval Loss: 0.004937 | PSNR: 23.3397 | SSIM: 0.9622
+[conventional (4.22M/4.22M)] Epoch: 55/100 | LR: 0.000045 | Train Loss: 0.000304 | Eval Loss: 0.005041 | PSNR: 23.2976 | SSIM: 0.9616
+[conventional (4.84M/4.84M)] Epoch: 55/100 | LR: 0.000045 | Train Loss: 0.000261 | Eval Loss: 0.002943 | PSNR: 25.7946 | SSIM: 0.9742
+      [BEST @ epoch 55] eval loss: 0.002993
+[conventional (4.84M/4.84M)] Epoch: 55/100 | LR: 0.000045 | Train Loss: 0.000250 | Eval Loss: 0.002993 | PSNR: 25.6428 | SSIM: 0.9748
+      [BEST @ epoch 60] eval loss: 0.003347
+[conventional (4.22M/4.84M)] Epoch: 60/100 | LR: 0.000040 | Train Loss: 0.000255 | Eval Loss: 0.003347 | PSNR: 25.1408 | SSIM: 0.9710
+[conventional (4.22M/4.84M)] Epoch: 60/100 | LR: 0.000040 | Train Loss: 0.000248 | Eval Loss: 0.004557 | PSNR: 23.7152 | SSIM: 0.9645
+[conventional (4.22M/4.22M)] Epoch: 60/100 | LR: 0.000040 | Train Loss: 0.000253 | Eval Loss: 0.004525 | PSNR: 23.7571 | SSIM: 0.9642
+[conventional (4.84M/4.84M)] Epoch: 60/100 | LR: 0.000040 | Train Loss: 0.000214 | Eval Loss: 0.003126 | PSNR: 25.4471 | SSIM: 0.9729
+[conventional (4.84M/4.84M)] Epoch: 60/100 | LR: 0.000040 | Train Loss: 0.000200 | Eval Loss: 0.003054 | PSNR: 25.5439 | SSIM: 0.9740
+[conventional (4.22M/4.84M)] Epoch: 65/100 | LR: 0.000035 | Train Loss: 0.000216 | Eval Loss: 0.003347 | PSNR: 25.1468 | SSIM: 0.9718
+[conventional (4.22M/4.84M)] Epoch: 65/100 | LR: 0.000035 | Train Loss: 0.000228 | Eval Loss: 0.004543 | PSNR: 23.7360 | SSIM: 0.9655
+[conventional (4.22M/4.22M)] Epoch: 65/100 | LR: 0.000035 | Train Loss: 0.000223 | Eval Loss: 0.004627 | PSNR: 23.6757 | SSIM: 0.9653
+      [BEST @ epoch 65] eval loss: 0.002790
+[conventional (4.84M/4.84M)] Epoch: 65/100 | LR: 0.000035 | Train Loss: 0.000176 | Eval Loss: 0.002790 | PSNR: 26.1164 | SSIM: 0.9764
+      [BEST @ epoch 65] eval loss: 0.002932
+[conventional (4.84M/4.84M)] Epoch: 65/100 | LR: 0.000035 | Train Loss: 0.000164 | Eval Loss: 0.002932 | PSNR: 25.8061 | SSIM: 0.9757
+      [BEST @ epoch 70] eval loss: 0.004365
+[conventional (4.22M/4.84M)] Epoch: 70/100 | LR: 0.000030 | Train Loss: 0.000188 | Eval Loss: 0.004365 | PSNR: 23.9267 | SSIM: 0.9667
+      [BEST @ epoch 70] eval loss: 0.003228
+[conventional (4.22M/4.84M)] Epoch: 70/100 | LR: 0.000030 | Train Loss: 0.000198 | Eval Loss: 0.003228 | PSNR: 25.3524 | SSIM: 0.9730
+      [BEST @ epoch 70] eval loss: 0.004381
+[conventional (4.22M/4.22M)] Epoch: 70/100 | LR: 0.000030 | Train Loss: 0.000192 | Eval Loss: 0.004381 | PSNR: 23.9622 | SSIM: 0.9668
+      [BEST @ epoch 70] eval loss: 0.002770
+[conventional (4.84M/4.84M)] Epoch: 70/100 | LR: 0.000030 | Train Loss: 0.000141 | Eval Loss: 0.002770 | PSNR: 26.1443 | SSIM: 0.9767
+      [BEST @ epoch 70] eval loss: 0.002928
+[conventional (4.84M/4.84M)] Epoch: 70/100 | LR: 0.000030 | Train Loss: 0.000132 | Eval Loss: 0.002928 | PSNR: 25.7815 | SSIM: 0.9760
+[conventional (4.22M/4.84M)] Epoch: 75/100 | LR: 0.000025 | Train Loss: 0.000168 | Eval Loss: 0.004387 | PSNR: 23.9091 | SSIM: 0.9672
+      [BEST @ epoch 75] eval loss: 0.003127
+[conventional (4.22M/4.84M)] Epoch: 75/100 | LR: 0.000025 | Train Loss: 0.000164 | Eval Loss: 0.003127 | PSNR: 25.4705 | SSIM: 0.9740
+[conventional (4.22M/4.22M)] Epoch: 75/100 | LR: 0.000025 | Train Loss: 0.000166 | Eval Loss: 0.004551 | PSNR: 23.7102 | SSIM: 0.9662
+[conventional (4.84M/4.84M)] Epoch: 75/100 | LR: 0.000025 | Train Loss: 0.000130 | Eval Loss: 0.002777 | PSNR: 26.1605 | SSIM: 0.9768
+      [BEST @ epoch 75] eval loss: 0.002856
+[conventional (4.84M/4.84M)] Epoch: 75/100 | LR: 0.000025 | Train Loss: 0.000125 | Eval Loss: 0.002856 | PSNR: 25.9413 | SSIM: 0.9768
+      [BEST @ epoch 80] eval loss: 0.004292
+[conventional (4.22M/4.84M)] Epoch: 80/100 | LR: 0.000020 | Train Loss: 0.000145 | Eval Loss: 0.004292 | PSNR: 24.0232 | SSIM: 0.9672
+[conventional (4.22M/4.84M)] Epoch: 80/100 | LR: 0.000020 | Train Loss: 0.000145 | Eval Loss: 0.003318 | PSNR: 25.1739 | SSIM: 0.9728
+      [BEST @ epoch 80] eval loss: 0.004291
+[conventional (4.22M/4.22M)] Epoch: 80/100 | LR: 0.000020 | Train Loss: 0.000145 | Eval Loss: 0.004291 | PSNR: 24.0258 | SSIM: 0.9671
+[conventional (4.84M/4.84M)] Epoch: 80/100 | LR: 0.000020 | Train Loss: 0.000107 | Eval Loss: 0.002856 | PSNR: 25.9918 | SSIM: 0.9757
+[conventional (4.84M/4.84M)] Epoch: 80/100 | LR: 0.000020 | Train Loss: 0.000101 | Eval Loss: 0.002948 | PSNR: 25.7658 | SSIM: 0.9761
+[conventional (4.22M/4.84M)] Epoch: 85/100 | LR: 0.000015 | Train Loss: 0.000129 | Eval Loss: 0.004317 | PSNR: 23.9814 | SSIM: 0.9677
+[conventional (4.22M/4.84M)] Epoch: 85/100 | LR: 0.000015 | Train Loss: 0.000126 | Eval Loss: 0.003302 | PSNR: 25.2329 | SSIM: 0.9732
+[conventional (4.22M/4.22M)] Epoch: 85/100 | LR: 0.000015 | Train Loss: 0.000128 | Eval Loss: 0.004400 | PSNR: 23.8597 | SSIM: 0.9673
+      [BEST @ epoch 85] eval loss: 0.002737
+[conventional (4.84M/4.84M)] Epoch: 85/100 | LR: 0.000015 | Train Loss: 0.000092 | Eval Loss: 0.002737 | PSNR: 26.2142 | SSIM: 0.9771
+[conventional (4.84M/4.84M)] Epoch: 85/100 | LR: 0.000015 | Train Loss: 0.000085 | Eval Loss: 0.002906 | PSNR: 25.8701 | SSIM: 0.9769
+[conventional (4.22M/4.84M)] Epoch: 90/100 | LR: 0.000010 | Train Loss: 0.000114 | Eval Loss: 0.003205 | PSNR: 25.3140 | SSIM: 0.9738
+[conventional (4.22M/4.84M)] Epoch: 90/100 | LR: 0.000010 | Train Loss: 0.000119 | Eval Loss: 0.004550 | PSNR: 23.7462 | SSIM: 0.9665
+[conventional (4.22M/4.22M)] Epoch: 90/100 | LR: 0.000010 | Train Loss: 0.000119 | Eval Loss: 0.004689 | PSNR: 23.5811 | SSIM: 0.9658
+[conventional (4.84M/4.84M)] Epoch: 90/100 | LR: 0.000010 | Train Loss: 0.000081 | Eval Loss: 0.002744 | PSNR: 26.1799 | SSIM: 0.9775
+      [BEST @ epoch 90] eval loss: 0.002851
+[conventional (4.84M/4.84M)] Epoch: 90/100 | LR: 0.000010 | Train Loss: 0.000077 | Eval Loss: 0.002851 | PSNR: 25.9276 | SSIM: 0.9773
+      [BEST @ epoch 95] eval loss: 0.004010
+[conventional (4.22M/4.84M)] Epoch: 95/100 | LR: 0.000005 | Train Loss: 0.000105 | Eval Loss: 0.004010 | PSNR: 24.3261 | SSIM: 0.9697
+[conventional (4.22M/4.84M)] Epoch: 95/100 | LR: 0.000005 | Train Loss: 0.000103 | Eval Loss: 0.003174 | PSNR: 25.3855 | SSIM: 0.9741
+      [BEST @ epoch 95] eval loss: 0.004056
+[conventional (4.22M/4.22M)] Epoch: 95/100 | LR: 0.000005 | Train Loss: 0.000106 | Eval Loss: 0.004056 | PSNR: 24.3005 | SSIM: 0.9696
+      [BEST @ epoch 95] eval loss: 0.002664
+[conventional (4.84M/4.84M)] Epoch: 95/100 | LR: 0.000005 | Train Loss: 0.000072 | Eval Loss: 0.002664 | PSNR: 26.4082 | SSIM: 0.9782
+[conventional (4.84M/4.84M)] Epoch: 95/100 | LR: 0.000005 | Train Loss: 0.000069 | Eval Loss: 0.002852 | PSNR: 25.9367 | SSIM: 0.9776
+[conventional (4.22M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000096 | Eval Loss: 0.003202 | PSNR: 25.3435 | SSIM: 0.9743
+
+[INFO] Using best model @ epoch 75, test loss: 0.003055 | PSNR: 26.8605 | SSIM: 0.9746
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_4221056/latent784_hidden1150_1150/lr0.0001_run2/experiment_summary.json
+[conventional (4.22M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000099 | Eval Loss: 0.004412 | PSNR: 23.8451 | SSIM: 0.9677
+
+[INFO] Using best model @ epoch 95, test loss: 0.004077 | PSNR: 25.3174 | SSIM: 0.9696
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_4221056/latent784_hidden1150_1150/lr0.0001_run2/experiment_summary.json
+[conventional (4.22M/4.22M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000099 | Eval Loss: 0.004578 | PSNR: 23.7252 | SSIM: 0.9671
+
+[INFO] Using best model @ epoch 95, test loss: 0.004087 | PSNR: 25.2526 | SSIM: 0.9697
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_4221056/latent784_hidden1150_1150/lr0.0001_run2/experiment_summary.json
+[conventional (4.84M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000062 | Eval Loss: 0.002865 | PSNR: 25.9428 | SSIM: 0.9776
+[conventional (4.84M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000065 | Eval Loss: 0.002690 | PSNR: 26.3479 | SSIM: 0.9783
+
+[INFO] Using best model @ epoch 90, test loss: 0.002636 | PSNR: 27.9668 | SSIM: 0.9783
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_4835712/latent784_hidden1150_1150/lr0.0001_run2/experiment_summary.json
+
+[INFO] Using best model @ epoch 95, test loss: 0.002560 | PSNR: 28.1274 | SSIM: 0.9789
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_4835712/latent784_hidden1150_1150/lr0.0001_run2/experiment_summary.json
+==========================================
+Starting experiments with run_id=2
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,221,056
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_4221056/latent784_hidden1150_1150/lr0.0005_run2
+cuda:2
+Initialize Win to Identity matrix
+cuda:2
+Created train split with 50000 samples
+cuda:2
+Set W_in to non-trianable
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,221,056
+Trainable parameters: 4,221,056
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_4221056/latent784_hidden1150_1150/lr0.0005_run2
+cuda:2
+Created train split with 50000 samples
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,835,712
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_4835712/latent784_hidden1150_1150/lr0.0005_run2
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,221,056
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_4221056/latent784_hidden1150_1150/lr0.0005_run2
+Created eval split with 10000 samples
+Created train split with 50000 samples
+Created train split with 50000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+Created eval split with 10000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,835,712
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_4835712/latent784_hidden1150_1150/lr0.0005_run2
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+      [BEST @ epoch 5] eval loss: 0.004833
+[conventional (4.84M/4.84M)] Epoch: 5/100 | LR: 0.000475 | Train Loss: 0.004319 | Eval Loss: 0.004833 | PSNR: 23.3175 | SSIM: 0.9468
+      [BEST @ epoch 5] eval loss: 0.004844
+[conventional (4.22M/4.84M)] Epoch: 5/100 | LR: 0.000475 | Train Loss: 0.004053 | Eval Loss: 0.004844 | PSNR: 23.3365 | SSIM: 0.9455
+      [BEST @ epoch 5] eval loss: 0.004647
+[conventional (4.84M/4.84M)] Epoch: 5/100 | LR: 0.000475 | Train Loss: 0.004252 | Eval Loss: 0.004647 | PSNR: 23.5102 | SSIM: 0.9483
+      [BEST @ epoch 5] eval loss: 0.005501
+[conventional (4.22M/4.84M)] Epoch: 5/100 | LR: 0.000475 | Train Loss: 0.003794 | Eval Loss: 0.005501 | PSNR: 22.7503 | SSIM: 0.9432
+      [BEST @ epoch 5] eval loss: 0.005468
+[conventional (4.22M/4.22M)] Epoch: 5/100 | LR: 0.000475 | Train Loss: 0.003797 | Eval Loss: 0.005468 | PSNR: 22.7811 | SSIM: 0.9420
+      [BEST @ epoch 10] eval loss: 0.003893
+[conventional (4.84M/4.84M)] Epoch: 10/100 | LR: 0.000450 | Train Loss: 0.002704 | Eval Loss: 0.003893 | PSNR: 24.2772 | SSIM: 0.9559
+      [BEST @ epoch 10] eval loss: 0.004064
+[conventional (4.22M/4.84M)] Epoch: 10/100 | LR: 0.000450 | Train Loss: 0.002472 | Eval Loss: 0.004064 | PSNR: 24.1076 | SSIM: 0.9558
+      [BEST @ epoch 10] eval loss: 0.005102
+[conventional (4.22M/4.84M)] Epoch: 10/100 | LR: 0.000450 | Train Loss: 0.002205 | Eval Loss: 0.005102 | PSNR: 23.1103 | SSIM: 0.9515
+      [BEST @ epoch 10] eval loss: 0.004051
+[conventional (4.84M/4.84M)] Epoch: 10/100 | LR: 0.000450 | Train Loss: 0.002667 | Eval Loss: 0.004051 | PSNR: 24.1125 | SSIM: 0.9571
+      [BEST @ epoch 10] eval loss: 0.005192
+[conventional (4.22M/4.22M)] Epoch: 10/100 | LR: 0.000450 | Train Loss: 0.002198 | Eval Loss: 0.005192 | PSNR: 23.0524 | SSIM: 0.9512
+      [BEST @ epoch 15] eval loss: 0.003557
+[conventional (4.84M/4.84M)] Epoch: 15/100 | LR: 0.000425 | Train Loss: 0.001959 | Eval Loss: 0.003557 | PSNR: 24.7475 | SSIM: 0.9611
+      [BEST @ epoch 15] eval loss: 0.004780
+[conventional (4.22M/4.84M)] Epoch: 15/100 | LR: 0.000425 | Train Loss: 0.001544 | Eval Loss: 0.004780 | PSNR: 23.4182 | SSIM: 0.9533
+      [BEST @ epoch 15] eval loss: 0.003764
+[conventional (4.22M/4.84M)] Epoch: 15/100 | LR: 0.000425 | Train Loss: 0.001721 | Eval Loss: 0.003764 | PSNR: 24.4844 | SSIM: 0.9587
+      [BEST @ epoch 15] eval loss: 0.003529
+[conventional (4.84M/4.84M)] Epoch: 15/100 | LR: 0.000425 | Train Loss: 0.001918 | Eval Loss: 0.003529 | PSNR: 24.7758 | SSIM: 0.9625
+      [BEST @ epoch 15] eval loss: 0.004778
+[conventional (4.22M/4.22M)] Epoch: 15/100 | LR: 0.000425 | Train Loss: 0.001519 | Eval Loss: 0.004778 | PSNR: 23.4428 | SSIM: 0.9532
+[conventional (4.84M/4.84M)] Epoch: 20/100 | LR: 0.000400 | Train Loss: 0.001510 | Eval Loss: 0.003661 | PSNR: 24.6169 | SSIM: 0.9582
+[conventional (4.22M/4.84M)] Epoch: 20/100 | LR: 0.000400 | Train Loss: 0.001152 | Eval Loss: 0.005088 | PSNR: 23.1621 | SSIM: 0.9509
+[conventional (4.22M/4.84M)] Epoch: 20/100 | LR: 0.000400 | Train Loss: 0.001288 | Eval Loss: 0.003944 | PSNR: 24.2651 | SSIM: 0.9548
+[conventional (4.84M/4.84M)] Epoch: 20/100 | LR: 0.000400 | Train Loss: 0.001473 | Eval Loss: 0.003678 | PSNR: 24.6242 | SSIM: 0.9583
+[conventional (4.22M/4.22M)] Epoch: 20/100 | LR: 0.000400 | Train Loss: 0.001168 | Eval Loss: 0.005009 | PSNR: 23.2163 | SSIM: 0.9553
+      [BEST @ epoch 25] eval loss: 0.003250
+[conventional (4.84M/4.84M)] Epoch: 25/100 | LR: 0.000375 | Train Loss: 0.001171 | Eval Loss: 0.003250 | PSNR: 25.2172 | SSIM: 0.9658
+      [BEST @ epoch 25] eval loss: 0.004178
+[conventional (4.22M/4.84M)] Epoch: 25/100 | LR: 0.000375 | Train Loss: 0.000921 | Eval Loss: 0.004178 | PSNR: 24.0591 | SSIM: 0.9595
+      [BEST @ epoch 25] eval loss: 0.003342
+[conventional (4.22M/4.84M)] Epoch: 25/100 | LR: 0.000375 | Train Loss: 0.001027 | Eval Loss: 0.003342 | PSNR: 25.0476 | SSIM: 0.9632
+[conventional (4.84M/4.84M)] Epoch: 25/100 | LR: 0.000375 | Train Loss: 0.001148 | Eval Loss: 0.003651 | PSNR: 24.6188 | SSIM: 0.9626
+      [BEST @ epoch 25] eval loss: 0.004291
+[conventional (4.22M/4.22M)] Epoch: 25/100 | LR: 0.000375 | Train Loss: 0.000930 | Eval Loss: 0.004291 | PSNR: 24.0054 | SSIM: 0.9596
+      [BEST @ epoch 30] eval loss: 0.003140
+[conventional (4.84M/4.84M)] Epoch: 30/100 | LR: 0.000350 | Train Loss: 0.000935 | Eval Loss: 0.003140 | PSNR: 25.3223 | SSIM: 0.9675
+[conventional (4.22M/4.84M)] Epoch: 30/100 | LR: 0.000350 | Train Loss: 0.000765 | Eval Loss: 0.004317 | PSNR: 23.8925 | SSIM: 0.9621
+      [BEST @ epoch 30] eval loss: 0.003273
+[conventional (4.22M/4.84M)] Epoch: 30/100 | LR: 0.000350 | Train Loss: 0.000848 | Eval Loss: 0.003273 | PSNR: 25.1492 | SSIM: 0.9667
+      [BEST @ epoch 30] eval loss: 0.003224
+[conventional (4.84M/4.84M)] Epoch: 30/100 | LR: 0.000350 | Train Loss: 0.000923 | Eval Loss: 0.003224 | PSNR: 25.2594 | SSIM: 0.9675
+      [BEST @ epoch 30] eval loss: 0.004195
+[conventional (4.22M/4.22M)] Epoch: 30/100 | LR: 0.000350 | Train Loss: 0.000743 | Eval Loss: 0.004195 | PSNR: 24.0214 | SSIM: 0.9622
+      [BEST @ epoch 35] eval loss: 0.002940
+[conventional (4.84M/4.84M)] Epoch: 35/100 | LR: 0.000325 | Train Loss: 0.000794 | Eval Loss: 0.002940 | PSNR: 25.6649 | SSIM: 0.9694
+      [BEST @ epoch 35] eval loss: 0.003249
+[conventional (4.22M/4.84M)] Epoch: 35/100 | LR: 0.000325 | Train Loss: 0.000690 | Eval Loss: 0.003249 | PSNR: 25.1688 | SSIM: 0.9686
+      [BEST @ epoch 35] eval loss: 0.004150
+[conventional (4.22M/4.84M)] Epoch: 35/100 | LR: 0.000325 | Train Loss: 0.000650 | Eval Loss: 0.004150 | PSNR: 24.1304 | SSIM: 0.9642
+      [BEST @ epoch 35] eval loss: 0.003029
+[conventional (4.84M/4.84M)] Epoch: 35/100 | LR: 0.000325 | Train Loss: 0.000724 | Eval Loss: 0.003029 | PSNR: 25.5690 | SSIM: 0.9691
+      [BEST @ epoch 35] eval loss: 0.004055
+[conventional (4.22M/4.22M)] Epoch: 35/100 | LR: 0.000325 | Train Loss: 0.000630 | Eval Loss: 0.004055 | PSNR: 24.1839 | SSIM: 0.9648
+[conventional (4.84M/4.84M)] Epoch: 40/100 | LR: 0.000300 | Train Loss: 0.000680 | Eval Loss: 0.002997 | PSNR: 25.5360 | SSIM: 0.9685
+      [BEST @ epoch 40] eval loss: 0.003244
+[conventional (4.22M/4.84M)] Epoch: 40/100 | LR: 0.000300 | Train Loss: 0.000599 | Eval Loss: 0.003244 | PSNR: 25.1908 | SSIM: 0.9674
+[conventional (4.22M/4.84M)] Epoch: 40/100 | LR: 0.000300 | Train Loss: 0.000552 | Eval Loss: 0.004495 | PSNR: 23.7285 | SSIM: 0.9609
+      [BEST @ epoch 40] eval loss: 0.003012
+[conventional (4.84M/4.84M)] Epoch: 40/100 | LR: 0.000300 | Train Loss: 0.000632 | Eval Loss: 0.003012 | PSNR: 25.5153 | SSIM: 0.9701
+[conventional (4.22M/4.22M)] Epoch: 40/100 | LR: 0.000300 | Train Loss: 0.000551 | Eval Loss: 0.004260 | PSNR: 24.0155 | SSIM: 0.9639
+[conventional (4.22M/4.84M)] Epoch: 45/100 | LR: 0.000275 | Train Loss: 0.000484 | Eval Loss: 0.003364 | PSNR: 25.0370 | SSIM: 0.9680
+[conventional (4.84M/4.84M)] Epoch: 45/100 | LR: 0.000275 | Train Loss: 0.000586 | Eval Loss: 0.002942 | PSNR: 25.6707 | SSIM: 0.9685
+[conventional (4.22M/4.84M)] Epoch: 45/100 | LR: 0.000275 | Train Loss: 0.000417 | Eval Loss: 0.004260 | PSNR: 24.0059 | SSIM: 0.9643
+      [BEST @ epoch 45] eval loss: 0.002955
+[conventional (4.84M/4.84M)] Epoch: 45/100 | LR: 0.000275 | Train Loss: 0.000564 | Eval Loss: 0.002955 | PSNR: 25.6999 | SSIM: 0.9709
+[conventional (4.22M/4.22M)] Epoch: 45/100 | LR: 0.000275 | Train Loss: 0.000426 | Eval Loss: 0.004147 | PSNR: 24.0563 | SSIM: 0.9645
+[conventional (4.22M/4.84M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.000422 | Eval Loss: 0.003255 | PSNR: 25.1888 | SSIM: 0.9678
+[conventional (4.84M/4.84M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.000499 | Eval Loss: 0.003006 | PSNR: 25.5215 | SSIM: 0.9688
+[conventional (4.22M/4.84M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.000408 | Eval Loss: 0.004350 | PSNR: 23.8810 | SSIM: 0.9629
+      [BEST @ epoch 50] eval loss: 0.002852
+[conventional (4.84M/4.84M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.000469 | Eval Loss: 0.002852 | PSNR: 25.8215 | SSIM: 0.9710
+[conventional (4.22M/4.22M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.000401 | Eval Loss: 0.004354 | PSNR: 23.8404 | SSIM: 0.9625
+      [BEST @ epoch 55] eval loss: 0.003074
+[conventional (4.22M/4.84M)] Epoch: 55/100 | LR: 0.000225 | Train Loss: 0.000361 | Eval Loss: 0.003074 | PSNR: 25.5195 | SSIM: 0.9713
+      [BEST @ epoch 55] eval loss: 0.002881
+[conventional (4.84M/4.84M)] Epoch: 55/100 | LR: 0.000225 | Train Loss: 0.000430 | Eval Loss: 0.002881 | PSNR: 25.7535 | SSIM: 0.9715
+[conventional (4.22M/4.84M)] Epoch: 55/100 | LR: 0.000225 | Train Loss: 0.000329 | Eval Loss: 0.004713 | PSNR: 23.5555 | SSIM: 0.9623
+[conventional (4.84M/4.84M)] Epoch: 55/100 | LR: 0.000225 | Train Loss: 0.000408 | Eval Loss: 0.002879 | PSNR: 25.7938 | SSIM: 0.9722
+[conventional (4.22M/4.22M)] Epoch: 55/100 | LR: 0.000225 | Train Loss: 0.000342 | Eval Loss: 0.004649 | PSNR: 23.6116 | SSIM: 0.9631
+      [BEST @ epoch 60] eval loss: 0.003016
+[conventional (4.22M/4.84M)] Epoch: 60/100 | LR: 0.000200 | Train Loss: 0.000308 | Eval Loss: 0.003016 | PSNR: 25.5829 | SSIM: 0.9708
+      [BEST @ epoch 60] eval loss: 0.002790
+[conventional (4.84M/4.84M)] Epoch: 60/100 | LR: 0.000200 | Train Loss: 0.000359 | Eval Loss: 0.002790 | PSNR: 25.9251 | SSIM: 0.9723
+      [BEST @ epoch 60] eval loss: 0.004122
+[conventional (4.22M/4.84M)] Epoch: 60/100 | LR: 0.000200 | Train Loss: 0.000276 | Eval Loss: 0.004122 | PSNR: 24.1276 | SSIM: 0.9659
+[conventional (4.84M/4.84M)] Epoch: 60/100 | LR: 0.000200 | Train Loss: 0.000334 | Eval Loss: 0.002858 | PSNR: 25.8534 | SSIM: 0.9726
+[conventional (4.22M/4.22M)] Epoch: 60/100 | LR: 0.000200 | Train Loss: 0.000278 | Eval Loss: 0.004107 | PSNR: 24.2052 | SSIM: 0.9659
+      [BEST @ epoch 65] eval loss: 0.002992
+[conventional (4.22M/4.84M)] Epoch: 65/100 | LR: 0.000175 | Train Loss: 0.000257 | Eval Loss: 0.002992 | PSNR: 25.7311 | SSIM: 0.9730
+      [BEST @ epoch 65] eval loss: 0.002648
+[conventional (4.84M/4.84M)] Epoch: 65/100 | LR: 0.000175 | Train Loss: 0.000315 | Eval Loss: 0.002648 | PSNR: 26.1853 | SSIM: 0.9750
+[conventional (4.22M/4.84M)] Epoch: 65/100 | LR: 0.000175 | Train Loss: 0.000244 | Eval Loss: 0.004178 | PSNR: 24.1018 | SSIM: 0.9665
+      [BEST @ epoch 65] eval loss: 0.002660
+[conventional (4.84M/4.84M)] Epoch: 65/100 | LR: 0.000175 | Train Loss: 0.000296 | Eval Loss: 0.002660 | PSNR: 26.1988 | SSIM: 0.9753
+[conventional (4.22M/4.22M)] Epoch: 65/100 | LR: 0.000175 | Train Loss: 0.000230 | Eval Loss: 0.004189 | PSNR: 24.1347 | SSIM: 0.9668
+[conventional (4.22M/4.84M)] Epoch: 70/100 | LR: 0.000150 | Train Loss: 0.000225 | Eval Loss: 0.003002 | PSNR: 25.6379 | SSIM: 0.9724
+[conventional (4.84M/4.84M)] Epoch: 70/100 | LR: 0.000150 | Train Loss: 0.000239 | Eval Loss: 0.002675 | PSNR: 26.1493 | SSIM: 0.9752
+      [BEST @ epoch 70] eval loss: 0.003977
+[conventional (4.22M/4.84M)] Epoch: 70/100 | LR: 0.000150 | Train Loss: 0.000205 | Eval Loss: 0.003977 | PSNR: 24.3362 | SSIM: 0.9686
+[conventional (4.84M/4.84M)] Epoch: 70/100 | LR: 0.000150 | Train Loss: 0.000224 | Eval Loss: 0.002737 | PSNR: 26.0421 | SSIM: 0.9748
+      [BEST @ epoch 70] eval loss: 0.003972
+[conventional (4.22M/4.22M)] Epoch: 70/100 | LR: 0.000150 | Train Loss: 0.000196 | Eval Loss: 0.003972 | PSNR: 24.3334 | SSIM: 0.9682
+      [BEST @ epoch 75] eval loss: 0.002900
+[conventional (4.22M/4.84M)] Epoch: 75/100 | LR: 0.000125 | Train Loss: 0.000184 | Eval Loss: 0.002900 | PSNR: 25.8604 | SSIM: 0.9741
+      [BEST @ epoch 75] eval loss: 0.002526
+[conventional (4.84M/4.84M)] Epoch: 75/100 | LR: 0.000125 | Train Loss: 0.000203 | Eval Loss: 0.002526 | PSNR: 26.4469 | SSIM: 0.9766
+[conventional (4.22M/4.84M)] Epoch: 75/100 | LR: 0.000125 | Train Loss: 0.000169 | Eval Loss: 0.004018 | PSNR: 24.2361 | SSIM: 0.9684
+      [BEST @ epoch 75] eval loss: 0.002636
+[conventional (4.84M/4.84M)] Epoch: 75/100 | LR: 0.000125 | Train Loss: 0.000186 | Eval Loss: 0.002636 | PSNR: 26.3312 | SSIM: 0.9764
+[conventional (4.22M/4.22M)] Epoch: 75/100 | LR: 0.000125 | Train Loss: 0.000168 | Eval Loss: 0.003974 | PSNR: 24.3149 | SSIM: 0.9691
+[conventional (4.22M/4.84M)] Epoch: 80/100 | LR: 0.000100 | Train Loss: 0.000152 | Eval Loss: 0.002932 | PSNR: 25.8122 | SSIM: 0.9740
+[conventional (4.84M/4.84M)] Epoch: 80/100 | LR: 0.000100 | Train Loss: 0.000176 | Eval Loss: 0.002615 | PSNR: 26.2589 | SSIM: 0.9757
+[conventional (4.22M/4.84M)] Epoch: 80/100 | LR: 0.000100 | Train Loss: 0.000138 | Eval Loss: 0.004088 | PSNR: 24.2389 | SSIM: 0.9682
+[conventional (4.84M/4.84M)] Epoch: 80/100 | LR: 0.000100 | Train Loss: 0.000152 | Eval Loss: 0.002750 | PSNR: 26.0956 | SSIM: 0.9759
+      [BEST @ epoch 80] eval loss: 0.003870
+[conventional (4.22M/4.22M)] Epoch: 80/100 | LR: 0.000100 | Train Loss: 0.000141 | Eval Loss: 0.003870 | PSNR: 24.4567 | SSIM: 0.9691
+[conventional (4.22M/4.84M)] Epoch: 85/100 | LR: 0.000075 | Train Loss: 0.000123 | Eval Loss: 0.002924 | PSNR: 25.8455 | SSIM: 0.9747
+[conventional (4.84M/4.84M)] Epoch: 85/100 | LR: 0.000075 | Train Loss: 0.000141 | Eval Loss: 0.002590 | PSNR: 26.3109 | SSIM: 0.9768
+[conventional (4.22M/4.84M)] Epoch: 85/100 | LR: 0.000075 | Train Loss: 0.000116 | Eval Loss: 0.004016 | PSNR: 24.3071 | SSIM: 0.9695
+      [BEST @ epoch 85] eval loss: 0.002585
+[conventional (4.84M/4.84M)] Epoch: 85/100 | LR: 0.000075 | Train Loss: 0.000123 | Eval Loss: 0.002585 | PSNR: 26.4290 | SSIM: 0.9776
+[conventional (4.22M/4.22M)] Epoch: 85/100 | LR: 0.000075 | Train Loss: 0.000114 | Eval Loss: 0.003929 | PSNR: 24.4132 | SSIM: 0.9700
+      [BEST @ epoch 90] eval loss: 0.002898
+[conventional (4.22M/4.84M)] Epoch: 90/100 | LR: 0.000050 | Train Loss: 0.000105 | Eval Loss: 0.002898 | PSNR: 25.8621 | SSIM: 0.9755
+[conventional (4.84M/4.84M)] Epoch: 90/100 | LR: 0.000050 | Train Loss: 0.000117 | Eval Loss: 0.002570 | PSNR: 26.3913 | SSIM: 0.9772
+[conventional (4.22M/4.84M)] Epoch: 90/100 | LR: 0.000050 | Train Loss: 0.000099 | Eval Loss: 0.004262 | PSNR: 24.0415 | SSIM: 0.9685
+[conventional (4.84M/4.84M)] Epoch: 90/100 | LR: 0.000050 | Train Loss: 0.000106 | Eval Loss: 0.002626 | PSNR: 26.3836 | SSIM: 0.9780
+[conventional (4.22M/4.22M)] Epoch: 90/100 | LR: 0.000050 | Train Loss: 0.000100 | Eval Loss: 0.004171 | PSNR: 24.1379 | SSIM: 0.9690
+      [BEST @ epoch 95] eval loss: 0.002839
+[conventional (4.22M/4.84M)] Epoch: 95/100 | LR: 0.000025 | Train Loss: 0.000087 | Eval Loss: 0.002839 | PSNR: 25.9955 | SSIM: 0.9762
+[conventional (4.84M/4.84M)] Epoch: 95/100 | LR: 0.000025 | Train Loss: 0.000097 | Eval Loss: 0.002539 | PSNR: 26.4462 | SSIM: 0.9784
+      [BEST @ epoch 95] eval loss: 0.003633
+[conventional (4.22M/4.84M)] Epoch: 95/100 | LR: 0.000025 | Train Loss: 0.000081 | Eval Loss: 0.003633 | PSNR: 24.8002 | SSIM: 0.9723
+      [BEST @ epoch 95] eval loss: 0.002564
+[conventional (4.84M/4.84M)] Epoch: 95/100 | LR: 0.000025 | Train Loss: 0.000086 | Eval Loss: 0.002564 | PSNR: 26.4658 | SSIM: 0.9786
+[conventional (4.22M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000075 | Eval Loss: 0.002853 | PSNR: 25.9557 | SSIM: 0.9765
+
+[INFO] Using best model @ epoch 95, test loss: 0.002704 | PSNR: 27.3500 | SSIM: 0.9772
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_4221056/latent784_hidden1150_1150/lr0.0005_run2/experiment_summary.json
+      [BEST @ epoch 95] eval loss: 0.003705
+[conventional (4.22M/4.22M)] Epoch: 95/100 | LR: 0.000025 | Train Loss: 0.000082 | Eval Loss: 0.003705 | PSNR: 24.7283 | SSIM: 0.9718
+[conventional (4.84M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000083 | Eval Loss: 0.002551 | PSNR: 26.4135 | SSIM: 0.9786
+
+[INFO] Using best model @ epoch 75, test loss: 0.002505 | PSNR: 27.8440 | SSIM: 0.9767
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_4835712/latent784_hidden1150_1150/lr0.0005_run2/experiment_summary.json
+[conventional (4.22M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000072 | Eval Loss: 0.004034 | PSNR: 24.2825 | SSIM: 0.9703
+
+[INFO] Using best model @ epoch 95, test loss: 0.003837 | PSNR: 25.4864 | SSIM: 0.9715
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_4221056/latent784_hidden1150_1150/lr0.0005_run2/experiment_summary.json
+[conventional (4.84M/4.84M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000074 | Eval Loss: 0.002587 | PSNR: 26.4478 | SSIM: 0.9788
+
+[INFO] Using best model @ epoch 95, test loss: 0.002389 | PSNR: 28.2884 | SSIM: 0.9795
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_4835712/latent784_hidden1150_1150/lr0.0005_run2/experiment_summary.json
+[conventional (4.22M/4.22M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000071 | Eval Loss: 0.004007 | PSNR: 24.3156 | SSIM: 0.9705
+
+[INFO] Using best model @ epoch 95, test loss: 0.003774 | PSNR: 25.7170 | SSIM: 0.9718
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_4221056/latent784_hidden1150_1150/lr0.0005_run2/experiment_summary.json
+==========================================
+Starting experiments with run_id=2
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+cuda:2
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,835,712
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_4835712/latent784_hidden1150_1150/lr0.0005_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_4835712/latent784_hidden1150_1150/lr0.0005_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,221,056
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_4221056/latent784_hidden1150_1150/lr0.0005_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_4221056/latent784_hidden1150_1150/lr0.0005_run2] already exist and contains summary json file!
+cuda:2
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,221,056
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_4221056/latent784_hidden1150_1150/lr0.0005_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_4221056/latent784_hidden1150_1150/lr0.0005_run2] already exist and contains summary json file!
+cuda:2
+cuda:2
+Initialize Win to Identity matrix
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,221,056
+Trainable parameters: 4,221,056
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_4221056/latent784_hidden1150_1150/lr0.0005_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_4221056/latent784_hidden1150_1150/lr0.0005_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 4,835,712
+Trainable parameters: 4,835,712
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_4835712/latent784_hidden1150_1150/lr0.0005_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_4835712/latent784_hidden1150_1150/lr0.0005_run2] already exist and contains summary json file!
+==========================================
+Completed run_id=2
+==========================================
+==========================================
+All experiments completed!
+==========================================

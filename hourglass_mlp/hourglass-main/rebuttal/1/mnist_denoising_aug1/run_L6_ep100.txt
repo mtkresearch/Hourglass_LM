@@ -1,0 +1,1121 @@
+==========================================
+Starting experiments with run_id=1
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-5
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:6
+Initialize Win to Identity matrix
+cuda:6
+cuda:6
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 12,048,512
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_I_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_I_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run1] already exist and contains summary json file!
+cuda:6
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 12,048,512
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run1] already exist and contains summary json file!
+cuda:6
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 11,433,856
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_I_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_I_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 11,433,856
+Trainable parameters: 11,433,856
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_wo_Win_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_wo_Win_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 11,433,856
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run1] already exist and contains summary json file!
+==========================================
+Starting experiments with run_id=1
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=1e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:6
+cuda:6
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+cuda:6
+cuda:6
+cuda:6
+Set W_in to non-trianable
+Initialize Win to Identity matrix
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 12,048,512
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 11,433,856
+Trainable parameters: 11,433,856
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_wo_Win_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_wo_Win_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 11,433,856
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_I_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_I_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 11,433,856
+Total parameters: 12,048,512
+Training with W_in matrix!Trainable parameters: 12,048,512
+
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run1
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_I_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+        main()
+main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_I_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run1] already exist and contains summary json file!
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run1] already exist and contains summary json file!
+==========================================
+Starting experiments with run_id=1
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:6
+cuda:6
+cuda:6
+Set W_in to non-trianable
+cuda:6
+Initialize Win to Identity matrix
+cuda:6
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 11,433,856
+Trainable parameters: 11,433,856
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_wo_Win_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_wo_Win_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 12,048,512
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 11,433,856
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 12,048,512
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_I_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_I_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 11,433,856
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_I_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_I_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run1] already exist and contains summary json file!
+==========================================
+Starting experiments with run_id=1
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=1e-3
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:6
+cuda:6
+Set W_in to non-trianable
+cuda:6
+Initialize Win to Identity matrix
+cuda:6
+cuda:6
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 11,433,856
+Trainable parameters: 11,433,856
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_wo_Win_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_wo_Win_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 11,433,856
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 12,048,512
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_I_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_I_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run1] already exist and contains summary json file!
+Total parameters: 12,048,512
+Trainable parameters: 12,048,512
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 11,433,856
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_I_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_I_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run1] already exist and contains summary json file!
+==========================================
+Completed run_id=1
+==========================================
+==========================================
+Starting experiments with run_id=2
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-5
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:6
+cuda:6
+Set W_in to non-trianable
+cuda:6
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 11,433,856
+Trainable parameters: 11,433,856
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_wo_Win_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_wo_Win_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run2] already exist and contains summary json file!
+cuda:6
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 11,433,856
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run2] already exist and contains summary json file!
+cuda:6
+Initialize Win to Identity matrix
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 12,048,512
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 11,433,856
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_I_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_I_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 12,048,512
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_I_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_I_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr5e-05_run2] already exist and contains summary json file!
+==========================================
+Starting experiments with run_id=2
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=1e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:6
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 11,433,856
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_I_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_I_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run2] already exist and contains summary json file!
+cuda:6
+cuda:6
+Set W_in to non-trianable
+cuda:6
+cuda:6
+Initialize Win to Identity matrix
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 12,048,512
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 11,433,856
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 11,433,856
+Trainable parameters: 11,433,856
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_wo_Win_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_wo_Win_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 12,048,512
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_I_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_I_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0001_run2] already exist and contains summary json file!
+==========================================
+Starting experiments with run_id=2
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:6
+cuda:6
+Initialize Win to Identity matrix
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 12,048,512
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 12,048,512
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_I_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_I_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run2] already exist and contains summary json file!
+cuda:6
+Set W_in to non-trianable
+cuda:6
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+cuda:6
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 11,433,856
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 11,433,856
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_I_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_I_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 11,433,856
+Trainable parameters: 11,433,856
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_wo_Win_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_wo_Win_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.0005_run2] already exist and contains summary json file!
+==========================================
+Starting experiments with run_id=2
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=1e-3
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:6
+Initialize Win to Identity matrix
+cuda:6
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 12,048,512
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_I_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_I_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run2] already exist and contains summary json file!
+cuda:6
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 12,048,512
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_12048512/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run2] already exist and contains summary json file!
+cuda:6
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+cuda:6
+Set W_in to non-trianable
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 11,433,856
+Trainable parameters: 11,433,856
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_wo_Win_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_wo_Win_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 11,433,856
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_I_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_I_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 12,048,512
+Trainable parameters: 11,433,856
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100/conventional_w_Win_fix_11433856/latent784_hidden1150_1150_1150_1150_1150_1150/lr0.001_run2] already exist and contains summary json file!
+==========================================
+Completed run_id=2
+==========================================
+==========================================
+All experiments completed!
+==========================================

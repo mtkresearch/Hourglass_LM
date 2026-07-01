@@ -1,0 +1,1178 @@
+==========================================
+Starting experiments with run_id=1
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-5
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+cuda:2
+Set W_in to non-trianable
+cuda:2
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+cuda:2
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+cuda:2
+Initialize Win to Identity matrix
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 18,646,656
+Trainable parameters: 18,646,656
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1
+Created train split with 50000 samples
+Created train split with 50000 samples
+Created eval split with 10000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+      [BEST @ epoch 5] eval loss: 0.004409
+[conventional (18.65M/19.26M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.002602 | Eval Loss: 0.004409 | PSNR: 23.8476 | SSIM: 0.9622
+      [BEST @ epoch 5] eval loss: 0.003556
+[conventional (19.26M/19.26M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.002689 | Eval Loss: 0.003556 | PSNR: 24.9831 | SSIM: 0.9680
+      [BEST @ epoch 10] eval loss: 0.004332
+[conventional (18.65M/19.26M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.001490 | Eval Loss: 0.004332 | PSNR: 24.0733 | SSIM: 0.9691
+      [BEST @ epoch 10] eval loss: 0.003288
+[conventional (19.26M/19.26M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.001580 | Eval Loss: 0.003288 | PSNR: 25.3274 | SSIM: 0.9740
+      [BEST @ epoch 15] eval loss: 0.003851
+[conventional (18.65M/19.26M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.001051 | Eval Loss: 0.003851 | PSNR: 24.6543 | SSIM: 0.9731
+      [BEST @ epoch 15] eval loss: 0.002536
+[conventional (19.26M/19.26M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.001126 | Eval Loss: 0.002536 | PSNR: 26.8304 | SSIM: 0.9806
+[conventional (18.65M/19.26M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.000767 | Eval Loss: 0.004233 | PSNR: 24.2659 | SSIM: 0.9717
+      [BEST @ epoch 20] eval loss: 0.002488
+[conventional (19.26M/19.26M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.000826 | Eval Loss: 0.002488 | PSNR: 26.7567 | SSIM: 0.9817
+[conventional (18.65M/19.26M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.000608 | Eval Loss: 0.003881 | PSNR: 24.5774 | SSIM: 0.9744
+[conventional (19.26M/19.26M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.000650 | Eval Loss: 0.002502 | PSNR: 26.8753 | SSIM: 0.9827
+      [BEST @ epoch 30] eval loss: 0.003655
+[conventional (18.65M/19.26M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.000494 | Eval Loss: 0.003655 | PSNR: 25.0954 | SSIM: 0.9754
+      [BEST @ epoch 30] eval loss: 0.002417
+[conventional (19.26M/19.26M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.000518 | Eval Loss: 0.002417 | PSNR: 27.3158 | SSIM: 0.9832
+[conventional (18.65M/19.26M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.000389 | Eval Loss: 0.003780 | PSNR: 24.7868 | SSIM: 0.9738
+      [BEST @ epoch 35] eval loss: 0.002178
+[conventional (19.26M/19.26M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.000417 | Eval Loss: 0.002178 | PSNR: 28.0028 | SSIM: 0.9843
+[conventional (18.65M/19.26M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.000334 | Eval Loss: 0.003742 | PSNR: 25.0433 | SSIM: 0.9759
+[conventional (19.26M/19.26M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.000361 | Eval Loss: 0.002419 | PSNR: 27.5049 | SSIM: 0.9835
+      [BEST @ epoch 45] eval loss: 0.003479
+[conventional (18.65M/19.26M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.000273 | Eval Loss: 0.003479 | PSNR: 25.2318 | SSIM: 0.9774
+      [BEST @ epoch 45] eval loss: 0.002175
+[conventional (19.26M/19.26M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.000290 | Eval Loss: 0.002175 | PSNR: 27.9058 | SSIM: 0.9852
+      [BEST @ epoch 50] eval loss: 0.003137
+[conventional (18.65M/19.26M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.000222 | Eval Loss: 0.003137 | PSNR: 25.8194 | SSIM: 0.9801
+[conventional (19.26M/19.26M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.000220 | Eval Loss: 0.002464 | PSNR: 26.9077 | SSIM: 0.9839
+[conventional (18.65M/19.26M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.000188 | Eval Loss: 0.003572 | PSNR: 25.3305 | SSIM: 0.9782
+[conventional (19.26M/19.26M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.000189 | Eval Loss: 0.002357 | PSNR: 27.6555 | SSIM: 0.9855
+[conventional (18.65M/19.26M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.000156 | Eval Loss: 0.003173 | PSNR: 25.7094 | SSIM: 0.9802
+[conventional (19.26M/19.26M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.000153 | Eval Loss: 0.002231 | PSNR: 28.1915 | SSIM: 0.9861
+      [BEST @ epoch 65] eval loss: 0.003006
+[conventional (18.65M/19.26M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.000130 | Eval Loss: 0.003006 | PSNR: 26.3672 | SSIM: 0.9815
+      [BEST @ epoch 65] eval loss: 0.001943
+[conventional (19.26M/19.26M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.000123 | Eval Loss: 0.001943 | PSNR: 29.6154 | SSIM: 0.9876
+[conventional (18.65M/19.26M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.000099 | Eval Loss: 0.003409 | PSNR: 25.2969 | SSIM: 0.9789
+[conventional (19.26M/19.26M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.000105 | Eval Loss: 0.002128 | PSNR: 29.3368 | SSIM: 0.9869
+[conventional (18.65M/19.26M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.000078 | Eval Loss: 0.003040 | PSNR: 25.8524 | SSIM: 0.9809
+[conventional (19.26M/19.26M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.000081 | Eval Loss: 0.002231 | PSNR: 28.1417 | SSIM: 0.9867
+[conventional (18.65M/19.26M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.000062 | Eval Loss: 0.003052 | PSNR: 26.1269 | SSIM: 0.9821
+[conventional (19.26M/19.26M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.000068 | Eval Loss: 0.002004 | PSNR: 29.5565 | SSIM: 0.9878
+[conventional (18.65M/19.26M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.000047 | Eval Loss: 0.003167 | PSNR: 25.7965 | SSIM: 0.9810
+[conventional (19.26M/19.26M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.000053 | Eval Loss: 0.002116 | PSNR: 28.6102 | SSIM: 0.9877
+      [BEST @ epoch 90] eval loss: 0.002795
+[conventional (18.65M/19.26M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.000033 | Eval Loss: 0.002795 | PSNR: 26.5873 | SSIM: 0.9835
+[conventional (19.26M/19.26M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.000040 | Eval Loss: 0.002106 | PSNR: 28.9925 | SSIM: 0.9878
+[conventional (18.65M/19.26M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.000026 | Eval Loss: 0.002871 | PSNR: 26.3222 | SSIM: 0.9830
+      [BEST @ epoch 95] eval loss: 0.001932
+[conventional (19.26M/19.26M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.000028 | Eval Loss: 0.001932 | PSNR: 29.3996 | SSIM: 0.9887
+      [BEST @ epoch 100] eval loss: 0.002563
+[conventional (18.65M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000021 | Eval Loss: 0.002563 | PSNR: 27.1862 | SSIM: 0.9848
+
+[INFO] Using best model @ epoch 100, test loss: 0.003101 | PSNR: 28.2988 | SSIM: 0.9824
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.001905
+[conventional (19.26M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000023 | Eval Loss: 0.001905 | PSNR: 29.6572 | SSIM: 0.9890
+
+[INFO] Using best model @ epoch 100, test loss: 0.002143 | PSNR: 31.9675 | SSIM: 0.9877
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1/experiment_summary.json
+==========================================
+Starting experiments with run_id=1
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=1e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+Initialize Win to Identity matrix
+cuda:2
+Set W_in to non-trianable
+cuda:2
+cuda:2
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+cuda:2
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1] already exist and contains summary json file!
+Created train split with 50000 samples
+Created eval split with 10000 samples
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1
+Created train split with 50000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 18,646,656
+Trainable parameters: 18,646,656
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1] already exist and contains summary json file!
+      [BEST @ epoch 5] eval loss: 0.003221
+[conventional (19.26M/19.26M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.003000 | Eval Loss: 0.003221 | PSNR: 25.3555 | SSIM: 0.9702
+      [BEST @ epoch 5] eval loss: 0.004563
+[conventional (18.65M/19.26M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.002934 | Eval Loss: 0.004563 | PSNR: 23.7133 | SSIM: 0.9613
+      [BEST @ epoch 10] eval loss: 0.003175
+[conventional (19.26M/19.26M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.001833 | Eval Loss: 0.003175 | PSNR: 25.5147 | SSIM: 0.9749
+      [BEST @ epoch 10] eval loss: 0.004050
+[conventional (18.65M/19.26M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.001759 | Eval Loss: 0.004050 | PSNR: 24.3767 | SSIM: 0.9697
+      [BEST @ epoch 15] eval loss: 0.002683
+[conventional (19.26M/19.26M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.001288 | Eval Loss: 0.002683 | PSNR: 26.4135 | SSIM: 0.9801
+      [BEST @ epoch 15] eval loss: 0.003282
+[conventional (18.65M/19.26M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.001219 | Eval Loss: 0.003282 | PSNR: 25.3968 | SSIM: 0.9756
+      [BEST @ epoch 20] eval loss: 0.002287
+[conventional (19.26M/19.26M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.000926 | Eval Loss: 0.002287 | PSNR: 27.4367 | SSIM: 0.9810
+[conventional (18.65M/19.26M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.000886 | Eval Loss: 0.003672 | PSNR: 24.9456 | SSIM: 0.9741
+[conventional (19.26M/19.26M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.000756 | Eval Loss: 0.002466 | PSNR: 26.9591 | SSIM: 0.9809
+[conventional (18.65M/19.26M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.000690 | Eval Loss: 0.003825 | PSNR: 24.8944 | SSIM: 0.9746
+      [BEST @ epoch 30] eval loss: 0.002235
+[conventional (19.26M/19.26M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.000569 | Eval Loss: 0.002235 | PSNR: 27.4981 | SSIM: 0.9847
+[conventional (18.65M/19.26M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.000540 | Eval Loss: 0.003634 | PSNR: 25.0257 | SSIM: 0.9751
+[conventional (19.26M/19.26M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.000458 | Eval Loss: 0.002382 | PSNR: 27.3396 | SSIM: 0.9829
+[conventional (18.65M/19.26M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.000417 | Eval Loss: 0.003727 | PSNR: 24.9448 | SSIM: 0.9754
+      [BEST @ epoch 40] eval loss: 0.001923
+[conventional (19.26M/19.26M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.000376 | Eval Loss: 0.001923 | PSNR: 28.8030 | SSIM: 0.9866
+[conventional (18.65M/19.26M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.000345 | Eval Loss: 0.003735 | PSNR: 25.1361 | SSIM: 0.9764
+[conventional (19.26M/19.26M)] Epoch: 45/100 | LR: 0.000055 | Train Loss: 0.000314 | Eval Loss: 0.001955 | PSNR: 29.0473 | SSIM: 0.9873
+[conventional (18.65M/19.26M)] Epoch: 45/100 | LR: 0.000055 | Train Loss: 0.000312 | Eval Loss: 0.003466 | PSNR: 25.3603 | SSIM: 0.9783
+[conventional (19.26M/19.26M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.000242 | Eval Loss: 0.002077 | PSNR: 28.3926 | SSIM: 0.9860
+[conventional (18.65M/19.26M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.000239 | Eval Loss: 0.003620 | PSNR: 25.1341 | SSIM: 0.9771
+[conventional (19.26M/19.26M)] Epoch: 55/100 | LR: 0.000045 | Train Loss: 0.000214 | Eval Loss: 0.002012 | PSNR: 28.1924 | SSIM: 0.9870
+[conventional (18.65M/19.26M)] Epoch: 55/100 | LR: 0.000045 | Train Loss: 0.000199 | Eval Loss: 0.003789 | PSNR: 24.9205 | SSIM: 0.9763
+[conventional (19.26M/19.26M)] Epoch: 60/100 | LR: 0.000040 | Train Loss: 0.000172 | Eval Loss: 0.002077 | PSNR: 28.1689 | SSIM: 0.9866
+      [BEST @ epoch 60] eval loss: 0.003128
+[conventional (18.65M/19.26M)] Epoch: 60/100 | LR: 0.000040 | Train Loss: 0.000150 | Eval Loss: 0.003128 | PSNR: 26.2121 | SSIM: 0.9804
+[conventional (19.26M/19.26M)] Epoch: 65/100 | LR: 0.000035 | Train Loss: 0.000136 | Eval Loss: 0.001935 | PSNR: 29.3643 | SSIM: 0.9882
+[conventional (18.65M/19.26M)] Epoch: 65/100 | LR: 0.000035 | Train Loss: 0.000153 | Eval Loss: 0.003432 | PSNR: 25.5249 | SSIM: 0.9784
+      [BEST @ epoch 70] eval loss: 0.001839
+[conventional (19.26M/19.26M)] Epoch: 70/100 | LR: 0.000030 | Train Loss: 0.000114 | Eval Loss: 0.001839 | PSNR: 29.2501 | SSIM: 0.9878
+[conventional (18.65M/19.26M)] Epoch: 70/100 | LR: 0.000030 | Train Loss: 0.000110 | Eval Loss: 0.003672 | PSNR: 25.0206 | SSIM: 0.9770
+[conventional (19.26M/19.26M)] Epoch: 75/100 | LR: 0.000025 | Train Loss: 0.000075 | Eval Loss: 0.002072 | PSNR: 28.3935 | SSIM: 0.9868
+[conventional (18.65M/19.26M)] Epoch: 75/100 | LR: 0.000025 | Train Loss: 0.000078 | Eval Loss: 0.003185 | PSNR: 25.8814 | SSIM: 0.9803
+[conventional (19.26M/19.26M)] Epoch: 80/100 | LR: 0.000020 | Train Loss: 0.000060 | Eval Loss: 0.002029 | PSNR: 28.8345 | SSIM: 0.9878
+[conventional (18.65M/19.26M)] Epoch: 80/100 | LR: 0.000020 | Train Loss: 0.000058 | Eval Loss: 0.003295 | PSNR: 25.5496 | SSIM: 0.9786
+[conventional (19.26M/19.26M)] Epoch: 85/100 | LR: 0.000015 | Train Loss: 0.000042 | Eval Loss: 0.001920 | PSNR: 29.6756 | SSIM: 0.9887
+[conventional (18.65M/19.26M)] Epoch: 85/100 | LR: 0.000015 | Train Loss: 0.000045 | Eval Loss: 0.003203 | PSNR: 26.0528 | SSIM: 0.9808
+      [BEST @ epoch 90] eval loss: 0.001767
+[conventional (19.26M/19.26M)] Epoch: 90/100 | LR: 0.000010 | Train Loss: 0.000024 | Eval Loss: 0.001767 | PSNR: 29.6433 | SSIM: 0.9895
+      [BEST @ epoch 90] eval loss: 0.002746
+[conventional (18.65M/19.26M)] Epoch: 90/100 | LR: 0.000010 | Train Loss: 0.000028 | Eval Loss: 0.002746 | PSNR: 26.9345 | SSIM: 0.9831
+      [BEST @ epoch 95] eval loss: 0.001576
+[conventional (19.26M/19.26M)] Epoch: 95/100 | LR: 0.000005 | Train Loss: 0.000012 | Eval Loss: 0.001576 | PSNR: 30.1388 | SSIM: 0.9907
+[conventional (18.65M/19.26M)] Epoch: 95/100 | LR: 0.000005 | Train Loss: 0.000020 | Eval Loss: 0.002855 | PSNR: 26.3818 | SSIM: 0.9825
+[conventional (19.26M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000009 | Eval Loss: 0.001678 | PSNR: 30.4068 | SSIM: 0.9903
+
+[INFO] Using best model @ epoch 95, test loss: 0.001992 | PSNR: 32.9714 | SSIM: 0.9883
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.002739
+[conventional (18.65M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000016 | Eval Loss: 0.002739 | PSNR: 26.6527 | SSIM: 0.9835
+
+[INFO] Using best model @ epoch 100, test loss: 0.002878 | PSNR: 29.2197 | SSIM: 0.9831
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1/experiment_summary.json
+==========================================
+Starting experiments with run_id=1
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglassCurrent working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+Set W_in to non-trianable
+cuda:2
+Initialize Win to Identity matrix
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+cuda:2
+Initialize Win to Identity matrix
+cuda:2
+Set W_in to non-trianable
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+cuda:2
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 18,646,656
+Trainable parameters: 18,646,656
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1] already exist and contains summary json file!
+Created train split with 50000 samples
+Created eval split with 10000 samples
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+Created train split with 50000 samples
+Created eval split with 10000 samples
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1] already exist and contains summary json file!
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+      [BEST @ epoch 5] eval loss: 0.004659
+[conventional (19.26M/19.26M)] Epoch: 5/100 | LR: 0.000475 | Train Loss: 0.004668 | Eval Loss: 0.004659 | PSNR: 23.5179 | SSIM: 0.9556
+      [BEST @ epoch 5] eval loss: 0.005474
+[conventional (18.65M/19.26M)] Epoch: 5/100 | LR: 0.000475 | Train Loss: 0.003941 | Eval Loss: 0.005474 | PSNR: 22.8517 | SSIM: 0.9525
+      [BEST @ epoch 10] eval loss: 0.004333
+[conventional (19.26M/19.26M)] Epoch: 10/100 | LR: 0.000450 | Train Loss: 0.003113 | Eval Loss: 0.004333 | PSNR: 23.8925 | SSIM: 0.9632
+      [BEST @ epoch 10] eval loss: 0.005211
+[conventional (18.65M/19.26M)] Epoch: 10/100 | LR: 0.000450 | Train Loss: 0.002541 | Eval Loss: 0.005211 | PSNR: 23.0687 | SSIM: 0.9586
+      [BEST @ epoch 15] eval loss: 0.003340
+[conventional (19.26M/19.26M)] Epoch: 15/100 | LR: 0.000425 | Train Loss: 0.002097 | Eval Loss: 0.003340 | PSNR: 25.1920 | SSIM: 0.9724
+      [BEST @ epoch 15] eval loss: 0.003845
+[conventional (18.65M/19.26M)] Epoch: 15/100 | LR: 0.000425 | Train Loss: 0.001783 | Eval Loss: 0.003845 | PSNR: 24.5611 | SSIM: 0.9699
+[conventional (19.26M/19.26M)] Epoch: 20/100 | LR: 0.000400 | Train Loss: 0.001658 | Eval Loss: 0.003342 | PSNR: 25.2593 | SSIM: 0.9743
+[conventional (18.65M/19.26M)] Epoch: 20/100 | LR: 0.000400 | Train Loss: 0.001409 | Eval Loss: 0.004488 | PSNR: 23.9140 | SSIM: 0.9673
+      [BEST @ epoch 25] eval loss: 0.002985
+[conventional (19.26M/19.26M)] Epoch: 25/100 | LR: 0.000375 | Train Loss: 0.001257 | Eval Loss: 0.002985 | PSNR: 25.7787 | SSIM: 0.9744
+[conventional (18.65M/19.26M)] Epoch: 25/100 | LR: 0.000375 | Train Loss: 0.001146 | Eval Loss: 0.004096 | PSNR: 24.3524 | SSIM: 0.9708
+[conventional (19.26M/19.26M)] Epoch: 30/100 | LR: 0.000350 | Train Loss: 0.001093 | Eval Loss: 0.003091 | PSNR: 25.8366 | SSIM: 0.9764
+[conventional (18.65M/19.26M)] Epoch: 30/100 | LR: 0.000350 | Train Loss: 0.000925 | Eval Loss: 0.004521 | PSNR: 23.8952 | SSIM: 0.9689
+      [BEST @ epoch 35] eval loss: 0.002852
+[conventional (19.26M/19.26M)] Epoch: 35/100 | LR: 0.000325 | Train Loss: 0.001142 | Eval Loss: 0.002852 | PSNR: 26.1961 | SSIM: 0.9782
+[conventional (18.65M/19.26M)] Epoch: 35/100 | LR: 0.000325 | Train Loss: 0.000847 | Eval Loss: 0.003910 | PSNR: 24.5262 | SSIM: 0.9735
+      [BEST @ epoch 40] eval loss: 0.002769
+[conventional (19.26M/19.26M)] Epoch: 40/100 | LR: 0.000300 | Train Loss: 0.000836 | Eval Loss: 0.002769 | PSNR: 26.1312 | SSIM: 0.9797
+[conventional (18.65M/19.26M)] Epoch: 40/100 | LR: 0.000300 | Train Loss: 0.000669 | Eval Loss: 0.004848 | PSNR: 23.6718 | SSIM: 0.9671
+[conventional (19.26M/19.26M)] Epoch: 45/100 | LR: 0.000275 | Train Loss: 0.000669 | Eval Loss: 0.003130 | PSNR: 25.8735 | SSIM: 0.9781
+[conventional (18.65M/19.26M)] Epoch: 45/100 | LR: 0.000275 | Train Loss: 0.000542 | Eval Loss: 0.003864 | PSNR: 24.6602 | SSIM: 0.9727
+      [BEST @ epoch 50] eval loss: 0.002596
+[conventional (19.26M/19.26M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.000568 | Eval Loss: 0.002596 | PSNR: 26.5865 | SSIM: 0.9809
+[conventional (18.65M/19.26M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.000645 | Eval Loss: 0.004373 | PSNR: 24.0223 | SSIM: 0.9718
+[conventional (19.26M/19.26M)] Epoch: 55/100 | LR: 0.000225 | Train Loss: 0.000465 | Eval Loss: 0.002747 | PSNR: 26.3724 | SSIM: 0.9817
+      [BEST @ epoch 55] eval loss: 0.003728
+[conventional (18.65M/19.26M)] Epoch: 55/100 | LR: 0.000225 | Train Loss: 0.000410 | Eval Loss: 0.003728 | PSNR: 24.8171 | SSIM: 0.9768
+[conventional (19.26M/19.26M)] Epoch: 60/100 | LR: 0.000200 | Train Loss: 0.000341 | Eval Loss: 0.002663 | PSNR: 26.5708 | SSIM: 0.9814
+      [BEST @ epoch 60] eval loss: 0.003515
+[conventional (18.65M/19.26M)] Epoch: 60/100 | LR: 0.000200 | Train Loss: 0.000352 | Eval Loss: 0.003515 | PSNR: 25.0433 | SSIM: 0.9776
+      [BEST @ epoch 65] eval loss: 0.002443
+[conventional (19.26M/19.26M)] Epoch: 65/100 | LR: 0.000175 | Train Loss: 0.000360 | Eval Loss: 0.002443 | PSNR: 27.2016 | SSIM: 0.9838
+      [BEST @ epoch 65] eval loss: 0.003499
+[conventional (18.65M/19.26M)] Epoch: 65/100 | LR: 0.000175 | Train Loss: 0.000285 | Eval Loss: 0.003499 | PSNR: 25.1951 | SSIM: 0.9780
+[conventional (19.26M/19.26M)] Epoch: 70/100 | LR: 0.000150 | Train Loss: 0.000251 | Eval Loss: 0.002563 | PSNR: 26.9811 | SSIM: 0.9836
+[conventional (18.65M/19.26M)] Epoch: 70/100 | LR: 0.000150 | Train Loss: 0.000229 | Eval Loss: 0.003735 | PSNR: 24.9111 | SSIM: 0.9777
+[conventional (19.26M/19.26M)] Epoch: 75/100 | LR: 0.000125 | Train Loss: 0.000237 | Eval Loss: 0.002454 | PSNR: 27.4548 | SSIM: 0.9844
+      [BEST @ epoch 75] eval loss: 0.003381
+[conventional (18.65M/19.26M)] Epoch: 75/100 | LR: 0.000125 | Train Loss: 0.000198 | Eval Loss: 0.003381 | PSNR: 25.6938 | SSIM: 0.9781
+      [BEST @ epoch 80] eval loss: 0.002346
+[conventional (19.26M/19.26M)] Epoch: 80/100 | LR: 0.000100 | Train Loss: 0.000157 | Eval Loss: 0.002346 | PSNR: 27.3808 | SSIM: 0.9854
+      [BEST @ epoch 80] eval loss: 0.003195
+[conventional (18.65M/19.26M)] Epoch: 80/100 | LR: 0.000100 | Train Loss: 0.000155 | Eval Loss: 0.003195 | PSNR: 25.8059 | SSIM: 0.9807
+[conventional (19.26M/19.26M)] Epoch: 85/100 | LR: 0.000075 | Train Loss: 0.000108 | Eval Loss: 0.002451 | PSNR: 27.7760 | SSIM: 0.9848
+[conventional (18.65M/19.26M)] Epoch: 85/100 | LR: 0.000075 | Train Loss: 0.000122 | Eval Loss: 0.003550 | PSNR: 25.4425 | SSIM: 0.9785
+      [BEST @ epoch 90] eval loss: 0.002332
+[conventional (19.26M/19.26M)] Epoch: 90/100 | LR: 0.000050 | Train Loss: 0.000100 | Eval Loss: 0.002332 | PSNR: 27.9104 | SSIM: 0.9862
+      [BEST @ epoch 90] eval loss: 0.003121
+[conventional (18.65M/19.26M)] Epoch: 90/100 | LR: 0.000050 | Train Loss: 0.000090 | Eval Loss: 0.003121 | PSNR: 26.0198 | SSIM: 0.9813
+      [BEST @ epoch 95] eval loss: 0.002238
+[conventional (19.26M/19.26M)] Epoch: 95/100 | LR: 0.000025 | Train Loss: 0.000073 | Eval Loss: 0.002238 | PSNR: 27.8648 | SSIM: 0.9868
+[conventional (18.65M/19.26M)] Epoch: 95/100 | LR: 0.000025 | Train Loss: 0.000067 | Eval Loss: 0.003493 | PSNR: 25.1752 | SSIM: 0.9803
+[conventional (19.26M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000065 | Eval Loss: 0.002240 | PSNR: 27.8365 | SSIM: 0.9870
+
+[INFO] Using best model @ epoch 95, test loss: 0.002530 | PSNR: 30.6438 | SSIM: 0.9853
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1/experiment_summary.json
+[conventional (18.65M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000055 | Eval Loss: 0.003196 | PSNR: 26.1811 | SSIM: 0.9820
+
+[INFO] Using best model @ epoch 90, test loss: 0.003475 | PSNR: 26.7615 | SSIM: 0.9797
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1/experiment_summary.json
+==========================================
+Starting experiments with run_id=1
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglassCurrent working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+Initialize Win to Identity matrix
+cuda:2
+Set W_in to non-trianable
+cuda:2
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+cuda:2
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+cuda:2
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 18,646,656
+Trainable parameters: 18,646,656
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1] already exist and contains summary json file!
+==========================================
+Completed run_id=1
+==========================================
+==========================================
+Starting experiments with run_id=2
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-5
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+Set W_in to non-trianable
+cuda:2
+Initialize Win to Identity matrix
+cuda:2
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+cuda:2
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+cuda:2
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 18,646,656
+Trainable parameters: 18,646,656
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2
+Created train split with 50000 samples
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2] already exist and contains summary json file!
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+      [BEST @ epoch 5] eval loss: 0.004693
+[conventional (18.65M/19.26M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.002594 | Eval Loss: 0.004693 | PSNR: 23.6449 | SSIM: 0.9626
+      [BEST @ epoch 5] eval loss: 0.003783
+[conventional (19.26M/19.26M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.002708 | Eval Loss: 0.003783 | PSNR: 24.6511 | SSIM: 0.9675
+      [BEST @ epoch 10] eval loss: 0.004090
+[conventional (18.65M/19.26M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.001483 | Eval Loss: 0.004090 | PSNR: 24.3068 | SSIM: 0.9695
+      [BEST @ epoch 10] eval loss: 0.003043
+[conventional (19.26M/19.26M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.001521 | Eval Loss: 0.003043 | PSNR: 25.9883 | SSIM: 0.9767
+      [BEST @ epoch 15] eval loss: 0.003910
+[conventional (18.65M/19.26M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.001077 | Eval Loss: 0.003910 | PSNR: 24.5808 | SSIM: 0.9733
+      [BEST @ epoch 15] eval loss: 0.002583
+[conventional (19.26M/19.26M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.001093 | Eval Loss: 0.002583 | PSNR: 26.6708 | SSIM: 0.9807
+      [BEST @ epoch 20] eval loss: 0.003906
+[conventional (18.65M/19.26M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.000822 | Eval Loss: 0.003906 | PSNR: 24.4675 | SSIM: 0.9720
+[conventional (19.26M/19.26M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.000826 | Eval Loss: 0.002752 | PSNR: 26.5854 | SSIM: 0.9792
+      [BEST @ epoch 25] eval loss: 0.003474
+[conventional (18.65M/19.26M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.000618 | Eval Loss: 0.003474 | PSNR: 25.1363 | SSIM: 0.9763
+      [BEST @ epoch 25] eval loss: 0.002544
+[conventional (19.26M/19.26M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.000658 | Eval Loss: 0.002544 | PSNR: 27.0129 | SSIM: 0.9817
+[conventional (18.65M/19.26M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.000486 | Eval Loss: 0.003935 | PSNR: 24.6346 | SSIM: 0.9744
+      [BEST @ epoch 30] eval loss: 0.002321
+[conventional (19.26M/19.26M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.000527 | Eval Loss: 0.002321 | PSNR: 27.3569 | SSIM: 0.9835
+[conventional (18.65M/19.26M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.000397 | Eval Loss: 0.003778 | PSNR: 24.5782 | SSIM: 0.9758
+      [BEST @ epoch 35] eval loss: 0.002189
+[conventional (19.26M/19.26M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.000438 | Eval Loss: 0.002189 | PSNR: 27.8751 | SSIM: 0.9845
+[conventional (18.65M/19.26M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.000347 | Eval Loss: 0.003840 | PSNR: 24.6323 | SSIM: 0.9752
+[conventional (19.26M/19.26M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.000340 | Eval Loss: 0.002361 | PSNR: 27.6055 | SSIM: 0.9842
+[conventional (18.65M/19.26M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.000267 | Eval Loss: 0.003832 | PSNR: 24.6435 | SSIM: 0.9759
+[conventional (19.26M/19.26M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.000273 | Eval Loss: 0.002520 | PSNR: 27.0661 | SSIM: 0.9836
+[conventional (18.65M/19.26M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.000238 | Eval Loss: 0.003771 | PSNR: 24.9781 | SSIM: 0.9767
+[conventional (19.26M/19.26M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.000237 | Eval Loss: 0.002207 | PSNR: 27.8459 | SSIM: 0.9853
+[conventional (18.65M/19.26M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.000186 | Eval Loss: 0.004056 | PSNR: 24.5503 | SSIM: 0.9750
+[conventional (19.26M/19.26M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.000185 | Eval Loss: 0.002329 | PSNR: 27.7577 | SSIM: 0.9849
+      [BEST @ epoch 60] eval loss: 0.003204
+[conventional (18.65M/19.26M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.000156 | Eval Loss: 0.003204 | PSNR: 25.4921 | SSIM: 0.9803
+[conventional (19.26M/19.26M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.000148 | Eval Loss: 0.002334 | PSNR: 27.6091 | SSIM: 0.9852
+[conventional (18.65M/19.26M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.000114 | Eval Loss: 0.003694 | PSNR: 24.8588 | SSIM: 0.9780
+      [BEST @ epoch 65] eval loss: 0.001935
+[conventional (19.26M/19.26M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.000127 | Eval Loss: 0.001935 | PSNR: 28.6689 | SSIM: 0.9877
+[conventional (18.65M/19.26M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.000111 | Eval Loss: 0.003314 | PSNR: 25.3566 | SSIM: 0.9793
+[conventional (19.26M/19.26M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.000095 | Eval Loss: 0.002310 | PSNR: 27.6847 | SSIM: 0.9861
+      [BEST @ epoch 75] eval loss: 0.003069
+[conventional (18.65M/19.26M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.000075 | Eval Loss: 0.003069 | PSNR: 25.6685 | SSIM: 0.9807
+[conventional (19.26M/19.26M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.000081 | Eval Loss: 0.002197 | PSNR: 28.0581 | SSIM: 0.9867
+[conventional (18.65M/19.26M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.000052 | Eval Loss: 0.003357 | PSNR: 25.5376 | SSIM: 0.9789
+[conventional (19.26M/19.26M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.000062 | Eval Loss: 0.002126 | PSNR: 28.2976 | SSIM: 0.9867
+[conventional (18.65M/19.26M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.000041 | Eval Loss: 0.003112 | PSNR: 25.5916 | SSIM: 0.9806
+[conventional (19.26M/19.26M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.000039 | Eval Loss: 0.001986 | PSNR: 28.5192 | SSIM: 0.9881
+[conventional (18.65M/19.26M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.000033 | Eval Loss: 0.003327 | PSNR: 25.3162 | SSIM: 0.9803
+      [BEST @ epoch 90] eval loss: 0.001925
+[conventional (19.26M/19.26M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.000033 | Eval Loss: 0.001925 | PSNR: 28.9959 | SSIM: 0.9885
+      [BEST @ epoch 95] eval loss: 0.002779
+[conventional (18.65M/19.26M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.000019 | Eval Loss: 0.002779 | PSNR: 26.2327 | SSIM: 0.9833
+      [BEST @ epoch 95] eval loss: 0.001912
+[conventional (19.26M/19.26M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.000025 | Eval Loss: 0.001912 | PSNR: 28.8521 | SSIM: 0.9885
+[conventional (18.65M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000020 | Eval Loss: 0.003102 | PSNR: 25.6899 | SSIM: 0.9819
+
+[INFO] Using best model @ epoch 95, test loss: 0.003312 | PSNR: 27.8123 | SSIM: 0.9806
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.001819
+[conventional (19.26M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000019 | Eval Loss: 0.001819 | PSNR: 29.0697 | SSIM: 0.9891
+
+[INFO] Using best model @ epoch 100, test loss: 0.001994 | PSNR: 32.8192 | SSIM: 0.9882
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2/experiment_summary.json
+==========================================
+Starting experiments with run_id=2
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=1e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglassCurrent working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+
+cuda:2
+cuda:2
+cuda:2
+Initialize Win to Identity matrix
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+cuda:2
+Initialize Win to Identity matrix
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Set W_in to non-trianable
+cuda:2
+Set W_in to non-trianable
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/ArthurLee/miniconda/envs/hourglass-env/lib/python3.12/site-packages/torch/cuda/__init__.py:789: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 18,646,656
+Trainable parameters: 18,646,656
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2
+Created train split with 50000 samples
+Created eval split with 10000 samples
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_generative_classification/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2] already exist and contains summary json file!
+      [BEST @ epoch 5] eval loss: 0.003222
+[conventional (19.26M/19.26M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.003025 | Eval Loss: 0.003222 | PSNR: 25.4390 | SSIM: 0.9685
+      [BEST @ epoch 5] eval loss: 0.004366
+[conventional (18.65M/19.26M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.002936 | Eval Loss: 0.004366 | PSNR: 23.9292 | SSIM: 0.9623
+      [BEST @ epoch 10] eval loss: 0.003083
+[conventional (19.26M/19.26M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.001772 | Eval Loss: 0.003083 | PSNR: 25.7198 | SSIM: 0.9741
+      [BEST @ epoch 10] eval loss: 0.003893
+[conventional (18.65M/19.26M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.001690 | Eval Loss: 0.003893 | PSNR: 24.6163 | SSIM: 0.9704
+      [BEST @ epoch 15] eval loss: 0.002795
+[conventional (19.26M/19.26M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.001275 | Eval Loss: 0.002795 | PSNR: 26.2055 | SSIM: 0.9779
+[conventional (18.65M/19.26M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.001201 | Eval Loss: 0.003931 | PSNR: 24.4498 | SSIM: 0.9717
+      [BEST @ epoch 20] eval loss: 0.002435
+[conventional (19.26M/19.26M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.000962 | Eval Loss: 0.002435 | PSNR: 26.9724 | SSIM: 0.9811
+      [BEST @ epoch 20] eval loss: 0.003544
+[conventional (18.65M/19.26M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.000887 | Eval Loss: 0.003544 | PSNR: 25.0533 | SSIM: 0.9731
+[conventional (19.26M/19.26M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.000713 | Eval Loss: 0.002655 | PSNR: 26.5384 | SSIM: 0.9821
+      [BEST @ epoch 25] eval loss: 0.003010
+[conventional (18.65M/19.26M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.000708 | Eval Loss: 0.003010 | PSNR: 25.7094 | SSIM: 0.9787
+[conventional (19.26M/19.26M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.000550 | Eval Loss: 0.002524 | PSNR: 27.0505 | SSIM: 0.9828
+[conventional (18.65M/19.26M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.000579 | Eval Loss: 0.003086 | PSNR: 25.8442 | SSIM: 0.9787
+      [BEST @ epoch 35] eval loss: 0.002126
+[conventional (19.26M/19.26M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.000472 | Eval Loss: 0.002126 | PSNR: 27.7340 | SSIM: 0.9846
+[conventional (18.65M/19.26M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.000449 | Eval Loss: 0.003323 | PSNR: 25.6468 | SSIM: 0.9789
+[conventional (19.26M/19.26M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.000374 | Eval Loss: 0.002354 | PSNR: 27.6964 | SSIM: 0.9843
+[conventional (18.65M/19.26M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.000376 | Eval Loss: 0.003498 | PSNR: 25.2696 | SSIM: 0.9769

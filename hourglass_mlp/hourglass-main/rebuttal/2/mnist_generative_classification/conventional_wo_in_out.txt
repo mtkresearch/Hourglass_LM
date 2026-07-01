@@ -1,0 +1,781 @@
+Running: run_id=1, hidden_dims=[785], layers=1
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+cuda:2
+cuda:2
+cuda:2
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0): MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 1,230,880
+Trainable parameters: 1,230,880
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_1230880/latent784_hidden785/lr0.0005_run1
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0): MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 1,230,880
+Trainable parameters: 1,230,880
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_1230880/latent784_hidden785/lr0.001_run1
+Created train split with 50000 samples
+Created train split with 50000 samples
+Created eval split with 10000 samples
+Created eval split with 10000 samples
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0): MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 1,230,880
+Trainable parameters: 1,230,880
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_1230880/latent784_hidden785/lr0.005_run1
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.001 -> 0.0 over 100 epochs
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.005 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0): MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 1,230,880
+Trainable parameters: 1,230,880
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_1230880/latent784_hidden785/lr0.0001_run1
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+      [BEST @ epoch 50] eval loss: 0.009310
+[conventional (1.23M/1.23M)] Epoch: 50/100 | LR: 0.000500 | Train Loss: 0.004192 | Eval Loss: 0.009310 | PSNR: 20.3849 | SSIM: 0.9068
+      [BEST @ epoch 50] eval loss: 0.008227
+[conventional (1.23M/1.23M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.003824 | Eval Loss: 0.008227 | PSNR: 20.9301 | SSIM: 0.9101
+      [BEST @ epoch 50] eval loss: 0.008130
+[conventional (1.23M/1.23M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.005075 | Eval Loss: 0.008130 | PSNR: 20.9768 | SSIM: 0.8990
+      [BEST @ epoch 50] eval loss: 0.020431
+[conventional (1.23M/1.23M)] Epoch: 50/100 | LR: 0.002500 | Train Loss: 0.016973 | Eval Loss: 0.020431 | PSNR: 16.9263 | SSIM: 0.8758
+      [BEST @ epoch 100] eval loss: 0.008223
+[conventional (1.23M/1.23M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.002863 | Eval Loss: 0.008223 | PSNR: 20.9296 | SSIM: 0.9074
+
+[INFO] Using best model @ epoch 100, test loss: 0.008183 | PSNR: 21.2285 | SSIM: 0.9084
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_1230880/latent784_hidden785/lr0.0005_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.008489
+[conventional (1.23M/1.23M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.002716 | Eval Loss: 0.008489 | PSNR: 20.7792 | SSIM: 0.9071
+
+[INFO] Using best model @ epoch 100, test loss: 0.008244 | PSNR: 21.1918 | SSIM: 0.9095
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_1230880/latent784_hidden785/lr0.001_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.008109
+[conventional (1.23M/1.23M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.004302 | Eval Loss: 0.008109 | PSNR: 20.9801 | SSIM: 0.9006
+
+[INFO] Using best model @ epoch 100, test loss: 0.007916 | PSNR: 21.3824 | SSIM: 0.9027
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_1230880/latent784_hidden785/lr0.0001_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.013151
+[conventional (1.23M/1.23M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.006773 | Eval Loss: 0.013151 | PSNR: 18.8560 | SSIM: 0.9037
+
+[INFO] Using best model @ epoch 100, test loss: 0.012877 | PSNR: 19.0874 | SSIM: 0.9055
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_1230880/latent784_hidden785/lr0.005_run1/experiment_summary.json
+Running: run_id=1, hidden_dims=[785 785], layers=2
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+cuda:2
+cuda:2
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 2,461,760
+Trainable parameters: 2,461,760
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_2461760/latent784_hidden785_785/lr0.0001_run1
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+cuda:2
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 2,461,760
+Trainable parameters: 2,461,760
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_2461760/latent784_hidden785_785/lr0.001_run1
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 2,461,760
+Trainable parameters: 2,461,760
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_2461760/latent784_hidden785_785/lr0.005_run1
+Created train split with 50000 samples
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.001 -> 0.0 over 100 epochs
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.005 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-1): 2 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 2,461,760
+Trainable parameters: 2,461,760
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_2461760/latent784_hidden785_785/lr0.0005_run1
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+      [BEST @ epoch 50] eval loss: 0.005503
+[conventional (2.46M/2.46M)] Epoch: 50/100 | LR: 0.000500 | Train Loss: 0.001060 | Eval Loss: 0.005503 | PSNR: 22.8160 | SSIM: 0.9579
+      [BEST @ epoch 50] eval loss: 0.004734
+[conventional (2.46M/2.46M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.000571 | Eval Loss: 0.004734 | PSNR: 23.5103 | SSIM: 0.9637
+      [BEST @ epoch 50] eval loss: 0.021020
+[conventional (2.46M/2.46M)] Epoch: 50/100 | LR: 0.002500 | Train Loss: 0.018486 | Eval Loss: 0.021020 | PSNR: 16.8012 | SSIM: 0.8721
+      [BEST @ epoch 50] eval loss: 0.005479
+[conventional (2.46M/2.46M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.000496 | Eval Loss: 0.005479 | PSNR: 22.9102 | SSIM: 0.9608
+      [BEST @ epoch 100] eval loss: 0.004837
+[conventional (2.46M/2.46M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000280 | Eval Loss: 0.004837 | PSNR: 23.4069 | SSIM: 0.9640
+
+[INFO] Using best model @ epoch 100, test loss: 0.004676 | PSNR: 24.3682 | SSIM: 0.9652
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_2461760/latent784_hidden785_785/lr0.001_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.004704
+[conventional (2.46M/2.46M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000130 | Eval Loss: 0.004704 | PSNR: 23.5303 | SSIM: 0.9668
+
+[INFO] Using best model @ epoch 100, test loss: 0.004361 | PSNR: 24.8726 | SSIM: 0.9688
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_2461760/latent784_hidden785_785/lr0.0005_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.017980
+[conventional (2.46M/2.46M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.012884 | Eval Loss: 0.017980 | PSNR: 17.4856 | SSIM: 0.8908
+
+[INFO] Using best model @ epoch 100, test loss: 0.017443 | PSNR: 17.6571 | SSIM: 0.8933
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_2461760/latent784_hidden785_785/lr0.005_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.005397
+[conventional (2.46M/2.46M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000183 | Eval Loss: 0.005397 | PSNR: 22.9912 | SSIM: 0.9626
+
+[INFO] Using best model @ epoch 100, test loss: 0.005101 | PSNR: 23.9218 | SSIM: 0.9643
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_2461760/latent784_hidden785_785/lr0.0001_run1/experiment_summary.json
+Running: run_id=1, hidden_dims=[785 785 785], layers=3
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-2): 3 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 3,692,640
+Trainable parameters: 3,692,640
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_3692640/latent784_hidden785_785_785/lr0.0005_run1
+Created train split with 50000 samples
+cuda:2
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+cuda:2
+cuda:2
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-2): 3 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 3,692,640
+Trainable parameters: 3,692,640
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_3692640/latent784_hidden785_785_785/lr0.001_run1
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.001 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-2): 3 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 3,692,640
+Trainable parameters: 3,692,640
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_3692640/latent784_hidden785_785_785/lr0.005_run1
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-2): 3 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 3,692,640
+Trainable parameters: 3,692,640
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_3692640/latent784_hidden785_785_785/lr0.0001_run1
+Created train split with 50000 samples
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.005 -> 0.0 over 100 epochs
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+      [BEST @ epoch 50] eval loss: 0.019218
+[conventional (3.69M/3.69M)] Epoch: 50/100 | LR: 0.002500 | Train Loss: 0.016402 | Eval Loss: 0.019218 | PSNR: 17.2153 | SSIM: 0.8879
+      [BEST @ epoch 50] eval loss: 0.004014
+[conventional (3.69M/3.69M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.000435 | Eval Loss: 0.004014 | PSNR: 24.4932 | SSIM: 0.9733
+      [BEST @ epoch 50] eval loss: 0.004670
+[conventional (3.69M/3.69M)] Epoch: 50/100 | LR: 0.000500 | Train Loss: 0.000891 | Eval Loss: 0.004670 | PSNR: 23.6569 | SSIM: 0.9677
+      [BEST @ epoch 50] eval loss: 0.003946
+[conventional (3.69M/3.69M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.000199 | Eval Loss: 0.003946 | PSNR: 24.4973 | SSIM: 0.9742
+      [BEST @ epoch 100] eval loss: 0.015177
+[conventional (3.69M/3.69M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.010513 | Eval Loss: 0.015177 | PSNR: 18.2395 | SSIM: 0.9113
+
+[INFO] Using best model @ epoch 100, test loss: 0.014914 | PSNR: 18.3952 | SSIM: 0.9127
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_3692640/latent784_hidden785_785_785/lr0.005_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.003726
+[conventional (3.69M/3.69M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000208 | Eval Loss: 0.003726 | PSNR: 24.6407 | SSIM: 0.9738
+
+[INFO] Using best model @ epoch 100, test loss: 0.003937 | PSNR: 25.4088 | SSIM: 0.9729
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_3692640/latent784_hidden785_785_785/lr0.001_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.003473
+[conventional (3.69M/3.69M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000056 | Eval Loss: 0.003473 | PSNR: 25.1573 | SSIM: 0.9773
+
+[INFO] Using best model @ epoch 100, test loss: 0.003428 | PSNR: 26.8682 | SSIM: 0.9773
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_3692640/latent784_hidden785_785_785/lr0.0005_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.003432
+[conventional (3.69M/3.69M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000036 | Eval Loss: 0.003432 | PSNR: 25.1424 | SSIM: 0.9777
+
+[INFO] Using best model @ epoch 100, test loss: 0.003602 | PSNR: 26.2796 | SSIM: 0.9765
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_3692640/latent784_hidden785_785_785/lr0.0001_run1/experiment_summary.json
+Running: run_id=1, hidden_dims=[785 785 785 785], layers=4
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+cuda:2
+cuda:2
+cuda:2
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-3): 4 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 4,923,520
+Trainable parameters: 4,923,520
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_4923520/latent784_hidden785_785_785_785/lr0.001_run1
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-3): 4 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 4,923,520
+Trainable parameters: 4,923,520
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_4923520/latent784_hidden785_785_785_785/lr0.0005_run1
+Created train split with 50000 samples
+Created train split with 50000 samples
+Created eval split with 10000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.001 -> 0.0 over 100 epochs
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-3): 4 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 4,923,520
+Trainable parameters: 4,923,520
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_4923520/latent784_hidden785_785_785_785/lr0.005_run1
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-3): 4 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 4,923,520
+Trainable parameters: 4,923,520
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_4923520/latent784_hidden785_785_785_785/lr0.0001_run1
+Created train split with 50000 samples
+Created train split with 50000 samples
+Created eval split with 10000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.005 -> 0.0 over 100 epochs
+      [BEST @ epoch 50] eval loss: 0.004866
+[conventional (4.92M/4.92M)] Epoch: 50/100 | LR: 0.000500 | Train Loss: 0.001232 | Eval Loss: 0.004866 | PSNR: 23.4818 | SSIM: 0.9675
+      [BEST @ epoch 50] eval loss: 0.003833
+[conventional (4.92M/4.92M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.000507 | Eval Loss: 0.003833 | PSNR: 24.5772 | SSIM: 0.9745
+      [BEST @ epoch 50] eval loss: 0.019107
+[conventional (4.92M/4.92M)] Epoch: 50/100 | LR: 0.002500 | Train Loss: 0.017482 | Eval Loss: 0.019107 | PSNR: 17.2396 | SSIM: 0.8928
+      [BEST @ epoch 50] eval loss: 0.003452
+[conventional (4.92M/4.92M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.000203 | Eval Loss: 0.003452 | PSNR: 25.1860 | SSIM: 0.9781
+      [BEST @ epoch 100] eval loss: 0.004307
+[conventional (4.92M/4.92M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000384 | Eval Loss: 0.004307 | PSNR: 23.9818 | SSIM: 0.9712
+
+[INFO] Using best model @ epoch 100, test loss: 0.004373 | PSNR: 24.8877 | SSIM: 0.9710
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_4923520/latent784_hidden785_785_785_785/lr0.001_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.003350
+[conventional (4.92M/4.92M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000049 | Eval Loss: 0.003350 | PSNR: 25.2251 | SSIM: 0.9785
+
+[INFO] Using best model @ epoch 100, test loss: 0.003410 | PSNR: 27.0565 | SSIM: 0.9782
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_4923520/latent784_hidden785_785_785_785/lr0.0005_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.014758
+[conventional (4.92M/4.92M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.010909 | Eval Loss: 0.014758 | PSNR: 18.3644 | SSIM: 0.9143
+
+[INFO] Using best model @ epoch 100, test loss: 0.014394 | PSNR: 18.5432 | SSIM: 0.9162
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_4923520/latent784_hidden785_785_785_785/lr0.005_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.003145
+[conventional (4.92M/4.92M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000029 | Eval Loss: 0.003145 | PSNR: 25.6892 | SSIM: 0.9802
+
+[INFO] Using best model @ epoch 100, test loss: 0.003258 | PSNR: 27.2380 | SSIM: 0.9799
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_4923520/latent784_hidden785_785_785_785/lr0.0001_run1/experiment_summary.json
+Running: run_id=1, hidden_dims=[785 785 785 785 785], layers=5
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+cuda:2
+cuda:2
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-4): 5 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 6,154,400
+Trainable parameters: 6,154,400
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_6154400/latent784_hidden785_785_785_785_785/lr0.005_run1
+cuda:2
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.005 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-4): 5 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 6,154,400
+Trainable parameters: 6,154,400
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_6154400/latent784_hidden785_785_785_785_785/lr0.0001_run1
+Created train split with 50000 samples
+Created eval split with 10000 samples
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-4): 5 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 6,154,400
+Trainable parameters: 6,154,400
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_6154400/latent784_hidden785_785_785_785_785/lr0.001_run1
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-4): 5 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 6,154,400
+Trainable parameters: 6,154,400
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_6154400/latent784_hidden785_785_785_785_785/lr0.0005_run1
+Created train split with 50000 samples
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.001 -> 0.0 over 100 epochs
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+      [BEST @ epoch 50] eval loss: 0.003957
+[conventional (6.15M/6.15M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.000583 | Eval Loss: 0.003957 | PSNR: 24.6439 | SSIM: 0.9752
+      [BEST @ epoch 50] eval loss: 0.003659
+[conventional (6.15M/6.15M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.000247 | Eval Loss: 0.003659 | PSNR: 25.0764 | SSIM: 0.9782
+      [BEST @ epoch 50] eval loss: 0.020465
+[conventional (6.15M/6.15M)] Epoch: 50/100 | LR: 0.002500 | Train Loss: 0.018490 | Eval Loss: 0.020465 | PSNR: 16.9393 | SSIM: 0.8829
+      [BEST @ epoch 50] eval loss: 0.004634
+[conventional (6.15M/6.15M)] Epoch: 50/100 | LR: 0.000500 | Train Loss: 0.001345 | Eval Loss: 0.004634 | PSNR: 23.6066 | SSIM: 0.9699
+      [BEST @ epoch 100] eval loss: 0.003470
+[conventional (6.15M/6.15M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000063 | Eval Loss: 0.003470 | PSNR: 25.3528 | SSIM: 0.9778
+
+[INFO] Using best model @ epoch 100, test loss: 0.003477 | PSNR: 26.8919 | SSIM: 0.9780
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_6154400/latent784_hidden785_785_785_785_785/lr0.0005_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.003047
+[conventional (6.15M/6.15M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000032 | Eval Loss: 0.003047 | PSNR: 25.7890 | SSIM: 0.9815
+
+[INFO] Using best model @ epoch 100, test loss: 0.003297 | PSNR: 27.9838 | SSIM: 0.9803
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_6154400/latent784_hidden785_785_785_785_785/lr0.0001_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.015161
+[conventional (6.15M/6.15M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.011325 | Eval Loss: 0.015161 | PSNR: 18.2498 | SSIM: 0.9121
+
+[INFO] Using best model @ epoch 100, test loss: 0.014705 | PSNR: 18.4517 | SSIM: 0.9140
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_6154400/latent784_hidden785_785_785_785_785/lr0.005_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.003706
+[conventional (6.15M/6.15M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000312 | Eval Loss: 0.003706 | PSNR: 24.8259 | SSIM: 0.9760
+
+[INFO] Using best model @ epoch 100, test loss: 0.003861 | PSNR: 25.9120 | SSIM: 0.9756
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_6154400/latent784_hidden785_785_785_785_785/lr0.001_run1/experiment_summary.json
+Running: run_id=1, hidden_dims=[785 785 785 785 785 785], layers=6
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+cuda:2
+cuda:2
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 7,385,280
+Trainable parameters: 7,385,280
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_7385280/latent784_hidden785_785_785_785_785_785/lr0.0001_run1
+Created train split with 50000 samples
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 7,385,280
+Trainable parameters: 7,385,280
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_7385280/latent784_hidden785_785_785_785_785_785/lr0.005_run1
+cuda:2
+Created eval split with 10000 samples
+Created train split with 50000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.005 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 7,385,280
+Trainable parameters: 7,385,280
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_7385280/latent784_hidden785_785_785_785_785_785/lr0.0005_run1
+Created train split with 50000 samples
+Created eval split with 10000 samples
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=785, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=785, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 7,385,280
+Trainable parameters: 7,385,280
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_7385280/latent784_hidden785_785_785_785_785_785/lr0.001_run1
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.001 -> 0.0 over 100 epochs
+      [BEST @ epoch 50] eval loss: 0.004194
+[conventional (7.39M/7.39M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.000688 | Eval Loss: 0.004194 | PSNR: 24.3300 | SSIM: 0.9739
+      [BEST @ epoch 50] eval loss: 0.020005
+[conventional (7.39M/7.39M)] Epoch: 50/100 | LR: 0.002500 | Train Loss: 0.018025 | Eval Loss: 0.020005 | PSNR: 17.0345 | SSIM: 0.8884
+      [BEST @ epoch 50] eval loss: 0.005453
+[conventional (7.39M/7.39M)] Epoch: 50/100 | LR: 0.000500 | Train Loss: 0.001402 | Eval Loss: 0.005453 | PSNR: 22.9747 | SSIM: 0.9652
+      [BEST @ epoch 50] eval loss: 0.003499
+[conventional (7.39M/7.39M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.000255 | Eval Loss: 0.003499 | PSNR: 25.2617 | SSIM: 0.9786
+      [BEST @ epoch 100] eval loss: 0.014757
+[conventional (7.39M/7.39M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.011030 | Eval Loss: 0.014757 | PSNR: 18.3723 | SSIM: 0.9149
+
+[INFO] Using best model @ epoch 100, test loss: 0.014511 | PSNR: 18.5141 | SSIM: 0.9161
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_7385280/latent784_hidden785_785_785_785_785_785/lr0.005_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.003263
+[conventional (7.39M/7.39M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000129 | Eval Loss: 0.003263 | PSNR: 25.4591 | SSIM: 0.9793
+
+[INFO] Using best model @ epoch 100, test loss: 0.003525 | PSNR: 26.8677 | SSIM: 0.9784
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_7385280/latent784_hidden785_785_785_785_785_785/lr0.0005_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.004501
+[conventional (7.39M/7.39M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000333 | Eval Loss: 0.004501 | PSNR: 23.8067 | SSIM: 0.9717
+
+[INFO] Using best model @ epoch 100, test loss: 0.004371 | PSNR: 25.0697 | SSIM: 0.9726
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_7385280/latent784_hidden785_785_785_785_785_785/lr0.001_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.002770
+[conventional (7.39M/7.39M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.000035 | Eval Loss: 0.002770 | PSNR: 26.5866 | SSIM: 0.9834
+
+[INFO] Using best model @ epoch 100, test loss: 0.003212 | PSNR: 28.0122 | SSIM: 0.9812
+[INFO] Saved results to ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_7385280/latent784_hidden785_785_785_785_785_785/lr0.0001_run1/experiment_summary.json
+Running: run_id=1, hidden_dims=[905], layers=1
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:2
+cuda:2
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0): MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=905, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=905, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+)
+Total parameters: 1,419,040
+Trainable parameters: 1,419,040
+Training with no W_in matrix!
+Training with no W_out matrix!
+Experiment directory: ./results/mnist_generative_classification/bs128_ep100_aug4/conventional_wo_Win_wo_Wout_1419040/latent784_hidden905/lr0.0001_run1
+cuda:2
+Created train split with 50000 samples
+cuda:2
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs

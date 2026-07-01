@@ -1,0 +1,711 @@
+Running with learning rate: 3e-4
+Running with learning rate: 3e-4
+Running with learning rate: 3e-4
+Running with learning rate: 3e-4
+Running with learning rate: 3e-4
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:6
+Set W_in to non-trianable
+cuda:6
+cuda:6
+cuda:6
+Set W_in to non-trianable
+Set W_in to non-trianable
+Set W_in to non-trianable
+cuda:6
+Set W_in to non-trianable
+HourGlassMLP(
+  (in_fc): Linear(in_features=3072, out_features=3546, bias=False)
+  (blocks): ModuleList(
+    (0-4): 5 x MLPBlockReLU(
+      (norm): BatchNorm1d(3546, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3546, out_features=270, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=270, out_features=3546, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3546, out_features=3072, bias=False)
+)
+Total parameters: 31,360,824
+Trainable parameters: 20,467,512
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep4_aug4/hourglass_w_Win_fix_20467512/latent3546_hidden270_270_270_270_270/lr0.0003_run12
+Loading ImageNet-32 training data...
+  Loading batch 1...
+HourGlassMLP(
+  (in_fc): Linear(in_features=3072, out_features=3546, bias=False)
+  (blocks): ModuleList(
+    (0-4): 5 x MLPBlockReLU(
+      (norm): BatchNorm1d(3546, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3546, out_features=270, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=270, out_features=3546, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3546, out_features=3072, bias=False)
+)
+Total parameters: 31,360,824
+Trainable parameters: 20,467,512
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep4_aug4/hourglass_w_Win_fix_20467512/latent3546_hidden270_270_270_270_270/lr0.0003_run14
+Loading ImageNet-32 training data...
+  Loading batch 1...
+HourGlassMLP(
+  (in_fc): Linear(in_features=3072, out_features=3546, bias=False)
+  (blocks): ModuleList(
+    (0-4): 5 x MLPBlockReLU(
+      (norm): BatchNorm1d(3546, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3546, out_features=270, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=270, out_features=3546, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3546, out_features=3072, bias=False)
+)
+Total parameters: 31,360,824
+Trainable parameters: 20,467,512
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep4_aug4/hourglass_w_Win_fix_20467512/latent3546_hidden270_270_270_270_270/lr0.0003_run11
+Loading ImageNet-32 training data...
+  Loading batch 1...
+HourGlassMLP(
+  (in_fc): Linear(in_features=3072, out_features=3546, bias=False)
+  (blocks): ModuleList(
+    (0-4): 5 x MLPBlockReLU(
+      (norm): BatchNorm1d(3546, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3546, out_features=270, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=270, out_features=3546, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3546, out_features=3072, bias=False)
+)
+Total parameters: 31,360,824
+Trainable parameters: 20,467,512
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep4_aug4/hourglass_w_Win_fix_20467512/latent3546_hidden270_270_270_270_270/lr0.0003_run15
+Loading ImageNet-32 training data...
+  Loading batch 1...
+HourGlassMLP(
+  (in_fc): Linear(in_features=3072, out_features=3546, bias=False)
+  (blocks): ModuleList(
+    (0-4): 5 x MLPBlockReLU(
+      (norm): BatchNorm1d(3546, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3546, out_features=270, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=270, out_features=3546, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3546, out_features=3072, bias=False)
+)
+Total parameters: 31,360,824
+Trainable parameters: 20,467,512
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep4_aug4/hourglass_w_Win_fix_20467512/latent3546_hidden270_270_270_270_270/lr0.0003_run13
+Loading ImageNet-32 training data...
+  Loading batch 1...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 5...
+  Loading batch 5...
+  Loading batch 5...
+  Loading batch 5...
+  Loading batch 6...
+  Loading batch 5...
+  Loading batch 6...
+  Loading batch 7...
+  Loading batch 6...
+  Loading batch 6...
+  Loading batch 7...
+  Loading batch 6...
+  Loading batch 8...
+  Loading batch 7...
+  Loading batch 8...
+  Loading batch 7...
+  Loading batch 7...
+  Loading batch 9...
+  Loading batch 8...
+  Loading batch 9...
+  Loading batch 8...
+  Loading batch 9...
+  Loading batch 8...
+  Loading batch 10...
+  Loading batch 10...
+  Loading batch 10...
+  Loading batch 9...
+  Loading batch 9...
+  Loading batch 10...
+  Loading batch 10...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training hourglass MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0003 -> 0.0 over 40040 steps
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training hourglass MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0003 -> 0.0 over 40040 steps
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training hourglass MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0003 -> 0.0 over 40040 steps
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training hourglass MLP
+[INFO] Logging mode: step_based
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+[INFO] LinearLR (step-based): 0.0003 -> 0.0 over 40040 steps
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training hourglass MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0003 -> 0.0 over 40040 steps
+[hourglass (20.47M/31.36M)] Step: 500 | Epoch: 1/4 | LR: 0.000296 | Train Loss: 0.014334 | 18.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 500 | Epoch: 1/4 | LR: 0.000296 | Train Loss: 0.014396 | 19.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 500 | Epoch: 1/4 | LR: 0.000296 | Train Loss: 0.014391 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 500 | Epoch: 1/4 | LR: 0.000296 | Train Loss: 0.014295 | 19.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 500 | Epoch: 1/4 | LR: 0.000296 | Train Loss: 0.014337 | 19.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 1000 | Epoch: 1/4 | LR: 0.000293 | Train Loss: 0.010034 | 19.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 1000 | Epoch: 1/4 | LR: 0.000293 | Train Loss: 0.010020 | 19.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 1000 | Epoch: 1/4 | LR: 0.000293 | Train Loss: 0.010023 | 18.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 1000 | Epoch: 1/4 | LR: 0.000293 | Train Loss: 0.009984 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 1000 | Epoch: 1/4 | LR: 0.000293 | Train Loss: 0.010012 | 19.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 1500 | Epoch: 1/4 | LR: 0.000289 | Train Loss: 0.009190 | 20.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 1500 | Epoch: 1/4 | LR: 0.000289 | Train Loss: 0.009224 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 1500 | Epoch: 1/4 | LR: 0.000289 | Train Loss: 0.009204 | 19.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 1500 | Epoch: 1/4 | LR: 0.000289 | Train Loss: 0.009197 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 1500 | Epoch: 1/4 | LR: 0.000289 | Train Loss: 0.009191 | 20.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 2000 | Epoch: 1/4 | LR: 0.000285 | Train Loss: 0.008784 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 2000 | Epoch: 1/4 | LR: 0.000285 | Train Loss: 0.008753 | 19.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 2000 | Epoch: 1/4 | LR: 0.000285 | Train Loss: 0.008770 | 19.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 2000 | Epoch: 1/4 | LR: 0.000285 | Train Loss: 0.008736 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 2000 | Epoch: 1/4 | LR: 0.000285 | Train Loss: 0.008774 | 19.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 2500 | Epoch: 1/4 | LR: 0.000281 | Train Loss: 0.008510 | 19.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 2500 | Epoch: 1/4 | LR: 0.000281 | Train Loss: 0.008501 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 2500 | Epoch: 1/4 | LR: 0.000281 | Train Loss: 0.008484 | 20.0 steps/s
+      [BEST @ step 2500] eval loss: 0.008305
+[hourglass (20.47M/31.36M)] Step: 2500 | Epoch: 1/4 | LR: 0.000281 | Train Loss: 0.008515 | 20.0 steps/s
+      [BEST @ step 2500] eval loss: 0.008325
+[hourglass (20.47M/31.36M)] Step: 2500 | Epoch: 1/4 | LR: 0.000281 | Train Loss: 0.008518 | 19.5 steps/s
+      [BEST @ step 2500] eval loss: 0.008425
+      [BEST @ step 2500] eval loss: 0.008310
+      [BEST @ step 2500] eval loss: 0.008450
+[hourglass (20.47M/31.36M)] Step: 3000 | Epoch: 1/4 | LR: 0.000278 | Train Loss: 0.008346 | 17.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 3000 | Epoch: 1/4 | LR: 0.000278 | Train Loss: 0.008302 | 17.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 3000 | Epoch: 1/4 | LR: 0.000278 | Train Loss: 0.008323 | 17.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 3000 | Epoch: 1/4 | LR: 0.000278 | Train Loss: 0.008296 | 16.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 3000 | Epoch: 1/4 | LR: 0.000278 | Train Loss: 0.008320 | 17.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 3500 | Epoch: 1/4 | LR: 0.000274 | Train Loss: 0.008195 | 19.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 3500 | Epoch: 1/4 | LR: 0.000274 | Train Loss: 0.008175 | 19.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 3500 | Epoch: 1/4 | LR: 0.000274 | Train Loss: 0.008149 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 3500 | Epoch: 1/4 | LR: 0.000274 | Train Loss: 0.008162 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 3500 | Epoch: 1/4 | LR: 0.000274 | Train Loss: 0.008166 | 19.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 4000 | Epoch: 1/4 | LR: 0.000270 | Train Loss: 0.008053 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 4000 | Epoch: 1/4 | LR: 0.000270 | Train Loss: 0.008074 | 20.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 4000 | Epoch: 1/4 | LR: 0.000270 | Train Loss: 0.008054 | 19.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 4000 | Epoch: 1/4 | LR: 0.000270 | Train Loss: 0.008042 | 20.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 4000 | Epoch: 1/4 | LR: 0.000270 | Train Loss: 0.008075 | 19.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 4500 | Epoch: 1/4 | LR: 0.000266 | Train Loss: 0.007985 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 4500 | Epoch: 1/4 | LR: 0.000266 | Train Loss: 0.007982 | 19.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 4500 | Epoch: 1/4 | LR: 0.000266 | Train Loss: 0.007965 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 4500 | Epoch: 1/4 | LR: 0.000266 | Train Loss: 0.007952 | 18.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 4500 | Epoch: 1/4 | LR: 0.000266 | Train Loss: 0.007963 | 19.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 5000 | Epoch: 1/4 | LR: 0.000263 | Train Loss: 0.007903 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 5000 | Epoch: 1/4 | LR: 0.000263 | Train Loss: 0.007916 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 5000 | Epoch: 1/4 | LR: 0.000263 | Train Loss: 0.007905 | 20.3 steps/s
+      [BEST @ step 5000] eval loss: 0.007867
+      [BEST @ step 5000] eval loss: 0.007849
+[hourglass (20.47M/31.36M)] Step: 5000 | Epoch: 1/4 | LR: 0.000263 | Train Loss: 0.007889 | 19.4 steps/s
+      [BEST @ step 5000] eval loss: 0.007827
+[hourglass (20.47M/31.36M)] Step: 5000 | Epoch: 1/4 | LR: 0.000263 | Train Loss: 0.007897 | 19.7 steps/s
+      [BEST @ step 5000] eval loss: 0.007745
+      [BEST @ step 5000] eval loss: 0.007838
+[hourglass (20.47M/31.36M)] Step: 5500 | Epoch: 1/4 | LR: 0.000259 | Train Loss: 0.007830 | 18.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 5500 | Epoch: 1/4 | LR: 0.000259 | Train Loss: 0.007831 | 18.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 5500 | Epoch: 1/4 | LR: 0.000259 | Train Loss: 0.007820 | 17.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 5500 | Epoch: 1/4 | LR: 0.000259 | Train Loss: 0.007810 | 17.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 5500 | Epoch: 1/4 | LR: 0.000259 | Train Loss: 0.007832 | 17.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 6000 | Epoch: 1/4 | LR: 0.000255 | Train Loss: 0.007769 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 6000 | Epoch: 1/4 | LR: 0.000255 | Train Loss: 0.007781 | 19.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 6000 | Epoch: 1/4 | LR: 0.000255 | Train Loss: 0.007770 | 19.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 6000 | Epoch: 1/4 | LR: 0.000255 | Train Loss: 0.007767 | 18.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 6000 | Epoch: 1/4 | LR: 0.000255 | Train Loss: 0.007763 | 19.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 6500 | Epoch: 1/4 | LR: 0.000251 | Train Loss: 0.007743 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 6500 | Epoch: 1/4 | LR: 0.000251 | Train Loss: 0.007720 | 20.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 6500 | Epoch: 1/4 | LR: 0.000251 | Train Loss: 0.007709 | 19.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 6500 | Epoch: 1/4 | LR: 0.000251 | Train Loss: 0.007718 | 18.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 6500 | Epoch: 1/4 | LR: 0.000251 | Train Loss: 0.007714 | 19.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 7000 | Epoch: 1/4 | LR: 0.000248 | Train Loss: 0.007682 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 7000 | Epoch: 1/4 | LR: 0.000248 | Train Loss: 0.007667 | 20.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 7000 | Epoch: 1/4 | LR: 0.000248 | Train Loss: 0.007668 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 7000 | Epoch: 1/4 | LR: 0.000248 | Train Loss: 0.007670 | 18.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 7000 | Epoch: 1/4 | LR: 0.000248 | Train Loss: 0.007677 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 7500 | Epoch: 1/4 | LR: 0.000244 | Train Loss: 0.007627 | 21.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 7500 | Epoch: 1/4 | LR: 0.000244 | Train Loss: 0.007616 | 20.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 7500 | Epoch: 1/4 | LR: 0.000244 | Train Loss: 0.007642 | 20.8 steps/s
+      [BEST @ step 7500] eval loss: 0.007541
+      [BEST @ step 7500] eval loss: 0.007620
+      [BEST @ step 7500] eval loss: 0.007548
+[hourglass (20.47M/31.36M)] Step: 7500 | Epoch: 1/4 | LR: 0.000244 | Train Loss: 0.007626 | 20.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 7500 | Epoch: 1/4 | LR: 0.000244 | Train Loss: 0.007619 | 18.5 steps/s
+      [BEST @ step 7500] eval loss: 0.007578
+      [BEST @ step 7500] eval loss: 0.007604
+[hourglass (20.47M/31.36M)] Step: 8000 | Epoch: 1/4 | LR: 0.000240 | Train Loss: 0.007599 | 18.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 8000 | Epoch: 1/4 | LR: 0.000240 | Train Loss: 0.007587 | 18.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 8000 | Epoch: 1/4 | LR: 0.000240 | Train Loss: 0.007582 | 17.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 8000 | Epoch: 1/4 | LR: 0.000240 | Train Loss: 0.007580 | 18.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 8000 | Epoch: 1/4 | LR: 0.000240 | Train Loss: 0.007588 | 17.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 8500 | Epoch: 1/4 | LR: 0.000236 | Train Loss: 0.007559 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 8500 | Epoch: 1/4 | LR: 0.000236 | Train Loss: 0.007558 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 8500 | Epoch: 1/4 | LR: 0.000236 | Train Loss: 0.007552 | 19.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 8500 | Epoch: 1/4 | LR: 0.000236 | Train Loss: 0.007550 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 8500 | Epoch: 1/4 | LR: 0.000236 | Train Loss: 0.007549 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 9000 | Epoch: 1/4 | LR: 0.000233 | Train Loss: 0.007523 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 9000 | Epoch: 1/4 | LR: 0.000233 | Train Loss: 0.007535 | 20.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 9000 | Epoch: 1/4 | LR: 0.000233 | Train Loss: 0.007521 | 19.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 9000 | Epoch: 1/4 | LR: 0.000233 | Train Loss: 0.007530 | 20.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 9000 | Epoch: 1/4 | LR: 0.000233 | Train Loss: 0.007526 | 19.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 9500 | Epoch: 1/4 | LR: 0.000229 | Train Loss: 0.007489 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 9500 | Epoch: 1/4 | LR: 0.000229 | Train Loss: 0.007481 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 9500 | Epoch: 1/4 | LR: 0.000229 | Train Loss: 0.007473 | 20.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 9500 | Epoch: 1/4 | LR: 0.000229 | Train Loss: 0.007485 | 19.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 9500 | Epoch: 1/4 | LR: 0.000229 | Train Loss: 0.007507 | 19.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 10000 | Epoch: 1/4 | LR: 0.000225 | Train Loss: 0.007452 | 20.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 10000 | Epoch: 1/4 | LR: 0.000225 | Train Loss: 0.007462 | 19.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 10000 | Epoch: 1/4 | LR: 0.000225 | Train Loss: 0.007461 | 20.1 steps/s
+      [BEST @ step 10000] eval loss: 0.007386
+      [BEST @ step 10000] eval loss: 0.007425
+      [BEST @ step 10000] eval loss: 0.007361
+[hourglass (20.47M/31.36M)] Step: 10000 | Epoch: 1/4 | LR: 0.000225 | Train Loss: 0.007451 | 20.1 steps/s
+      [BEST @ step 10000] eval loss: 0.007383
+[hourglass (20.47M/31.36M)] Step: 10000 | Epoch: 1/4 | LR: 0.000225 | Train Loss: 0.007451 | 19.3 steps/s
+      [BEST @ step 10000] eval loss: 0.007411
+[hourglass (20.47M/31.36M)] Step: 10500 | Epoch: 2/4 | LR: 0.000221 | Train Loss: 0.007448 | 18.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 10500 | Epoch: 2/4 | LR: 0.000221 | Train Loss: 0.007451 | 18.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 10500 | Epoch: 2/4 | LR: 0.000221 | Train Loss: 0.007446 | 17.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 10500 | Epoch: 2/4 | LR: 0.000221 | Train Loss: 0.007438 | 17.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 10500 | Epoch: 2/4 | LR: 0.000221 | Train Loss: 0.007422 | 17.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 11000 | Epoch: 2/4 | LR: 0.000218 | Train Loss: 0.007389 | 20.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 11000 | Epoch: 2/4 | LR: 0.000218 | Train Loss: 0.007395 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 11000 | Epoch: 2/4 | LR: 0.000218 | Train Loss: 0.007386 | 19.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 11000 | Epoch: 2/4 | LR: 0.000218 | Train Loss: 0.007394 | 19.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 11000 | Epoch: 2/4 | LR: 0.000218 | Train Loss: 0.007407 | 19.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 11500 | Epoch: 2/4 | LR: 0.000214 | Train Loss: 0.007368 | 19.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 11500 | Epoch: 2/4 | LR: 0.000214 | Train Loss: 0.007378 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 11500 | Epoch: 2/4 | LR: 0.000214 | Train Loss: 0.007356 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 11500 | Epoch: 2/4 | LR: 0.000214 | Train Loss: 0.007381 | 19.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 11500 | Epoch: 2/4 | LR: 0.000214 | Train Loss: 0.007372 | 19.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 12000 | Epoch: 2/4 | LR: 0.000210 | Train Loss: 0.007333 | 19.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 12000 | Epoch: 2/4 | LR: 0.000210 | Train Loss: 0.007355 | 19.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 12000 | Epoch: 2/4 | LR: 0.000210 | Train Loss: 0.007341 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 12000 | Epoch: 2/4 | LR: 0.000210 | Train Loss: 0.007349 | 20.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 12000 | Epoch: 2/4 | LR: 0.000210 | Train Loss: 0.007343 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 12500 | Epoch: 2/4 | LR: 0.000206 | Train Loss: 0.007338 | 19.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 12500 | Epoch: 2/4 | LR: 0.000206 | Train Loss: 0.007337 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 12500 | Epoch: 2/4 | LR: 0.000206 | Train Loss: 0.007314 | 19.5 steps/s
+      [BEST @ step 12500] eval loss: 0.007278
+      [BEST @ step 12500] eval loss: 0.007277
+      [BEST @ step 12500] eval loss: 0.007279
+[hourglass (20.47M/31.36M)] Step: 12500 | Epoch: 2/4 | LR: 0.000206 | Train Loss: 0.007332 | 20.0 steps/s
+      [BEST @ step 12500] eval loss: 0.007342
+[hourglass (20.47M/31.36M)] Step: 12500 | Epoch: 2/4 | LR: 0.000206 | Train Loss: 0.007315 | 19.2 steps/s
+      [BEST @ step 12500] eval loss: 0.007331
+[hourglass (20.47M/31.36M)] Step: 13000 | Epoch: 2/4 | LR: 0.000203 | Train Loss: 0.007294 | 18.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 13000 | Epoch: 2/4 | LR: 0.000203 | Train Loss: 0.007306 | 17.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 13000 | Epoch: 2/4 | LR: 0.000203 | Train Loss: 0.007308 | 17.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 13000 | Epoch: 2/4 | LR: 0.000203 | Train Loss: 0.007292 | 17.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 13000 | Epoch: 2/4 | LR: 0.000203 | Train Loss: 0.007303 | 17.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 13500 | Epoch: 2/4 | LR: 0.000199 | Train Loss: 0.007293 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 13500 | Epoch: 2/4 | LR: 0.000199 | Train Loss: 0.007288 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 13500 | Epoch: 2/4 | LR: 0.000199 | Train Loss: 0.007266 | 21.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 13500 | Epoch: 2/4 | LR: 0.000199 | Train Loss: 0.007278 | 19.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 13500 | Epoch: 2/4 | LR: 0.000199 | Train Loss: 0.007275 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 14000 | Epoch: 2/4 | LR: 0.000195 | Train Loss: 0.007270 | 20.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 14000 | Epoch: 2/4 | LR: 0.000195 | Train Loss: 0.007264 | 19.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 14000 | Epoch: 2/4 | LR: 0.000195 | Train Loss: 0.007261 | 19.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 14000 | Epoch: 2/4 | LR: 0.000195 | Train Loss: 0.007249 | 18.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 14000 | Epoch: 2/4 | LR: 0.000195 | Train Loss: 0.007246 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 14500 | Epoch: 2/4 | LR: 0.000191 | Train Loss: 0.007242 | 18.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 14500 | Epoch: 2/4 | LR: 0.000191 | Train Loss: 0.007249 | 19.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 14500 | Epoch: 2/4 | LR: 0.000191 | Train Loss: 0.007232 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 14500 | Epoch: 2/4 | LR: 0.000191 | Train Loss: 0.007232 | 19.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 14500 | Epoch: 2/4 | LR: 0.000191 | Train Loss: 0.007245 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 15000 | Epoch: 2/4 | LR: 0.000188 | Train Loss: 0.007218 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 15000 | Epoch: 2/4 | LR: 0.000188 | Train Loss: 0.007220 | 19.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 15000 | Epoch: 2/4 | LR: 0.000188 | Train Loss: 0.007217 | 19.9 steps/s
+      [BEST @ step 15000] eval loss: 0.007176
+      [BEST @ step 15000] eval loss: 0.007241
+      [BEST @ step 15000] eval loss: 0.007163
+[hourglass (20.47M/31.36M)] Step: 15000 | Epoch: 2/4 | LR: 0.000188 | Train Loss: 0.007225 | 20.0 steps/s
+      [BEST @ step 15000] eval loss: 0.007182
+[hourglass (20.47M/31.36M)] Step: 15000 | Epoch: 2/4 | LR: 0.000188 | Train Loss: 0.007217 | 20.1 steps/s
+      [BEST @ step 15000] eval loss: 0.007295
+[hourglass (20.47M/31.36M)] Step: 15500 | Epoch: 2/4 | LR: 0.000184 | Train Loss: 0.007202 | 18.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 15500 | Epoch: 2/4 | LR: 0.000184 | Train Loss: 0.007203 | 17.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 15500 | Epoch: 2/4 | LR: 0.000184 | Train Loss: 0.007193 | 17.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 15500 | Epoch: 2/4 | LR: 0.000184 | Train Loss: 0.007188 | 17.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 15500 | Epoch: 2/4 | LR: 0.000184 | Train Loss: 0.007210 | 17.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 16000 | Epoch: 2/4 | LR: 0.000180 | Train Loss: 0.007183 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 16000 | Epoch: 2/4 | LR: 0.000180 | Train Loss: 0.007180 | 19.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 16000 | Epoch: 2/4 | LR: 0.000180 | Train Loss: 0.007178 | 20.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 16000 | Epoch: 2/4 | LR: 0.000180 | Train Loss: 0.007179 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 16000 | Epoch: 2/4 | LR: 0.000180 | Train Loss: 0.007178 | 20.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 16500 | Epoch: 2/4 | LR: 0.000176 | Train Loss: 0.007165 | 21.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 16500 | Epoch: 2/4 | LR: 0.000176 | Train Loss: 0.007163 | 19.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 16500 | Epoch: 2/4 | LR: 0.000176 | Train Loss: 0.007150 | 20.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 16500 | Epoch: 2/4 | LR: 0.000176 | Train Loss: 0.007160 | 19.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 16500 | Epoch: 2/4 | LR: 0.000176 | Train Loss: 0.007176 | 19.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 17000 | Epoch: 2/4 | LR: 0.000173 | Train Loss: 0.007153 | 19.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 17000 | Epoch: 2/4 | LR: 0.000173 | Train Loss: 0.007145 | 19.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 17000 | Epoch: 2/4 | LR: 0.000173 | Train Loss: 0.007143 | 19.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 17000 | Epoch: 2/4 | LR: 0.000173 | Train Loss: 0.007140 | 20.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 17000 | Epoch: 2/4 | LR: 0.000173 | Train Loss: 0.007132 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 17500 | Epoch: 2/4 | LR: 0.000169 | Train Loss: 0.007130 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 17500 | Epoch: 2/4 | LR: 0.000169 | Train Loss: 0.007122 | 19.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 17500 | Epoch: 2/4 | LR: 0.000169 | Train Loss: 0.007122 | 19.5 steps/s
+      [BEST @ step 17500] eval loss: 0.007089
+      [BEST @ step 17500] eval loss: 0.007117
+      [BEST @ step 17500] eval loss: 0.007071
+[hourglass (20.47M/31.36M)] Step: 17500 | Epoch: 2/4 | LR: 0.000169 | Train Loss: 0.007122 | 20.4 steps/s
+      [BEST @ step 17500] eval loss: 0.007095
+[hourglass (20.47M/31.36M)] Step: 17500 | Epoch: 2/4 | LR: 0.000169 | Train Loss: 0.007124 | 20.2 steps/s
+      [BEST @ step 17500] eval loss: 0.007068
+[hourglass (20.47M/31.36M)] Step: 18000 | Epoch: 2/4 | LR: 0.000165 | Train Loss: 0.007109 | 17.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 18000 | Epoch: 2/4 | LR: 0.000165 | Train Loss: 0.007106 | 18.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 18000 | Epoch: 2/4 | LR: 0.000165 | Train Loss: 0.007112 | 18.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 18000 | Epoch: 2/4 | LR: 0.000165 | Train Loss: 0.007102 | 17.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 18000 | Epoch: 2/4 | LR: 0.000165 | Train Loss: 0.007112 | 17.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 18500 | Epoch: 2/4 | LR: 0.000161 | Train Loss: 0.007100 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 18500 | Epoch: 2/4 | LR: 0.000161 | Train Loss: 0.007104 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 18500 | Epoch: 2/4 | LR: 0.000161 | Train Loss: 0.007081 | 19.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 18500 | Epoch: 2/4 | LR: 0.000161 | Train Loss: 0.007090 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 18500 | Epoch: 2/4 | LR: 0.000161 | Train Loss: 0.007083 | 19.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 19000 | Epoch: 2/4 | LR: 0.000158 | Train Loss: 0.007066 | 19.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 19000 | Epoch: 2/4 | LR: 0.000158 | Train Loss: 0.007065 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 19000 | Epoch: 2/4 | LR: 0.000158 | Train Loss: 0.007071 | 19.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 19000 | Epoch: 2/4 | LR: 0.000158 | Train Loss: 0.007065 | 20.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 19000 | Epoch: 2/4 | LR: 0.000158 | Train Loss: 0.007081 | 19.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 19500 | Epoch: 2/4 | LR: 0.000154 | Train Loss: 0.007047 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 19500 | Epoch: 2/4 | LR: 0.000154 | Train Loss: 0.007046 | 19.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 19500 | Epoch: 2/4 | LR: 0.000154 | Train Loss: 0.007046 | 19.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 19500 | Epoch: 2/4 | LR: 0.000154 | Train Loss: 0.007047 | 19.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 19500 | Epoch: 2/4 | LR: 0.000154 | Train Loss: 0.007050 | 19.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 20000 | Epoch: 2/4 | LR: 0.000150 | Train Loss: 0.007038 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 20000 | Epoch: 2/4 | LR: 0.000150 | Train Loss: 0.007033 | 19.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 20000 | Epoch: 2/4 | LR: 0.000150 | Train Loss: 0.007041 | 19.4 steps/s
+      [BEST @ step 20000] eval loss: 0.006984
+      [BEST @ step 20000] eval loss: 0.007033
+      [BEST @ step 20000] eval loss: 0.007039
+[hourglass (20.47M/31.36M)] Step: 20000 | Epoch: 2/4 | LR: 0.000150 | Train Loss: 0.007022 | 20.2 steps/s
+      [BEST @ step 20000] eval loss: 0.006993
+[hourglass (20.47M/31.36M)] Step: 20000 | Epoch: 2/4 | LR: 0.000150 | Train Loss: 0.007038 | 19.1 steps/s
+      [BEST @ step 20000] eval loss: 0.007012
+[hourglass (20.47M/31.36M)] Step: 20500 | Epoch: 3/4 | LR: 0.000146 | Train Loss: 0.007027 | 18.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 20500 | Epoch: 3/4 | LR: 0.000146 | Train Loss: 0.007020 | 18.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 20500 | Epoch: 3/4 | LR: 0.000146 | Train Loss: 0.007029 | 18.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 20500 | Epoch: 3/4 | LR: 0.000146 | Train Loss: 0.007013 | 17.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 20500 | Epoch: 3/4 | LR: 0.000146 | Train Loss: 0.007025 | 17.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 21000 | Epoch: 3/4 | LR: 0.000143 | Train Loss: 0.007000 | 20.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 21000 | Epoch: 3/4 | LR: 0.000143 | Train Loss: 0.007000 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 21000 | Epoch: 3/4 | LR: 0.000143 | Train Loss: 0.007005 | 19.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 21000 | Epoch: 3/4 | LR: 0.000143 | Train Loss: 0.007004 | 20.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 21000 | Epoch: 3/4 | LR: 0.000143 | Train Loss: 0.007011 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 21500 | Epoch: 3/4 | LR: 0.000139 | Train Loss: 0.006977 | 20.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 21500 | Epoch: 3/4 | LR: 0.000139 | Train Loss: 0.006984 | 20.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 21500 | Epoch: 3/4 | LR: 0.000139 | Train Loss: 0.006981 | 20.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 21500 | Epoch: 3/4 | LR: 0.000139 | Train Loss: 0.006985 | 20.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 22000 | Epoch: 3/4 | LR: 0.000135 | Train Loss: 0.006969 | 21.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 21500 | Epoch: 3/4 | LR: 0.000139 | Train Loss: 0.006991 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 22000 | Epoch: 3/4 | LR: 0.000135 | Train Loss: 0.006973 | 20.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 22000 | Epoch: 3/4 | LR: 0.000135 | Train Loss: 0.006967 | 20.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 22000 | Epoch: 3/4 | LR: 0.000135 | Train Loss: 0.006966 | 19.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 22500 | Epoch: 3/4 | LR: 0.000131 | Train Loss: 0.006965 | 20.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 22000 | Epoch: 3/4 | LR: 0.000135 | Train Loss: 0.006971 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 22500 | Epoch: 3/4 | LR: 0.000131 | Train Loss: 0.006950 | 20.1 steps/s
+      [BEST @ step 22500] eval loss: 0.006928
+[hourglass (20.47M/31.36M)] Step: 22500 | Epoch: 3/4 | LR: 0.000131 | Train Loss: 0.006963 | 20.9 steps/s
+      [BEST @ step 22500] eval loss: 0.006889
+      [BEST @ step 22500] eval loss: 0.006934
+[hourglass (20.47M/31.36M)] Step: 22500 | Epoch: 3/4 | LR: 0.000131 | Train Loss: 0.006944 | 21.1 steps/s
+      [BEST @ step 22500] eval loss: 0.006916
+[hourglass (20.47M/31.36M)] Step: 22500 | Epoch: 3/4 | LR: 0.000131 | Train Loss: 0.006964 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 23000 | Epoch: 3/4 | LR: 0.000128 | Train Loss: 0.006937 | 18.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 23000 | Epoch: 3/4 | LR: 0.000128 | Train Loss: 0.006938 | 19.4 steps/s
+      [BEST @ step 22500] eval loss: 0.006904
+[hourglass (20.47M/31.36M)] Step: 23000 | Epoch: 3/4 | LR: 0.000128 | Train Loss: 0.006939 | 18.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 23000 | Epoch: 3/4 | LR: 0.000128 | Train Loss: 0.006944 | 18.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 23500 | Epoch: 3/4 | LR: 0.000124 | Train Loss: 0.006922 | 21.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 23500 | Epoch: 3/4 | LR: 0.000124 | Train Loss: 0.006926 | 21.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 23000 | Epoch: 3/4 | LR: 0.000128 | Train Loss: 0.006950 | 18.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 23500 | Epoch: 3/4 | LR: 0.000124 | Train Loss: 0.006915 | 20.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 23500 | Epoch: 3/4 | LR: 0.000124 | Train Loss: 0.006916 | 21.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 24000 | Epoch: 3/4 | LR: 0.000120 | Train Loss: 0.006905 | 21.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 24000 | Epoch: 3/4 | LR: 0.000120 | Train Loss: 0.006912 | 20.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 23500 | Epoch: 3/4 | LR: 0.000124 | Train Loss: 0.006935 | 20.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 24000 | Epoch: 3/4 | LR: 0.000120 | Train Loss: 0.006898 | 20.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 24000 | Epoch: 3/4 | LR: 0.000120 | Train Loss: 0.006898 | 20.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 24500 | Epoch: 3/4 | LR: 0.000116 | Train Loss: 0.006889 | 21.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 24500 | Epoch: 3/4 | LR: 0.000116 | Train Loss: 0.006897 | 21.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 24500 | Epoch: 3/4 | LR: 0.000116 | Train Loss: 0.006893 | 20.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 24000 | Epoch: 3/4 | LR: 0.000120 | Train Loss: 0.006901 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 24500 | Epoch: 3/4 | LR: 0.000116 | Train Loss: 0.006894 | 20.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 25000 | Epoch: 3/4 | LR: 0.000113 | Train Loss: 0.006884 | 20.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 25000 | Epoch: 3/4 | LR: 0.000113 | Train Loss: 0.006873 | 20.4 steps/s
+      [BEST @ step 25000] eval loss: 0.006847
+      [BEST @ step 25000] eval loss: 0.006820
+[hourglass (20.47M/31.36M)] Step: 25000 | Epoch: 3/4 | LR: 0.000113 | Train Loss: 0.006865 | 21.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 24500 | Epoch: 3/4 | LR: 0.000116 | Train Loss: 0.006902 | 19.1 steps/s
+      [BEST @ step 25000] eval loss: 0.006843
+[hourglass (20.47M/31.36M)] Step: 25000 | Epoch: 3/4 | LR: 0.000113 | Train Loss: 0.006876 | 21.0 steps/s
+      [BEST @ step 25000] eval loss: 0.006825
+[hourglass (20.47M/31.36M)] Step: 25500 | Epoch: 3/4 | LR: 0.000109 | Train Loss: 0.006865 | 17.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 25500 | Epoch: 3/4 | LR: 0.000109 | Train Loss: 0.006851 | 18.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 25500 | Epoch: 3/4 | LR: 0.000109 | Train Loss: 0.006860 | 18.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 25000 | Epoch: 3/4 | LR: 0.000113 | Train Loss: 0.006879 | 19.3 steps/s
+      [BEST @ step 25000] eval loss: 0.006822
+[hourglass (20.47M/31.36M)] Step: 25500 | Epoch: 3/4 | LR: 0.000109 | Train Loss: 0.006856 | 18.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 26000 | Epoch: 3/4 | LR: 0.000105 | Train Loss: 0.006839 | 20.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 26000 | Epoch: 3/4 | LR: 0.000105 | Train Loss: 0.006838 | 20.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 26000 | Epoch: 3/4 | LR: 0.000105 | Train Loss: 0.006850 | 19.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 25500 | Epoch: 3/4 | LR: 0.000109 | Train Loss: 0.006855 | 17.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 26000 | Epoch: 3/4 | LR: 0.000105 | Train Loss: 0.006843 | 20.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 26500 | Epoch: 3/4 | LR: 0.000101 | Train Loss: 0.006833 | 20.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 26500 | Epoch: 3/4 | LR: 0.000101 | Train Loss: 0.006831 | 20.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 26500 | Epoch: 3/4 | LR: 0.000101 | Train Loss: 0.006825 | 20.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 26000 | Epoch: 3/4 | LR: 0.000105 | Train Loss: 0.006842 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 26500 | Epoch: 3/4 | LR: 0.000101 | Train Loss: 0.006835 | 19.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 27000 | Epoch: 3/4 | LR: 0.000098 | Train Loss: 0.006814 | 20.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 27000 | Epoch: 3/4 | LR: 0.000098 | Train Loss: 0.006824 | 19.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 27000 | Epoch: 3/4 | LR: 0.000098 | Train Loss: 0.006825 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 26500 | Epoch: 3/4 | LR: 0.000101 | Train Loss: 0.006833 | 19.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 27000 | Epoch: 3/4 | LR: 0.000098 | Train Loss: 0.006811 | 20.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 27500 | Epoch: 3/4 | LR: 0.000094 | Train Loss: 0.006804 | 20.2 steps/s
+      [BEST @ step 27500] eval loss: 0.006766
+[hourglass (20.47M/31.36M)] Step: 27500 | Epoch: 3/4 | LR: 0.000094 | Train Loss: 0.006807 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 27500 | Epoch: 3/4 | LR: 0.000094 | Train Loss: 0.006804 | 20.4 steps/s
+      [BEST @ step 27500] eval loss: 0.006806
+      [BEST @ step 27500] eval loss: 0.006783
+[hourglass (20.47M/31.36M)] Step: 27000 | Epoch: 3/4 | LR: 0.000098 | Train Loss: 0.006815 | 20.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 27500 | Epoch: 3/4 | LR: 0.000094 | Train Loss: 0.006796 | 20.8 steps/s
+      [BEST @ step 27500] eval loss: 0.006760
+[hourglass (20.47M/31.36M)] Step: 28000 | Epoch: 3/4 | LR: 0.000090 | Train Loss: 0.006782 | 18.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 28000 | Epoch: 3/4 | LR: 0.000090 | Train Loss: 0.006791 | 18.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 28000 | Epoch: 3/4 | LR: 0.000090 | Train Loss: 0.006788 | 18.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 27500 | Epoch: 3/4 | LR: 0.000094 | Train Loss: 0.006792 | 19.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 28000 | Epoch: 3/4 | LR: 0.000090 | Train Loss: 0.006778 | 18.2 steps/s
+      [BEST @ step 27500] eval loss: 0.006745
+[hourglass (20.47M/31.36M)] Step: 28500 | Epoch: 3/4 | LR: 0.000086 | Train Loss: 0.006762 | 20.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 28500 | Epoch: 3/4 | LR: 0.000086 | Train Loss: 0.006763 | 20.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 28500 | Epoch: 3/4 | LR: 0.000086 | Train Loss: 0.006777 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 28500 | Epoch: 3/4 | LR: 0.000086 | Train Loss: 0.006782 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 28000 | Epoch: 3/4 | LR: 0.000090 | Train Loss: 0.006796 | 18.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 29000 | Epoch: 3/4 | LR: 0.000083 | Train Loss: 0.006763 | 20.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 29000 | Epoch: 3/4 | LR: 0.000083 | Train Loss: 0.006752 | 20.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 29000 | Epoch: 3/4 | LR: 0.000083 | Train Loss: 0.006755 | 20.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 29000 | Epoch: 3/4 | LR: 0.000083 | Train Loss: 0.006747 | 20.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 28500 | Epoch: 3/4 | LR: 0.000086 | Train Loss: 0.006778 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 29500 | Epoch: 3/4 | LR: 0.000079 | Train Loss: 0.006749 | 21.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 29500 | Epoch: 3/4 | LR: 0.000079 | Train Loss: 0.006730 | 20.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 29500 | Epoch: 3/4 | LR: 0.000079 | Train Loss: 0.006740 | 20.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 29500 | Epoch: 3/4 | LR: 0.000079 | Train Loss: 0.006723 | 20.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 29000 | Epoch: 3/4 | LR: 0.000083 | Train Loss: 0.006751 | 20.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 30000 | Epoch: 3/4 | LR: 0.000075 | Train Loss: 0.006732 | 18.7 steps/s
+      [BEST @ step 30000] eval loss: 0.006693
+[hourglass (20.47M/31.36M)] Step: 30000 | Epoch: 3/4 | LR: 0.000075 | Train Loss: 0.006721 | 18.0 steps/s
+      [BEST @ step 30000] eval loss: 0.006684
+[hourglass (20.47M/31.36M)] Step: 30000 | Epoch: 3/4 | LR: 0.000075 | Train Loss: 0.006727 | 17.6 steps/s
+      [BEST @ step 30000] eval loss: 0.006684
+[hourglass (20.47M/31.36M)] Step: 30000 | Epoch: 3/4 | LR: 0.000075 | Train Loss: 0.006725 | 16.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 29500 | Epoch: 3/4 | LR: 0.000079 | Train Loss: 0.006741 | 15.1 steps/s
+      [BEST @ step 30000] eval loss: 0.006687
+[hourglass (20.47M/31.36M)] Step: 30500 | Epoch: 4/4 | LR: 0.000071 | Train Loss: 0.006718 | 14.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 30500 | Epoch: 4/4 | LR: 0.000071 | Train Loss: 0.006715 | 14.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 30500 | Epoch: 4/4 | LR: 0.000071 | Train Loss: 0.006716 | 14.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 30000 | Epoch: 3/4 | LR: 0.000075 | Train Loss: 0.006725 | 18.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 30500 | Epoch: 4/4 | LR: 0.000071 | Train Loss: 0.006709 | 16.2 steps/s
+      [BEST @ step 30000] eval loss: 0.006686
+[hourglass (20.47M/31.36M)] Step: 31000 | Epoch: 4/4 | LR: 0.000068 | Train Loss: 0.006695 | 20.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 31000 | Epoch: 4/4 | LR: 0.000068 | Train Loss: 0.006701 | 20.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 31000 | Epoch: 4/4 | LR: 0.000068 | Train Loss: 0.006691 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 31000 | Epoch: 4/4 | LR: 0.000068 | Train Loss: 0.006694 | 20.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 30500 | Epoch: 4/4 | LR: 0.000071 | Train Loss: 0.006714 | 17.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 31500 | Epoch: 4/4 | LR: 0.000064 | Train Loss: 0.006686 | 20.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 31500 | Epoch: 4/4 | LR: 0.000064 | Train Loss: 0.006678 | 20.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 31500 | Epoch: 4/4 | LR: 0.000064 | Train Loss: 0.006684 | 20.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 31500 | Epoch: 4/4 | LR: 0.000064 | Train Loss: 0.006679 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 31000 | Epoch: 4/4 | LR: 0.000068 | Train Loss: 0.006701 | 20.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 32000 | Epoch: 4/4 | LR: 0.000060 | Train Loss: 0.006675 | 20.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 32000 | Epoch: 4/4 | LR: 0.000060 | Train Loss: 0.006668 | 20.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 32000 | Epoch: 4/4 | LR: 0.000060 | Train Loss: 0.006673 | 19.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 32000 | Epoch: 4/4 | LR: 0.000060 | Train Loss: 0.006666 | 21.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 31500 | Epoch: 4/4 | LR: 0.000064 | Train Loss: 0.006679 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 32500 | Epoch: 4/4 | LR: 0.000056 | Train Loss: 0.006654 | 20.9 steps/s
+      [BEST @ step 32500] eval loss: 0.006616
+[hourglass (20.47M/31.36M)] Step: 32500 | Epoch: 4/4 | LR: 0.000056 | Train Loss: 0.006655 | 20.7 steps/s
+      [BEST @ step 32500] eval loss: 0.006611
+[hourglass (20.47M/31.36M)] Step: 32500 | Epoch: 4/4 | LR: 0.000056 | Train Loss: 0.006650 | 20.2 steps/s
+      [BEST @ step 32500] eval loss: 0.006606
+[hourglass (20.47M/31.36M)] Step: 32500 | Epoch: 4/4 | LR: 0.000056 | Train Loss: 0.006651 | 21.3 steps/s
+      [BEST @ step 32500] eval loss: 0.006610
+[hourglass (20.47M/31.36M)] Step: 32000 | Epoch: 4/4 | LR: 0.000060 | Train Loss: 0.006673 | 20.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 33000 | Epoch: 4/4 | LR: 0.000053 | Train Loss: 0.006645 | 18.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 33000 | Epoch: 4/4 | LR: 0.000053 | Train Loss: 0.006640 | 18.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 33000 | Epoch: 4/4 | LR: 0.000053 | Train Loss: 0.006632 | 17.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 33000 | Epoch: 4/4 | LR: 0.000053 | Train Loss: 0.006647 | 18.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 32500 | Epoch: 4/4 | LR: 0.000056 | Train Loss: 0.006661 | 19.4 steps/s
+      [BEST @ step 32500] eval loss: 0.006629
+[hourglass (20.47M/31.36M)] Step: 33500 | Epoch: 4/4 | LR: 0.000049 | Train Loss: 0.006632 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 33500 | Epoch: 4/4 | LR: 0.000049 | Train Loss: 0.006622 | 19.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 33500 | Epoch: 4/4 | LR: 0.000049 | Train Loss: 0.006628 | 19.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 33500 | Epoch: 4/4 | LR: 0.000049 | Train Loss: 0.006614 | 19.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 33000 | Epoch: 4/4 | LR: 0.000053 | Train Loss: 0.006649 | 17.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 34000 | Epoch: 4/4 | LR: 0.000045 | Train Loss: 0.006614 | 20.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 34000 | Epoch: 4/4 | LR: 0.000045 | Train Loss: 0.006613 | 20.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 34000 | Epoch: 4/4 | LR: 0.000045 | Train Loss: 0.006620 | 19.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 34000 | Epoch: 4/4 | LR: 0.000045 | Train Loss: 0.006607 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 33500 | Epoch: 4/4 | LR: 0.000049 | Train Loss: 0.006629 | 19.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 34500 | Epoch: 4/4 | LR: 0.000042 | Train Loss: 0.006592 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 34500 | Epoch: 4/4 | LR: 0.000042 | Train Loss: 0.006601 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 34500 | Epoch: 4/4 | LR: 0.000042 | Train Loss: 0.006594 | 19.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 34500 | Epoch: 4/4 | LR: 0.000042 | Train Loss: 0.006595 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 34000 | Epoch: 4/4 | LR: 0.000045 | Train Loss: 0.006623 | 19.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 35000 | Epoch: 4/4 | LR: 0.000038 | Train Loss: 0.006584 | 20.2 steps/s
+      [BEST @ step 35000] eval loss: 0.006551
+[hourglass (20.47M/31.36M)] Step: 35000 | Epoch: 4/4 | LR: 0.000038 | Train Loss: 0.006592 | 19.7 steps/s
+      [BEST @ step 35000] eval loss: 0.006541
+[hourglass (20.47M/31.36M)] Step: 35000 | Epoch: 4/4 | LR: 0.000038 | Train Loss: 0.006585 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 35000 | Epoch: 4/4 | LR: 0.000038 | Train Loss: 0.006579 | 19.9 steps/s
+      [BEST @ step 35000] eval loss: 0.006546
+      [BEST @ step 35000] eval loss: 0.006544
+[hourglass (20.47M/31.36M)] Step: 34500 | Epoch: 4/4 | LR: 0.000042 | Train Loss: 0.006604 | 20.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 35500 | Epoch: 4/4 | LR: 0.000034 | Train Loss: 0.006571 | 18.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 35500 | Epoch: 4/4 | LR: 0.000034 | Train Loss: 0.006566 | 18.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 35500 | Epoch: 4/4 | LR: 0.000034 | Train Loss: 0.006571 | 18.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 35500 | Epoch: 4/4 | LR: 0.000034 | Train Loss: 0.006574 | 17.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 35000 | Epoch: 4/4 | LR: 0.000038 | Train Loss: 0.006592 | 19.7 steps/s
+      [BEST @ step 35000] eval loss: 0.006546
+[hourglass (20.47M/31.36M)] Step: 36000 | Epoch: 4/4 | LR: 0.000030 | Train Loss: 0.006568 | 20.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 36000 | Epoch: 4/4 | LR: 0.000030 | Train Loss: 0.006562 | 19.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 36000 | Epoch: 4/4 | LR: 0.000030 | Train Loss: 0.006557 | 18.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 36000 | Epoch: 4/4 | LR: 0.000030 | Train Loss: 0.006553 | 19.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 35500 | Epoch: 4/4 | LR: 0.000034 | Train Loss: 0.006567 | 17.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 36500 | Epoch: 4/4 | LR: 0.000027 | Train Loss: 0.006547 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 36500 | Epoch: 4/4 | LR: 0.000027 | Train Loss: 0.006545 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 36500 | Epoch: 4/4 | LR: 0.000027 | Train Loss: 0.006549 | 21.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 36500 | Epoch: 4/4 | LR: 0.000027 | Train Loss: 0.006546 | 19.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 36000 | Epoch: 4/4 | LR: 0.000030 | Train Loss: 0.006557 | 19.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 37000 | Epoch: 4/4 | LR: 0.000023 | Train Loss: 0.006530 | 19.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 37000 | Epoch: 4/4 | LR: 0.000023 | Train Loss: 0.006536 | 19.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 37000 | Epoch: 4/4 | LR: 0.000023 | Train Loss: 0.006530 | 20.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 37000 | Epoch: 4/4 | LR: 0.000023 | Train Loss: 0.006533 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 36500 | Epoch: 4/4 | LR: 0.000027 | Train Loss: 0.006544 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 37500 | Epoch: 4/4 | LR: 0.000019 | Train Loss: 0.006527 | 20.0 steps/s
+      [BEST @ step 37500] eval loss: 0.006484
+[hourglass (20.47M/31.36M)] Step: 37500 | Epoch: 4/4 | LR: 0.000019 | Train Loss: 0.006517 | 20.4 steps/s
+      [BEST @ step 37500] eval loss: 0.006480
+[hourglass (20.47M/31.36M)] Step: 37500 | Epoch: 4/4 | LR: 0.000019 | Train Loss: 0.006519 | 20.1 steps/s
+      [BEST @ step 37500] eval loss: 0.006491
+[hourglass (20.47M/31.36M)] Step: 37500 | Epoch: 4/4 | LR: 0.000019 | Train Loss: 0.006519 | 19.6 steps/s
+      [BEST @ step 37500] eval loss: 0.006475
+[hourglass (20.47M/31.36M)] Step: 37000 | Epoch: 4/4 | LR: 0.000023 | Train Loss: 0.006536 | 19.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 38000 | Epoch: 4/4 | LR: 0.000015 | Train Loss: 0.006505 | 18.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 38000 | Epoch: 4/4 | LR: 0.000015 | Train Loss: 0.006503 | 18.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 38000 | Epoch: 4/4 | LR: 0.000015 | Train Loss: 0.006506 | 18.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 38000 | Epoch: 4/4 | LR: 0.000015 | Train Loss: 0.006504 | 17.5 steps/s
+[hourglass (20.47M/31.36M)] Step: 37500 | Epoch: 4/4 | LR: 0.000019 | Train Loss: 0.006525 | 18.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 38500 | Epoch: 4/4 | LR: 0.000012 | Train Loss: 0.006495 | 20.2 steps/s
+      [BEST @ step 37500] eval loss: 0.006482
+[hourglass (20.47M/31.36M)] Step: 38500 | Epoch: 4/4 | LR: 0.000012 | Train Loss: 0.006493 | 20.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 38500 | Epoch: 4/4 | LR: 0.000012 | Train Loss: 0.006490 | 20.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 38500 | Epoch: 4/4 | LR: 0.000012 | Train Loss: 0.006488 | 19.8 steps/s
+[hourglass (20.47M/31.36M)] Step: 39000 | Epoch: 4/4 | LR: 0.000008 | Train Loss: 0.006485 | 19.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 38000 | Epoch: 4/4 | LR: 0.000015 | Train Loss: 0.006517 | 18.0 steps/s
+[hourglass (20.47M/31.36M)] Step: 39000 | Epoch: 4/4 | LR: 0.000008 | Train Loss: 0.006473 | 20.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 39000 | Epoch: 4/4 | LR: 0.000008 | Train Loss: 0.006482 | 19.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 39000 | Epoch: 4/4 | LR: 0.000008 | Train Loss: 0.006475 | 20.2 steps/s
+[hourglass (20.47M/31.36M)] Step: 39500 | Epoch: 4/4 | LR: 0.000004 | Train Loss: 0.006475 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 38500 | Epoch: 4/4 | LR: 0.000012 | Train Loss: 0.006498 | 19.9 steps/s
+[hourglass (20.47M/31.36M)] Step: 39500 | Epoch: 4/4 | LR: 0.000004 | Train Loss: 0.006476 | 20.1 steps/s
+[hourglass (20.47M/31.36M)] Step: 39500 | Epoch: 4/4 | LR: 0.000004 | Train Loss: 0.006478 | 19.4 steps/s
+[hourglass (20.47M/31.36M)] Step: 39500 | Epoch: 4/4 | LR: 0.000004 | Train Loss: 0.006470 | 19.6 steps/s
+[hourglass (20.47M/31.36M)] Step: 40000 | Epoch: 4/4 | LR: 0.000000 | Train Loss: 0.006461 | 20.7 steps/s
+[hourglass (20.47M/31.36M)] Step: 39000 | Epoch: 4/4 | LR: 0.000008 | Train Loss: 0.006485 | 19.9 steps/s
+      [BEST @ step 40000] eval loss: 0.006429
+[hourglass (20.47M/31.36M)] Step: 40000 | Epoch: 4/4 | LR: 0.000000 | Train Loss: 0.006464 | 20.1 steps/s
+
+[INFO] Using best model @ step: 40000, test loss: 0.006423 | PSNR: 21.9251 | SSIM: 0.6826
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep4_aug4/hourglass_w_Win_fix_20467512/latent3546_hidden270_270_270_270_270/lr0.0003_run11/experiment_summary.json
+      [BEST @ step 40000] eval loss: 0.006425
+
+[INFO] Using best model @ step: 40000, test loss: 0.006419 | PSNR: 21.9277 | SSIM: 0.6829
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep4_aug4/hourglass_w_Win_fix_20467512/latent3546_hidden270_270_270_270_270/lr0.0003_run12/experiment_summary.json
+[hourglass (20.47M/31.36M)] Step: 40000 | Epoch: 4/4 | LR: 0.000000 | Train Loss: 0.006466 | 21.1 steps/s
+      [BEST @ step 40000] eval loss: 0.006430
+[hourglass (20.47M/31.36M)] Step: 40000 | Epoch: 4/4 | LR: 0.000000 | Train Loss: 0.006456 | 21.7 steps/s
+
+[INFO] Using best model @ step: 40000, test loss: 0.006423 | PSNR: 21.9252 | SSIM: 0.6832
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep4_aug4/hourglass_w_Win_fix_20467512/latent3546_hidden270_270_270_270_270/lr0.0003_run15/experiment_summary.json
+      [BEST @ step 40000] eval loss: 0.006421
+
+[INFO] Using best model @ step: 40000, test loss: 0.006421 | PSNR: 21.9261 | SSIM: 0.6830
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep4_aug4/hourglass_w_Win_fix_20467512/latent3546_hidden270_270_270_270_270/lr0.0003_run14/experiment_summary.json
+[hourglass (20.47M/31.36M)] Step: 39500 | Epoch: 4/4 | LR: 0.000004 | Train Loss: 0.006476 | 22.3 steps/s
+[hourglass (20.47M/31.36M)] Step: 40000 | Epoch: 4/4 | LR: 0.000000 | Train Loss: 0.006475 | 25.7 steps/s
+      [BEST @ step 40000] eval loss: 0.006427
+
+[INFO] Using best model @ step: 40000, test loss: 0.006420 | PSNR: 21.9273 | SSIM: 0.6833
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep4_aug4/hourglass_w_Win_fix_20467512/latent3546_hidden270_270_270_270_270/lr0.0003_run13/experiment_summary.json
+All experiments completed!

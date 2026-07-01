@@ -1,0 +1,60 @@
+{
+  "args": {
+    "device": "cuda:8",
+    "exp_home": "./results",
+    "ds_name": "imagenet32",
+    "mode": "denoising",
+    "noise_std": 0.25,
+    "down_scale": 2.0,
+    "model_type": "conventional",
+    "latent_dim": 3072,
+    "hidden_dims": [
+      3546,
+      3546
+    ],
+    "wo_Win": false,
+    "fix_Win": true,
+    "I_Win": true,
+    "batch_size": 512,
+    "epochs": 2,
+    "lr": 0.0001,
+    "use_augmentation": false,
+    "aug_num": 2,
+    "run_id": 2,
+    "seed": 42
+  },
+  "training_logs": {
+    "train_losses": [
+      0.015041239466518164,
+      0.009509150449186564,
+      0.008632622269913555,
+      0.008202661089599132,
+      0.007968146794475614,
+      0.007773502289317548,
+      0.007637271713465452,
+      0.007528098378330469,
+      0.0074478594223037365,
+      0.007403287395834923
+    ],
+    "eval_losses": [
+      0.007748500181436539,
+      0.007311783342063427
+    ],
+    "psnr": [
+      21.109858207397462,
+      21.361758036499022
+    ],
+    "ssim": [
+      0.6381078197097778,
+      0.6516367129707337
+    ],
+    "best_epoch": null,
+    "best_step": 5000,
+    "best_eval_loss": 0.007311783342063427
+  },
+  "test_results": {
+    "test_loss": 0.007301753639429808,
+    "test_psnr": 21.368139479370118,
+    "test_ssim": 0.6519125257110596
+  }
+}

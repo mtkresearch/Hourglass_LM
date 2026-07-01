@@ -1,0 +1,1350 @@
+==========================================
+Starting experiments with run_id=1
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-5
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:1
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+cuda:1
+Initialize Win to Identity matrix
+cuda:1
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1
+Created train split with 50000 samples
+cuda:1
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+cuda:1
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1] already exist and contains summary json file!
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 18,646,656
+Trainable parameters: 18,646,656
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1] already exist and contains summary json file!
+      [BEST @ epoch 5] eval loss: 0.004798
+[conventional (19.26M/19.26M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.005117 | Eval Loss: 0.004798 | PSNR: 23.1918 | SSIM: 0.9080
+      [BEST @ epoch 5] eval loss: 0.004938
+[conventional (18.65M/19.26M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.005315 | Eval Loss: 0.004938 | PSNR: 23.0669 | SSIM: 0.9052
+      [BEST @ epoch 10] eval loss: 0.004310
+[conventional (19.26M/19.26M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.004486 | Eval Loss: 0.004310 | PSNR: 23.6573 | SSIM: 0.9268
+      [BEST @ epoch 10] eval loss: 0.004407
+[conventional (18.65M/19.26M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.004638 | Eval Loss: 0.004407 | PSNR: 23.5608 | SSIM: 0.9240
+      [BEST @ epoch 15] eval loss: 0.004201
+[conventional (18.65M/19.26M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.004371 | Eval Loss: 0.004201 | PSNR: 23.7689 | SSIM: 0.9340
+      [BEST @ epoch 15] eval loss: 0.004139
+[conventional (19.26M/19.26M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.004234 | Eval Loss: 0.004139 | PSNR: 23.8331 | SSIM: 0.9356
+      [BEST @ epoch 20] eval loss: 0.004030
+[conventional (19.26M/19.26M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.004074 | Eval Loss: 0.004030 | PSNR: 23.9492 | SSIM: 0.9385
+      [BEST @ epoch 20] eval loss: 0.004110
+[conventional (18.65M/19.26M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.004200 | Eval Loss: 0.004110 | PSNR: 23.8635 | SSIM: 0.9370
+      [BEST @ epoch 25] eval loss: 0.003958
+[conventional (19.26M/19.26M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.003955 | Eval Loss: 0.003958 | PSNR: 24.0272 | SSIM: 0.9415
+      [BEST @ epoch 25] eval loss: 0.004017
+[conventional (18.65M/19.26M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.004075 | Eval Loss: 0.004017 | PSNR: 23.9630 | SSIM: 0.9417
+      [BEST @ epoch 30] eval loss: 0.003860
+[conventional (19.26M/19.26M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.003864 | Eval Loss: 0.003860 | PSNR: 24.1358 | SSIM: 0.9438
+      [BEST @ epoch 30] eval loss: 0.003922
+[conventional (18.65M/19.26M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.003977 | Eval Loss: 0.003922 | PSNR: 24.0666 | SSIM: 0.9434
+      [BEST @ epoch 35] eval loss: 0.003804
+[conventional (19.26M/19.26M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.003790 | Eval Loss: 0.003804 | PSNR: 24.1992 | SSIM: 0.9446
+      [BEST @ epoch 35] eval loss: 0.003854
+[conventional (18.65M/19.26M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.003900 | Eval Loss: 0.003854 | PSNR: 24.1428 | SSIM: 0.9440
+      [BEST @ epoch 40] eval loss: 0.003782
+[conventional (19.26M/19.26M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.003722 | Eval Loss: 0.003782 | PSNR: 24.2248 | SSIM: 0.9468
+      [BEST @ epoch 40] eval loss: 0.003826
+[conventional (18.65M/19.26M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.003828 | Eval Loss: 0.003826 | PSNR: 24.1750 | SSIM: 0.9467
+      [BEST @ epoch 45] eval loss: 0.003725
+[conventional (19.26M/19.26M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.003671 | Eval Loss: 0.003725 | PSNR: 24.2904 | SSIM: 0.9486
+      [BEST @ epoch 45] eval loss: 0.003786
+[conventional (18.65M/19.26M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.003773 | Eval Loss: 0.003786 | PSNR: 24.2204 | SSIM: 0.9480
+      [BEST @ epoch 50] eval loss: 0.003701
+[conventional (19.26M/19.26M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.003622 | Eval Loss: 0.003701 | PSNR: 24.3185 | SSIM: 0.9511
+      [BEST @ epoch 50] eval loss: 0.003745
+[conventional (18.65M/19.26M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.003722 | Eval Loss: 0.003745 | PSNR: 24.2680 | SSIM: 0.9512
+      [BEST @ epoch 55] eval loss: 0.003667
+[conventional (19.26M/19.26M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.003573 | Eval Loss: 0.003667 | PSNR: 24.3584 | SSIM: 0.9503
+      [BEST @ epoch 55] eval loss: 0.003701
+[conventional (18.65M/19.26M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.003671 | Eval Loss: 0.003701 | PSNR: 24.3182 | SSIM: 0.9504
+      [BEST @ epoch 60] eval loss: 0.003623
+[conventional (19.26M/19.26M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.003536 | Eval Loss: 0.003623 | PSNR: 24.4107 | SSIM: 0.9513
+      [BEST @ epoch 60] eval loss: 0.003672
+[conventional (18.65M/19.26M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.003630 | Eval Loss: 0.003672 | PSNR: 24.3526 | SSIM: 0.9516
+      [BEST @ epoch 65] eval loss: 0.003610
+[conventional (19.26M/19.26M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.003499 | Eval Loss: 0.003610 | PSNR: 24.4264 | SSIM: 0.9514
+      [BEST @ epoch 65] eval loss: 0.003656
+[conventional (18.65M/19.26M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.003591 | Eval Loss: 0.003656 | PSNR: 24.3726 | SSIM: 0.9507
+      [BEST @ epoch 70] eval loss: 0.003573
+[conventional (19.26M/19.26M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.003466 | Eval Loss: 0.003573 | PSNR: 24.4717 | SSIM: 0.9533
+      [BEST @ epoch 70] eval loss: 0.003614
+[conventional (18.65M/19.26M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.003554 | Eval Loss: 0.003614 | PSNR: 24.4229 | SSIM: 0.9533
+      [BEST @ epoch 75] eval loss: 0.003567
+[conventional (19.26M/19.26M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.003436 | Eval Loss: 0.003567 | PSNR: 24.4793 | SSIM: 0.9541
+      [BEST @ epoch 75] eval loss: 0.003606
+[conventional (18.65M/19.26M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.003524 | Eval Loss: 0.003606 | PSNR: 24.4321 | SSIM: 0.9538
+      [BEST @ epoch 80] eval loss: 0.003546
+[conventional (19.26M/19.26M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.003408 | Eval Loss: 0.003546 | PSNR: 24.5054 | SSIM: 0.9549
+      [BEST @ epoch 80] eval loss: 0.003587
+[conventional (18.65M/19.26M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.003491 | Eval Loss: 0.003587 | PSNR: 24.4546 | SSIM: 0.9547
+      [BEST @ epoch 85] eval loss: 0.003542
+[conventional (19.26M/19.26M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.003383 | Eval Loss: 0.003542 | PSNR: 24.5093 | SSIM: 0.9549
+      [BEST @ epoch 85] eval loss: 0.003581
+[conventional (18.65M/19.26M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.003465 | Eval Loss: 0.003581 | PSNR: 24.4619 | SSIM: 0.9549
+      [BEST @ epoch 90] eval loss: 0.003523
+[conventional (19.26M/19.26M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.003362 | Eval Loss: 0.003523 | PSNR: 24.5326 | SSIM: 0.9552
+      [BEST @ epoch 90] eval loss: 0.003554
+[conventional (18.65M/19.26M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.003443 | Eval Loss: 0.003554 | PSNR: 24.4942 | SSIM: 0.9549
+      [BEST @ epoch 95] eval loss: 0.003508
+[conventional (19.26M/19.26M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.003342 | Eval Loss: 0.003508 | PSNR: 24.5512 | SSIM: 0.9561
+      [BEST @ epoch 95] eval loss: 0.003541
+[conventional (18.65M/19.26M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.003421 | Eval Loss: 0.003541 | PSNR: 24.5105 | SSIM: 0.9560
+      [BEST @ epoch 100] eval loss: 0.003480
+[conventional (19.26M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.003324 | Eval Loss: 0.003480 | PSNR: 24.5857 | SSIM: 0.9558
+
+[INFO] Using best model @ epoch 100, test loss: 0.003479 | PSNR: 24.5950 | SSIM: 0.9565
+[INFO] Saved results to ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.003518
+[conventional (18.65M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.003401 | Eval Loss: 0.003518 | PSNR: 24.5385 | SSIM: 0.9554
+
+[INFO] Using best model @ epoch 100, test loss: 0.003521 | PSNR: 24.5430 | SSIM: 0.9560
+[INFO] Saved results to ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run1/experiment_summary.json
+==========================================
+Starting experiments with run_id=1
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=1e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:1
+Initialize Win to Identity matrix
+cuda:1
+cuda:1
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1
+cuda:1
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+cuda:1
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1] already exist and contains summary json file!
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 18,646,656
+Trainable parameters: 18,646,656
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1] already exist and contains summary json file!
+      [BEST @ epoch 5] eval loss: 0.004713
+[conventional (19.26M/19.26M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.004904 | Eval Loss: 0.004713 | PSNR: 23.2685 | SSIM: 0.9189
+      [BEST @ epoch 5] eval loss: 0.004807
+[conventional (18.65M/19.26M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.005097 | Eval Loss: 0.004807 | PSNR: 23.1833 | SSIM: 0.9170
+      [BEST @ epoch 10] eval loss: 0.004279
+[conventional (19.26M/19.26M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.004391 | Eval Loss: 0.004279 | PSNR: 23.6888 | SSIM: 0.9330
+      [BEST @ epoch 10] eval loss: 0.004357
+[conventional (18.65M/19.26M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.004567 | Eval Loss: 0.004357 | PSNR: 23.6098 | SSIM: 0.9296
+      [BEST @ epoch 15] eval loss: 0.004071
+[conventional (19.26M/19.26M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.004147 | Eval Loss: 0.004071 | PSNR: 23.9046 | SSIM: 0.9373
+      [BEST @ epoch 15] eval loss: 0.004159
+[conventional (18.65M/19.26M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.004320 | Eval Loss: 0.004159 | PSNR: 23.8120 | SSIM: 0.9362
+      [BEST @ epoch 20] eval loss: 0.003977
+[conventional (19.26M/19.26M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.003985 | Eval Loss: 0.003977 | PSNR: 24.0059 | SSIM: 0.9404
+      [BEST @ epoch 20] eval loss: 0.004059
+[conventional (18.65M/19.26M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.004156 | Eval Loss: 0.004059 | PSNR: 23.9171 | SSIM: 0.9407
+      [BEST @ epoch 25] eval loss: 0.003893
+[conventional (19.26M/19.26M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.003859 | Eval Loss: 0.003893 | PSNR: 24.0994 | SSIM: 0.9433
+      [BEST @ epoch 25] eval loss: 0.003992
+[conventional (18.65M/19.26M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.004026 | Eval Loss: 0.003992 | PSNR: 23.9900 | SSIM: 0.9422
+      [BEST @ epoch 30] eval loss: 0.003799
+[conventional (19.26M/19.26M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.003760 | Eval Loss: 0.003799 | PSNR: 24.2053 | SSIM: 0.9484
+      [BEST @ epoch 30] eval loss: 0.003891
+[conventional (18.65M/19.26M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.003917 | Eval Loss: 0.003891 | PSNR: 24.1011 | SSIM: 0.9477
+      [BEST @ epoch 35] eval loss: 0.003799
+[conventional (18.65M/19.26M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.003828 | Eval Loss: 0.003799 | PSNR: 24.2058 | SSIM: 0.9481
+      [BEST @ epoch 35] eval loss: 0.003725
+[conventional (19.26M/19.26M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.003678 | Eval Loss: 0.003725 | PSNR: 24.2905 | SSIM: 0.9479
+      [BEST @ epoch 40] eval loss: 0.003758
+[conventional (18.65M/19.26M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.003743 | Eval Loss: 0.003758 | PSNR: 24.2524 | SSIM: 0.9493
+      [BEST @ epoch 40] eval loss: 0.003691
+[conventional (19.26M/19.26M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.003601 | Eval Loss: 0.003691 | PSNR: 24.3305 | SSIM: 0.9509
+      [BEST @ epoch 45] eval loss: 0.003708
+[conventional (18.65M/19.26M)] Epoch: 45/100 | LR: 0.000055 | Train Loss: 0.003676 | Eval Loss: 0.003708 | PSNR: 24.3113 | SSIM: 0.9528
+      [BEST @ epoch 45] eval loss: 0.003638
+[conventional (19.26M/19.26M)] Epoch: 45/100 | LR: 0.000055 | Train Loss: 0.003540 | Eval Loss: 0.003638 | PSNR: 24.3942 | SSIM: 0.9518
+      [BEST @ epoch 50] eval loss: 0.003676
+[conventional (18.65M/19.26M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.003611 | Eval Loss: 0.003676 | PSNR: 24.3485 | SSIM: 0.9541
+      [BEST @ epoch 50] eval loss: 0.003602
+[conventional (19.26M/19.26M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.003481 | Eval Loss: 0.003602 | PSNR: 24.4366 | SSIM: 0.9540
+      [BEST @ epoch 55] eval loss: 0.003622
+[conventional (18.65M/19.26M)] Epoch: 55/100 | LR: 0.000045 | Train Loss: 0.003547 | Eval Loss: 0.003622 | PSNR: 24.4118 | SSIM: 0.9536
+      [BEST @ epoch 55] eval loss: 0.003559
+[conventional (19.26M/19.26M)] Epoch: 55/100 | LR: 0.000045 | Train Loss: 0.003426 | Eval Loss: 0.003559 | PSNR: 24.4891 | SSIM: 0.9537
+      [BEST @ epoch 60] eval loss: 0.003572
+[conventional (18.65M/19.26M)] Epoch: 60/100 | LR: 0.000040 | Train Loss: 0.003496 | Eval Loss: 0.003572 | PSNR: 24.4727 | SSIM: 0.9542
+      [BEST @ epoch 60] eval loss: 0.003529
+[conventional (19.26M/19.26M)] Epoch: 60/100 | LR: 0.000040 | Train Loss: 0.003379 | Eval Loss: 0.003529 | PSNR: 24.5248 | SSIM: 0.9539
+      [BEST @ epoch 65] eval loss: 0.003562
+[conventional (18.65M/19.26M)] Epoch: 65/100 | LR: 0.000035 | Train Loss: 0.003440 | Eval Loss: 0.003562 | PSNR: 24.4853 | SSIM: 0.9539
+      [BEST @ epoch 65] eval loss: 0.003508
+[conventional (19.26M/19.26M)] Epoch: 65/100 | LR: 0.000035 | Train Loss: 0.003331 | Eval Loss: 0.003508 | PSNR: 24.5518 | SSIM: 0.9551
+      [BEST @ epoch 70] eval loss: 0.003507
+[conventional (18.65M/19.26M)] Epoch: 70/100 | LR: 0.000030 | Train Loss: 0.003391 | Eval Loss: 0.003507 | PSNR: 24.5530 | SSIM: 0.9571
+      [BEST @ epoch 70] eval loss: 0.003457
+[conventional (19.26M/19.26M)] Epoch: 70/100 | LR: 0.000030 | Train Loss: 0.003289 | Eval Loss: 0.003457 | PSNR: 24.6147 | SSIM: 0.9569
+      [BEST @ epoch 75] eval loss: 0.003499
+[conventional (18.65M/19.26M)] Epoch: 75/100 | LR: 0.000025 | Train Loss: 0.003345 | Eval Loss: 0.003499 | PSNR: 24.5627 | SSIM: 0.9571
+      [BEST @ epoch 75] eval loss: 0.003450
+[conventional (19.26M/19.26M)] Epoch: 75/100 | LR: 0.000025 | Train Loss: 0.003250 | Eval Loss: 0.003450 | PSNR: 24.6235 | SSIM: 0.9571
+      [BEST @ epoch 80] eval loss: 0.003463
+[conventional (18.65M/19.26M)] Epoch: 80/100 | LR: 0.000020 | Train Loss: 0.003302 | Eval Loss: 0.003463 | PSNR: 24.6077 | SSIM: 0.9579
+      [BEST @ epoch 80] eval loss: 0.003420
+[conventional (19.26M/19.26M)] Epoch: 80/100 | LR: 0.000020 | Train Loss: 0.003211 | Eval Loss: 0.003420 | PSNR: 24.6624 | SSIM: 0.9581
+      [BEST @ epoch 85] eval loss: 0.003451
+[conventional (18.65M/19.26M)] Epoch: 85/100 | LR: 0.000015 | Train Loss: 0.003262 | Eval Loss: 0.003451 | PSNR: 24.6218 | SSIM: 0.9587
+      [BEST @ epoch 85] eval loss: 0.003408
+[conventional (19.26M/19.26M)] Epoch: 85/100 | LR: 0.000015 | Train Loss: 0.003176 | Eval Loss: 0.003408 | PSNR: 24.6765 | SSIM: 0.9587
+      [BEST @ epoch 90] eval loss: 0.003418
+[conventional (18.65M/19.26M)] Epoch: 90/100 | LR: 0.000010 | Train Loss: 0.003225 | Eval Loss: 0.003418 | PSNR: 24.6645 | SSIM: 0.9592
+      [BEST @ epoch 90] eval loss: 0.003383
+[conventional (19.26M/19.26M)] Epoch: 90/100 | LR: 0.000010 | Train Loss: 0.003144 | Eval Loss: 0.003383 | PSNR: 24.7087 | SSIM: 0.9592
+      [BEST @ epoch 95] eval loss: 0.003398
+[conventional (18.65M/19.26M)] Epoch: 95/100 | LR: 0.000005 | Train Loss: 0.003191 | Eval Loss: 0.003398 | PSNR: 24.6900 | SSIM: 0.9603
+      [BEST @ epoch 95] eval loss: 0.003368
+[conventional (19.26M/19.26M)] Epoch: 95/100 | LR: 0.000005 | Train Loss: 0.003114 | Eval Loss: 0.003368 | PSNR: 24.7289 | SSIM: 0.9600
+      [BEST @ epoch 100] eval loss: 0.003369
+[conventional (18.65M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.003161 | Eval Loss: 0.003369 | PSNR: 24.7267 | SSIM: 0.9598
+      [BEST @ epoch 100] eval loss: 0.003331
+[conventional (19.26M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.003088 | Eval Loss: 0.003331 | PSNR: 24.7759 | SSIM: 0.9598
+
+[INFO] Using best model @ epoch 100, test loss: 0.003331 | PSNR: 24.7839 | SSIM: 0.9604
+[INFO] Saved results to ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1/experiment_summary.json
+
+[INFO] Using best model @ epoch 100, test loss: 0.003367 | PSNR: 24.7369 | SSIM: 0.9603
+[INFO] Saved results to ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run1/experiment_summary.json
+==========================================
+Starting experiments with run_id=1
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:1
+cuda:1
+Set W_in to non-trianable
+cuda:1
+Initialize Win to Identity matrix
+cuda:1
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 18,646,656
+Trainable parameters: 18,646,656
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1] already exist and contains summary json file!
+cuda:1
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Created train split with 50000 samples
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1] already exist and contains summary json file!
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+      [BEST @ epoch 5] eval loss: 0.005292
+[conventional (18.65M/19.26M)] Epoch: 5/100 | LR: 0.000475 | Train Loss: 0.005685 | Eval Loss: 0.005292 | PSNR: 22.7649 | SSIM: 0.9143
+      [BEST @ epoch 5] eval loss: 0.005029
+[conventional (19.26M/19.26M)] Epoch: 5/100 | LR: 0.000475 | Train Loss: 0.005232 | Eval Loss: 0.005029 | PSNR: 22.9868 | SSIM: 0.9170
+      [BEST @ epoch 10] eval loss: 0.004899
+[conventional (18.65M/19.26M)] Epoch: 10/100 | LR: 0.000450 | Train Loss: 0.005155 | Eval Loss: 0.004899 | PSNR: 23.1005 | SSIM: 0.9302
+      [BEST @ epoch 10] eval loss: 0.004578
+[conventional (19.26M/19.26M)] Epoch: 10/100 | LR: 0.000450 | Train Loss: 0.004698 | Eval Loss: 0.004578 | PSNR: 23.3944 | SSIM: 0.9345
+      [BEST @ epoch 15] eval loss: 0.004593
+[conventional (18.65M/19.26M)] Epoch: 15/100 | LR: 0.000425 | Train Loss: 0.004886 | Eval Loss: 0.004593 | PSNR: 23.3806 | SSIM: 0.9346
+      [BEST @ epoch 15] eval loss: 0.004509
+[conventional (19.26M/19.26M)] Epoch: 15/100 | LR: 0.000425 | Train Loss: 0.004478 | Eval Loss: 0.004509 | PSNR: 23.4605 | SSIM: 0.9376
+      [BEST @ epoch 20] eval loss: 0.004432
+[conventional (18.65M/19.26M)] Epoch: 20/100 | LR: 0.000400 | Train Loss: 0.004710 | Eval Loss: 0.004432 | PSNR: 23.5354 | SSIM: 0.9400
+      [BEST @ epoch 20] eval loss: 0.004215
+[conventional (19.26M/19.26M)] Epoch: 20/100 | LR: 0.000400 | Train Loss: 0.004328 | Eval Loss: 0.004215 | PSNR: 23.7534 | SSIM: 0.9397
+      [BEST @ epoch 25] eval loss: 0.004372
+[conventional (18.65M/19.26M)] Epoch: 25/100 | LR: 0.000375 | Train Loss: 0.004570 | Eval Loss: 0.004372 | PSNR: 23.5954 | SSIM: 0.9413
+      [BEST @ epoch 25] eval loss: 0.004138
+[conventional (19.26M/19.26M)] Epoch: 25/100 | LR: 0.000375 | Train Loss: 0.004216 | Eval Loss: 0.004138 | PSNR: 23.8344 | SSIM: 0.9421
+      [BEST @ epoch 30] eval loss: 0.004236
+[conventional (18.65M/19.26M)] Epoch: 30/100 | LR: 0.000350 | Train Loss: 0.004441 | Eval Loss: 0.004236 | PSNR: 23.7320 | SSIM: 0.9448
+      [BEST @ epoch 30] eval loss: 0.004065
+[conventional (19.26M/19.26M)] Epoch: 30/100 | LR: 0.000350 | Train Loss: 0.004117 | Eval Loss: 0.004065 | PSNR: 23.9110 | SSIM: 0.9453
+      [BEST @ epoch 35] eval loss: 0.004092
+[conventional (18.65M/19.26M)] Epoch: 35/100 | LR: 0.000325 | Train Loss: 0.004329 | Eval Loss: 0.004092 | PSNR: 23.8829 | SSIM: 0.9449
+      [BEST @ epoch 35] eval loss: 0.003928
+[conventional (19.26M/19.26M)] Epoch: 35/100 | LR: 0.000325 | Train Loss: 0.004030 | Eval Loss: 0.003928 | PSNR: 24.0605 | SSIM: 0.9463
+      [BEST @ epoch 40] eval loss: 0.004058
+[conventional (18.65M/19.26M)] Epoch: 40/100 | LR: 0.000300 | Train Loss: 0.004225 | Eval Loss: 0.004058 | PSNR: 23.9182 | SSIM: 0.9465
+      [BEST @ epoch 40] eval loss: 0.003923
+[conventional (19.26M/19.26M)] Epoch: 40/100 | LR: 0.000300 | Train Loss: 0.003952 | Eval Loss: 0.003923 | PSNR: 24.0656 | SSIM: 0.9469
+      [BEST @ epoch 45] eval loss: 0.003954
+[conventional (18.65M/19.26M)] Epoch: 45/100 | LR: 0.000275 | Train Loss: 0.004135 | Eval Loss: 0.003954 | PSNR: 24.0324 | SSIM: 0.9495
+      [BEST @ epoch 45] eval loss: 0.003825
+[conventional (19.26M/19.26M)] Epoch: 45/100 | LR: 0.000275 | Train Loss: 0.003867 | Eval Loss: 0.003825 | PSNR: 24.1753 | SSIM: 0.9497
+      [BEST @ epoch 50] eval loss: 0.003909
+[conventional (18.65M/19.26M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.004050 | Eval Loss: 0.003909 | PSNR: 24.0815 | SSIM: 0.9507
+      [BEST @ epoch 50] eval loss: 0.003803
+[conventional (19.26M/19.26M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.003792 | Eval Loss: 0.003803 | PSNR: 24.2004 | SSIM: 0.9511
+      [BEST @ epoch 55] eval loss: 0.003821
+[conventional (18.65M/19.26M)] Epoch: 55/100 | LR: 0.000225 | Train Loss: 0.003961 | Eval Loss: 0.003821 | PSNR: 24.1803 | SSIM: 0.9508
+      [BEST @ epoch 55] eval loss: 0.003697
+[conventional (19.26M/19.26M)] Epoch: 55/100 | LR: 0.000225 | Train Loss: 0.003725 | Eval Loss: 0.003697 | PSNR: 24.3236 | SSIM: 0.9512
+      [BEST @ epoch 60] eval loss: 0.003757
+[conventional (18.65M/19.26M)] Epoch: 60/100 | LR: 0.000200 | Train Loss: 0.003883 | Eval Loss: 0.003757 | PSNR: 24.2531 | SSIM: 0.9512
+      [BEST @ epoch 60] eval loss: 0.003636
+[conventional (19.26M/19.26M)] Epoch: 60/100 | LR: 0.000200 | Train Loss: 0.003645 | Eval Loss: 0.003636 | PSNR: 24.3951 | SSIM: 0.9509
+      [BEST @ epoch 65] eval loss: 0.003715
+[conventional (18.65M/19.26M)] Epoch: 65/100 | LR: 0.000175 | Train Loss: 0.003797 | Eval Loss: 0.003715 | PSNR: 24.3019 | SSIM: 0.9519
+      [BEST @ epoch 65] eval loss: 0.003594
+[conventional (19.26M/19.26M)] Epoch: 65/100 | LR: 0.000175 | Train Loss: 0.003570 | Eval Loss: 0.003594 | PSNR: 24.4456 | SSIM: 0.9524
+      [BEST @ epoch 70] eval loss: 0.003622
+[conventional (18.65M/19.26M)] Epoch: 70/100 | LR: 0.000150 | Train Loss: 0.003716 | Eval Loss: 0.003622 | PSNR: 24.4125 | SSIM: 0.9544
+      [BEST @ epoch 70] eval loss: 0.003522
+[conventional (19.26M/19.26M)] Epoch: 70/100 | LR: 0.000150 | Train Loss: 0.003500 | Eval Loss: 0.003522 | PSNR: 24.5340 | SSIM: 0.9548
+      [BEST @ epoch 75] eval loss: 0.003616
+[conventional (18.65M/19.26M)] Epoch: 75/100 | LR: 0.000125 | Train Loss: 0.003634 | Eval Loss: 0.003616 | PSNR: 24.4198 | SSIM: 0.9551
+      [BEST @ epoch 75] eval loss: 0.003502
+[conventional (19.26M/19.26M)] Epoch: 75/100 | LR: 0.000125 | Train Loss: 0.003430 | Eval Loss: 0.003502 | PSNR: 24.5592 | SSIM: 0.9547
+      [BEST @ epoch 80] eval loss: 0.003546
+[conventional (18.65M/19.26M)] Epoch: 80/100 | LR: 0.000100 | Train Loss: 0.003550 | Eval Loss: 0.003546 | PSNR: 24.5046 | SSIM: 0.9559
+      [BEST @ epoch 80] eval loss: 0.003444
+[conventional (19.26M/19.26M)] Epoch: 80/100 | LR: 0.000100 | Train Loss: 0.003357 | Eval Loss: 0.003444 | PSNR: 24.6319 | SSIM: 0.9563
+      [BEST @ epoch 85] eval loss: 0.003520
+[conventional (18.65M/19.26M)] Epoch: 85/100 | LR: 0.000075 | Train Loss: 0.003465 | Eval Loss: 0.003520 | PSNR: 24.5365 | SSIM: 0.9566
+      [BEST @ epoch 85] eval loss: 0.003415
+[conventional (19.26M/19.26M)] Epoch: 85/100 | LR: 0.000075 | Train Loss: 0.003286 | Eval Loss: 0.003415 | PSNR: 24.6684 | SSIM: 0.9569
+      [BEST @ epoch 90] eval loss: 0.003463
+[conventional (18.65M/19.26M)] Epoch: 90/100 | LR: 0.000050 | Train Loss: 0.003378 | Eval Loss: 0.003463 | PSNR: 24.6077 | SSIM: 0.9579
+      [BEST @ epoch 90] eval loss: 0.003377
+[conventional (19.26M/19.26M)] Epoch: 90/100 | LR: 0.000050 | Train Loss: 0.003212 | Eval Loss: 0.003377 | PSNR: 24.7167 | SSIM: 0.9580
+      [BEST @ epoch 95] eval loss: 0.003429
+[conventional (18.65M/19.26M)] Epoch: 95/100 | LR: 0.000025 | Train Loss: 0.003295 | Eval Loss: 0.003429 | PSNR: 24.6502 | SSIM: 0.9588
+      [BEST @ epoch 95] eval loss: 0.003338
+[conventional (19.26M/19.26M)] Epoch: 95/100 | LR: 0.000025 | Train Loss: 0.003142 | Eval Loss: 0.003338 | PSNR: 24.7669 | SSIM: 0.9593
+      [BEST @ epoch 100] eval loss: 0.003381
+[conventional (18.65M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.003221 | Eval Loss: 0.003381 | PSNR: 24.7109 | SSIM: 0.9589
+
+[INFO] Using best model @ epoch 100, test loss: 0.003388 | PSNR: 24.7103 | SSIM: 0.9594
+[INFO] Saved results to ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.003285
+[conventional (19.26M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.003079 | Eval Loss: 0.003285 | PSNR: 24.8367 | SSIM: 0.9596
+
+[INFO] Using best model @ epoch 100, test loss: 0.003289 | PSNR: 24.8380 | SSIM: 0.9601
+[INFO] Saved results to ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run1/experiment_summary.json
+==========================================
+Completed run_id=1
+==========================================
+==========================================
+Starting experiments with run_id=2
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-5
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:1
+Set W_in to non-trianable
+cuda:1
+Initialize Win to Identity matrix
+cuda:1
+cuda:1
+cuda:1
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 18,646,656
+Trainable parameters: 18,646,656
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2] already exist and contains summary json file!
+Created train split with 50000 samples
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 5e-05 -> 0.0 over 100 epochs
+      [BEST @ epoch 5] eval loss: 0.004894
+[conventional (18.65M/19.26M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.005311 | Eval Loss: 0.004894 | PSNR: 23.1054 | SSIM: 0.9096
+      [BEST @ epoch 5] eval loss: 0.004771
+[conventional (19.26M/19.26M)] Epoch: 5/100 | LR: 0.000048 | Train Loss: 0.005109 | Eval Loss: 0.004771 | PSNR: 23.2161 | SSIM: 0.9127
+      [BEST @ epoch 10] eval loss: 0.004397
+[conventional (18.65M/19.26M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.004645 | Eval Loss: 0.004397 | PSNR: 23.5703 | SSIM: 0.9262
+      [BEST @ epoch 10] eval loss: 0.004316
+[conventional (19.26M/19.26M)] Epoch: 10/100 | LR: 0.000045 | Train Loss: 0.004489 | Eval Loss: 0.004316 | PSNR: 23.6514 | SSIM: 0.9279
+      [BEST @ epoch 15] eval loss: 0.004244
+[conventional (18.65M/19.26M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.004368 | Eval Loss: 0.004244 | PSNR: 23.7240 | SSIM: 0.9326
+      [BEST @ epoch 15] eval loss: 0.004159
+[conventional (19.26M/19.26M)] Epoch: 15/100 | LR: 0.000043 | Train Loss: 0.004233 | Eval Loss: 0.004159 | PSNR: 23.8118 | SSIM: 0.9352
+      [BEST @ epoch 20] eval loss: 0.004057
+[conventional (18.65M/19.26M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.004196 | Eval Loss: 0.004057 | PSNR: 23.9197 | SSIM: 0.9355
+      [BEST @ epoch 20] eval loss: 0.003994
+[conventional (19.26M/19.26M)] Epoch: 20/100 | LR: 0.000040 | Train Loss: 0.004071 | Eval Loss: 0.003994 | PSNR: 23.9876 | SSIM: 0.9362
+      [BEST @ epoch 25] eval loss: 0.003976
+[conventional (18.65M/19.26M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.004080 | Eval Loss: 0.003976 | PSNR: 24.0070 | SSIM: 0.9408
+      [BEST @ epoch 25] eval loss: 0.003925
+[conventional (19.26M/19.26M)] Epoch: 25/100 | LR: 0.000038 | Train Loss: 0.003961 | Eval Loss: 0.003925 | PSNR: 24.0636 | SSIM: 0.9410
+      [BEST @ epoch 30] eval loss: 0.003917
+[conventional (18.65M/19.26M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.003976 | Eval Loss: 0.003917 | PSNR: 24.0725 | SSIM: 0.9439
+      [BEST @ epoch 30] eval loss: 0.003880
+[conventional (19.26M/19.26M)] Epoch: 30/100 | LR: 0.000035 | Train Loss: 0.003863 | Eval Loss: 0.003880 | PSNR: 24.1144 | SSIM: 0.9437
+      [BEST @ epoch 35] eval loss: 0.003852
+[conventional (18.65M/19.26M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.003899 | Eval Loss: 0.003852 | PSNR: 24.1447 | SSIM: 0.9445
+      [BEST @ epoch 35] eval loss: 0.003808
+[conventional (19.26M/19.26M)] Epoch: 35/100 | LR: 0.000033 | Train Loss: 0.003790 | Eval Loss: 0.003808 | PSNR: 24.1952 | SSIM: 0.9444
+      [BEST @ epoch 40] eval loss: 0.003839
+[conventional (18.65M/19.26M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.003832 | Eval Loss: 0.003839 | PSNR: 24.1602 | SSIM: 0.9453
+      [BEST @ epoch 40] eval loss: 0.003783
+[conventional (19.26M/19.26M)] Epoch: 40/100 | LR: 0.000030 | Train Loss: 0.003729 | Eval Loss: 0.003783 | PSNR: 24.2233 | SSIM: 0.9455
+      [BEST @ epoch 45] eval loss: 0.003766
+[conventional (18.65M/19.26M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.003770 | Eval Loss: 0.003766 | PSNR: 24.2431 | SSIM: 0.9483
+      [BEST @ epoch 45] eval loss: 0.003723
+[conventional (19.26M/19.26M)] Epoch: 45/100 | LR: 0.000028 | Train Loss: 0.003670 | Eval Loss: 0.003723 | PSNR: 24.2931 | SSIM: 0.9492
+      [BEST @ epoch 50] eval loss: 0.003737
+[conventional (18.65M/19.26M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.003722 | Eval Loss: 0.003737 | PSNR: 24.2763 | SSIM: 0.9478
+      [BEST @ epoch 50] eval loss: 0.003692
+[conventional (19.26M/19.26M)] Epoch: 50/100 | LR: 0.000025 | Train Loss: 0.003624 | Eval Loss: 0.003692 | PSNR: 24.3291 | SSIM: 0.9485
+      [BEST @ epoch 55] eval loss: 0.003689
+[conventional (18.65M/19.26M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.003672 | Eval Loss: 0.003689 | PSNR: 24.3325 | SSIM: 0.9512
+      [BEST @ epoch 55] eval loss: 0.003652
+[conventional (19.26M/19.26M)] Epoch: 55/100 | LR: 0.000023 | Train Loss: 0.003578 | Eval Loss: 0.003652 | PSNR: 24.3765 | SSIM: 0.9514
+      [BEST @ epoch 60] eval loss: 0.003677
+[conventional (18.65M/19.26M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.003631 | Eval Loss: 0.003677 | PSNR: 24.3471 | SSIM: 0.9518
+      [BEST @ epoch 60] eval loss: 0.003638
+[conventional (19.26M/19.26M)] Epoch: 60/100 | LR: 0.000020 | Train Loss: 0.003539 | Eval Loss: 0.003638 | PSNR: 24.3935 | SSIM: 0.9514
+      [BEST @ epoch 65] eval loss: 0.003651
+[conventional (18.65M/19.26M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.003589 | Eval Loss: 0.003651 | PSNR: 24.3777 | SSIM: 0.9530
+      [BEST @ epoch 65] eval loss: 0.003612
+[conventional (19.26M/19.26M)] Epoch: 65/100 | LR: 0.000018 | Train Loss: 0.003501 | Eval Loss: 0.003612 | PSNR: 24.4244 | SSIM: 0.9534
+      [BEST @ epoch 70] eval loss: 0.003618
+[conventional (18.65M/19.26M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.003551 | Eval Loss: 0.003618 | PSNR: 24.4178 | SSIM: 0.9525
+      [BEST @ epoch 70] eval loss: 0.003583
+[conventional (19.26M/19.26M)] Epoch: 70/100 | LR: 0.000015 | Train Loss: 0.003466 | Eval Loss: 0.003583 | PSNR: 24.4595 | SSIM: 0.9527
+      [BEST @ epoch 75] eval loss: 0.003602
+[conventional (18.65M/19.26M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.003520 | Eval Loss: 0.003602 | PSNR: 24.4371 | SSIM: 0.9545
+      [BEST @ epoch 75] eval loss: 0.003568
+[conventional (19.26M/19.26M)] Epoch: 75/100 | LR: 0.000013 | Train Loss: 0.003436 | Eval Loss: 0.003568 | PSNR: 24.4779 | SSIM: 0.9545
+      [BEST @ epoch 80] eval loss: 0.003580
+[conventional (18.65M/19.26M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.003492 | Eval Loss: 0.003580 | PSNR: 24.4630 | SSIM: 0.9544
+      [BEST @ epoch 80] eval loss: 0.003545
+[conventional (19.26M/19.26M)] Epoch: 80/100 | LR: 0.000010 | Train Loss: 0.003410 | Eval Loss: 0.003545 | PSNR: 24.5053 | SSIM: 0.9542
+      [BEST @ epoch 85] eval loss: 0.003565
+[conventional (18.65M/19.26M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.003468 | Eval Loss: 0.003565 | PSNR: 24.4815 | SSIM: 0.9550
+      [BEST @ epoch 85] eval loss: 0.003535
+[conventional (19.26M/19.26M)] Epoch: 85/100 | LR: 0.000008 | Train Loss: 0.003386 | Eval Loss: 0.003535 | PSNR: 24.5182 | SSIM: 0.9550
+      [BEST @ epoch 90] eval loss: 0.003545
+[conventional (18.65M/19.26M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.003439 | Eval Loss: 0.003545 | PSNR: 24.5062 | SSIM: 0.9551
+      [BEST @ epoch 90] eval loss: 0.003514
+[conventional (19.26M/19.26M)] Epoch: 90/100 | LR: 0.000005 | Train Loss: 0.003362 | Eval Loss: 0.003514 | PSNR: 24.5433 | SSIM: 0.9549
+[conventional (18.65M/19.26M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.003418 | Eval Loss: 0.003547 | PSNR: 24.5034 | SSIM: 0.9552
+      [BEST @ epoch 95] eval loss: 0.003513
+[conventional (19.26M/19.26M)] Epoch: 95/100 | LR: 0.000003 | Train Loss: 0.003342 | Eval Loss: 0.003513 | PSNR: 24.5448 | SSIM: 0.9550
+      [BEST @ epoch 100] eval loss: 0.003518
+[conventional (18.65M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.003402 | Eval Loss: 0.003518 | PSNR: 24.5391 | SSIM: 0.9560
+
+[INFO] Using best model @ epoch 100, test loss: 0.003523 | PSNR: 24.5392 | SSIM: 0.9563
+[INFO] Saved results to ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.003490
+[conventional (19.26M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.003328 | Eval Loss: 0.003490 | PSNR: 24.5740 | SSIM: 0.9560
+
+[INFO] Using best model @ epoch 100, test loss: 0.003486 | PSNR: 24.5851 | SSIM: 0.9565
+[INFO] Saved results to ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr5e-05_run2/experiment_summary.json
+==========================================
+Starting experiments with run_id=2
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=1e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:1
+cuda:1
+cuda:1
+Set W_in to non-trianable
+cuda:1
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+cuda:1
+Initialize Win to Identity matrix
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 18,646,656
+Trainable parameters: 18,646,656
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2
+Created train split with 50000 samples
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0001 -> 0.0 over 100 epochs
+      [BEST @ epoch 5] eval loss: 0.004750
+[conventional (18.65M/19.26M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.005096 | Eval Loss: 0.004750 | PSNR: 23.2343 | SSIM: 0.9187
+      [BEST @ epoch 5] eval loss: 0.004672
+[conventional (19.26M/19.26M)] Epoch: 5/100 | LR: 0.000095 | Train Loss: 0.004901 | Eval Loss: 0.004672 | PSNR: 23.3067 | SSIM: 0.9214
+      [BEST @ epoch 10] eval loss: 0.004353
+[conventional (18.65M/19.26M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.004571 | Eval Loss: 0.004353 | PSNR: 23.6146 | SSIM: 0.9280
+      [BEST @ epoch 10] eval loss: 0.004264
+[conventional (19.26M/19.26M)] Epoch: 10/100 | LR: 0.000090 | Train Loss: 0.004394 | Eval Loss: 0.004264 | PSNR: 23.7037 | SSIM: 0.9288
+      [BEST @ epoch 15] eval loss: 0.004178
+[conventional (18.65M/19.26M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.004324 | Eval Loss: 0.004178 | PSNR: 23.7916 | SSIM: 0.9367
+      [BEST @ epoch 15] eval loss: 0.004082
+[conventional (19.26M/19.26M)] Epoch: 15/100 | LR: 0.000085 | Train Loss: 0.004151 | Eval Loss: 0.004082 | PSNR: 23.8930 | SSIM: 0.9386
+      [BEST @ epoch 20] eval loss: 0.004040
+[conventional (18.65M/19.26M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.004154 | Eval Loss: 0.004040 | PSNR: 23.9384 | SSIM: 0.9392
+      [BEST @ epoch 20] eval loss: 0.003957
+[conventional (19.26M/19.26M)] Epoch: 20/100 | LR: 0.000080 | Train Loss: 0.003984 | Eval Loss: 0.003957 | PSNR: 24.0285 | SSIM: 0.9405
+      [BEST @ epoch 25] eval loss: 0.003872
+[conventional (19.26M/19.26M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.003866 | Eval Loss: 0.003872 | PSNR: 24.1223 | SSIM: 0.9447
+      [BEST @ epoch 25] eval loss: 0.003943
+[conventional (18.65M/19.26M)] Epoch: 25/100 | LR: 0.000075 | Train Loss: 0.004029 | Eval Loss: 0.003943 | PSNR: 24.0442 | SSIM: 0.9440
+      [BEST @ epoch 30] eval loss: 0.003904
+[conventional (18.65M/19.26M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.003916 | Eval Loss: 0.003904 | PSNR: 24.0876 | SSIM: 0.9461
+      [BEST @ epoch 30] eval loss: 0.003812
+[conventional (19.26M/19.26M)] Epoch: 30/100 | LR: 0.000070 | Train Loss: 0.003759 | Eval Loss: 0.003812 | PSNR: 24.1909 | SSIM: 0.9469
+      [BEST @ epoch 35] eval loss: 0.003803
+[conventional (18.65M/19.26M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.003828 | Eval Loss: 0.003803 | PSNR: 24.2010 | SSIM: 0.9470
+      [BEST @ epoch 35] eval loss: 0.003724
+[conventional (19.26M/19.26M)] Epoch: 35/100 | LR: 0.000065 | Train Loss: 0.003677 | Eval Loss: 0.003724 | PSNR: 24.2923 | SSIM: 0.9482
+      [BEST @ epoch 40] eval loss: 0.003707
+[conventional (19.26M/19.26M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.003604 | Eval Loss: 0.003707 | PSNR: 24.3113 | SSIM: 0.9496
+      [BEST @ epoch 40] eval loss: 0.003776
+[conventional (18.65M/19.26M)] Epoch: 40/100 | LR: 0.000060 | Train Loss: 0.003748 | Eval Loss: 0.003776 | PSNR: 24.2314 | SSIM: 0.9494
+      [BEST @ epoch 45] eval loss: 0.003629
+[conventional (19.26M/19.26M)] Epoch: 45/100 | LR: 0.000055 | Train Loss: 0.003538 | Eval Loss: 0.003629 | PSNR: 24.4036 | SSIM: 0.9525
+      [BEST @ epoch 45] eval loss: 0.003708
+[conventional (18.65M/19.26M)] Epoch: 45/100 | LR: 0.000055 | Train Loss: 0.003674 | Eval Loss: 0.003708 | PSNR: 24.3111 | SSIM: 0.9504
+      [BEST @ epoch 50] eval loss: 0.003658
+[conventional (18.65M/19.26M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.003614 | Eval Loss: 0.003658 | PSNR: 24.3691 | SSIM: 0.9511
+      [BEST @ epoch 50] eval loss: 0.003591
+[conventional (19.26M/19.26M)] Epoch: 50/100 | LR: 0.000050 | Train Loss: 0.003483 | Eval Loss: 0.003591 | PSNR: 24.4501 | SSIM: 0.9529
+      [BEST @ epoch 55] eval loss: 0.003611
+[conventional (18.65M/19.26M)] Epoch: 55/100 | LR: 0.000045 | Train Loss: 0.003551 | Eval Loss: 0.003611 | PSNR: 24.4261 | SSIM: 0.9536
+      [BEST @ epoch 55] eval loss: 0.003544
+[conventional (19.26M/19.26M)] Epoch: 55/100 | LR: 0.000045 | Train Loss: 0.003429 | Eval Loss: 0.003544 | PSNR: 24.5067 | SSIM: 0.9540
+      [BEST @ epoch 60] eval loss: 0.003592
+[conventional (18.65M/19.26M)] Epoch: 60/100 | LR: 0.000040 | Train Loss: 0.003495 | Eval Loss: 0.003592 | PSNR: 24.4490 | SSIM: 0.9539
+      [BEST @ epoch 60] eval loss: 0.003536
+[conventional (19.26M/19.26M)] Epoch: 60/100 | LR: 0.000040 | Train Loss: 0.003380 | Eval Loss: 0.003536 | PSNR: 24.5167 | SSIM: 0.9542
+      [BEST @ epoch 65] eval loss: 0.003559
+[conventional (18.65M/19.26M)] Epoch: 65/100 | LR: 0.000035 | Train Loss: 0.003440 | Eval Loss: 0.003559 | PSNR: 24.4884 | SSIM: 0.9572
+      [BEST @ epoch 65] eval loss: 0.003488
+[conventional (19.26M/19.26M)] Epoch: 65/100 | LR: 0.000035 | Train Loss: 0.003332 | Eval Loss: 0.003488 | PSNR: 24.5762 | SSIM: 0.9568
+      [BEST @ epoch 70] eval loss: 0.003516
+[conventional (18.65M/19.26M)] Epoch: 70/100 | LR: 0.000030 | Train Loss: 0.003390 | Eval Loss: 0.003516 | PSNR: 24.5419 | SSIM: 0.9566
+      [BEST @ epoch 70] eval loss: 0.003467
+[conventional (19.26M/19.26M)] Epoch: 70/100 | LR: 0.000030 | Train Loss: 0.003289 | Eval Loss: 0.003467 | PSNR: 24.6025 | SSIM: 0.9568
+      [BEST @ epoch 75] eval loss: 0.003498
+[conventional (18.65M/19.26M)] Epoch: 75/100 | LR: 0.000025 | Train Loss: 0.003343 | Eval Loss: 0.003498 | PSNR: 24.5636 | SSIM: 0.9580
+      [BEST @ epoch 75] eval loss: 0.003443
+[conventional (19.26M/19.26M)] Epoch: 75/100 | LR: 0.000025 | Train Loss: 0.003248 | Eval Loss: 0.003443 | PSNR: 24.6330 | SSIM: 0.9586
+      [BEST @ epoch 80] eval loss: 0.003462
+[conventional (18.65M/19.26M)] Epoch: 80/100 | LR: 0.000020 | Train Loss: 0.003302 | Eval Loss: 0.003462 | PSNR: 24.6083 | SSIM: 0.9575
+      [BEST @ epoch 80] eval loss: 0.003414
+[conventional (19.26M/19.26M)] Epoch: 80/100 | LR: 0.000020 | Train Loss: 0.003212 | Eval Loss: 0.003414 | PSNR: 24.6694 | SSIM: 0.9582
+      [BEST @ epoch 85] eval loss: 0.003440
+[conventional (18.65M/19.26M)] Epoch: 85/100 | LR: 0.000015 | Train Loss: 0.003264 | Eval Loss: 0.003440 | PSNR: 24.6359 | SSIM: 0.9588
+      [BEST @ epoch 85] eval loss: 0.003399
+[conventional (19.26M/19.26M)] Epoch: 85/100 | LR: 0.000015 | Train Loss: 0.003179 | Eval Loss: 0.003399 | PSNR: 24.6883 | SSIM: 0.9590
+      [BEST @ epoch 90] eval loss: 0.003412
+[conventional (18.65M/19.26M)] Epoch: 90/100 | LR: 0.000010 | Train Loss: 0.003224 | Eval Loss: 0.003412 | PSNR: 24.6721 | SSIM: 0.9593
+      [BEST @ epoch 90] eval loss: 0.003367
+[conventional (19.26M/19.26M)] Epoch: 90/100 | LR: 0.000010 | Train Loss: 0.003143 | Eval Loss: 0.003367 | PSNR: 24.7299 | SSIM: 0.9595
+      [BEST @ epoch 95] eval loss: 0.003403
+[conventional (18.65M/19.26M)] Epoch: 95/100 | LR: 0.000005 | Train Loss: 0.003190 | Eval Loss: 0.003403 | PSNR: 24.6828 | SSIM: 0.9596
+[conventional (19.26M/19.26M)] Epoch: 95/100 | LR: 0.000005 | Train Loss: 0.003113 | Eval Loss: 0.003367 | PSNR: 24.7290 | SSIM: 0.9596
+      [BEST @ epoch 100] eval loss: 0.003374
+[conventional (18.65M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.003164 | Eval Loss: 0.003374 | PSNR: 24.7203 | SSIM: 0.9603
+
+[INFO] Using best model @ epoch 100, test loss: 0.003378 | PSNR: 24.7223 | SSIM: 0.9606
+[INFO] Saved results to ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.003335
+[conventional (19.26M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.003090 | Eval Loss: 0.003335 | PSNR: 24.7702 | SSIM: 0.9605
+
+[INFO] Using best model @ epoch 100, test loss: 0.003337 | PSNR: 24.7761 | SSIM: 0.9609
+[INFO] Saved results to ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0001_run2/experiment_summary.json
+==========================================
+Starting experiments with run_id=2
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=5e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:1
+cuda:1
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+cuda:1
+Initialize Win to Identity matrix
+cuda:1
+Set W_in to non-trianable
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 18,646,656
+Trainable parameters: 18,646,656
+Training with no W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_wo_Win_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run2] already exist and contains summary json file!
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run2
+Created train split with 50000 samples
+cuda:1
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run2
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 18,646,656
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run2] already exist and contains summary json file!
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+Created train split with 50000 samples
+Created eval split with 10000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: epoch_based
+[INFO] Linear LR Decay (epoch-based): 0.0005 -> 0.0 over 100 epochs
+ConventionalMLP(
+  (in_fc): Linear(in_features=784, out_features=784, bias=False)
+  (blocks): ModuleList(
+    (0-9): 10 x MLPBlockReLU(
+      (norm): BatchNorm1d(784, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=784, out_features=1150, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=1150, out_features=784, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=784, out_features=784, bias=False)
+)
+Total parameters: 19,261,312
+Trainable parameters: 19,261,312
+Training with W_in matrix!
+Experiment directory: ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run2
+Traceback (most recent call last):
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 228, in <module>
+    main()
+  File "/storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass/run.py", line 152, in main
+    raise ValueError(f"Dupicated experiment: [{exp_dir}] already exist and contains summary json file!")
+ValueError: Dupicated experiment: [./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run2] already exist and contains summary json file!
+      [BEST @ epoch 5] eval loss: 0.005061
+[conventional (19.26M/19.26M)] Epoch: 5/100 | LR: 0.000475 | Train Loss: 0.005228 | Eval Loss: 0.005061 | PSNR: 22.9592 | SSIM: 0.9200
+      [BEST @ epoch 5] eval loss: 0.005329
+[conventional (18.65M/19.26M)] Epoch: 5/100 | LR: 0.000475 | Train Loss: 0.005672 | Eval Loss: 0.005329 | PSNR: 22.7350 | SSIM: 0.9155
+      [BEST @ epoch 10] eval loss: 0.004844
+[conventional (18.65M/19.26M)] Epoch: 10/100 | LR: 0.000450 | Train Loss: 0.005165 | Eval Loss: 0.004844 | PSNR: 23.1501 | SSIM: 0.9278
+      [BEST @ epoch 10] eval loss: 0.004673
+[conventional (19.26M/19.26M)] Epoch: 10/100 | LR: 0.000450 | Train Loss: 0.004696 | Eval Loss: 0.004673 | PSNR: 23.3058 | SSIM: 0.9297
+      [BEST @ epoch 15] eval loss: 0.004616
+[conventional (18.65M/19.26M)] Epoch: 15/100 | LR: 0.000425 | Train Loss: 0.004900 | Eval Loss: 0.004616 | PSNR: 23.3588 | SSIM: 0.9372
+      [BEST @ epoch 15] eval loss: 0.004412
+[conventional (19.26M/19.26M)] Epoch: 15/100 | LR: 0.000425 | Train Loss: 0.004477 | Eval Loss: 0.004412 | PSNR: 23.5553 | SSIM: 0.9357
+      [BEST @ epoch 20] eval loss: 0.004459
+[conventional (18.65M/19.26M)] Epoch: 20/100 | LR: 0.000400 | Train Loss: 0.004715 | Eval Loss: 0.004459 | PSNR: 23.5095 | SSIM: 0.9381
+      [BEST @ epoch 20] eval loss: 0.004335
+[conventional (19.26M/19.26M)] Epoch: 20/100 | LR: 0.000400 | Train Loss: 0.004329 | Eval Loss: 0.004335 | PSNR: 23.6323 | SSIM: 0.9375
+      [BEST @ epoch 25] eval loss: 0.004303
+[conventional (18.65M/19.26M)] Epoch: 25/100 | LR: 0.000375 | Train Loss: 0.004579 | Eval Loss: 0.004303 | PSNR: 23.6641 | SSIM: 0.9444
+      [BEST @ epoch 25] eval loss: 0.004210
+[conventional (19.26M/19.26M)] Epoch: 25/100 | LR: 0.000375 | Train Loss: 0.004220 | Eval Loss: 0.004210 | PSNR: 23.7585 | SSIM: 0.9431
+[conventional (18.65M/19.26M)] Epoch: 30/100 | LR: 0.000350 | Train Loss: 0.004445 | Eval Loss: 0.004308 | PSNR: 23.6598 | SSIM: 0.9440
+      [BEST @ epoch 30] eval loss: 0.004184
+[conventional (19.26M/19.26M)] Epoch: 30/100 | LR: 0.000350 | Train Loss: 0.004126 | Eval Loss: 0.004184 | PSNR: 23.7860 | SSIM: 0.9452
+      [BEST @ epoch 35] eval loss: 0.004121
+[conventional (18.65M/19.26M)] Epoch: 35/100 | LR: 0.000325 | Train Loss: 0.004336 | Eval Loss: 0.004121 | PSNR: 23.8519 | SSIM: 0.9449
+      [BEST @ epoch 35] eval loss: 0.004068
+[conventional (19.26M/19.26M)] Epoch: 35/100 | LR: 0.000325 | Train Loss: 0.004068 | Eval Loss: 0.004068 | PSNR: 23.9076 | SSIM: 0.9452
+      [BEST @ epoch 40] eval loss: 0.004111
+[conventional (18.65M/19.26M)] Epoch: 40/100 | LR: 0.000300 | Train Loss: 0.004236 | Eval Loss: 0.004111 | PSNR: 23.8629 | SSIM: 0.9472
+      [BEST @ epoch 40] eval loss: 0.003980
+[conventional (19.26M/19.26M)] Epoch: 40/100 | LR: 0.000300 | Train Loss: 0.003957 | Eval Loss: 0.003980 | PSNR: 24.0035 | SSIM: 0.9461
+      [BEST @ epoch 45] eval loss: 0.003971
+[conventional (18.65M/19.26M)] Epoch: 45/100 | LR: 0.000275 | Train Loss: 0.004138 | Eval Loss: 0.003971 | PSNR: 24.0131 | SSIM: 0.9489
+      [BEST @ epoch 45] eval loss: 0.003877
+[conventional (19.26M/19.26M)] Epoch: 45/100 | LR: 0.000275 | Train Loss: 0.003867 | Eval Loss: 0.003877 | PSNR: 24.1169 | SSIM: 0.9472
+      [BEST @ epoch 50] eval loss: 0.003907
+[conventional (18.65M/19.26M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.004060 | Eval Loss: 0.003907 | PSNR: 24.0827 | SSIM: 0.9487
+      [BEST @ epoch 50] eval loss: 0.003819
+[conventional (19.26M/19.26M)] Epoch: 50/100 | LR: 0.000250 | Train Loss: 0.003810 | Eval Loss: 0.003819 | PSNR: 24.1819 | SSIM: 0.9482
+      [BEST @ epoch 55] eval loss: 0.003845
+[conventional (18.65M/19.26M)] Epoch: 55/100 | LR: 0.000225 | Train Loss: 0.003977 | Eval Loss: 0.003845 | PSNR: 24.1528 | SSIM: 0.9508
+      [BEST @ epoch 55] eval loss: 0.003781
+[conventional (19.26M/19.26M)] Epoch: 55/100 | LR: 0.000225 | Train Loss: 0.003718 | Eval Loss: 0.003781 | PSNR: 24.2255 | SSIM: 0.9498
+      [BEST @ epoch 60] eval loss: 0.003799
+[conventional (18.65M/19.26M)] Epoch: 60/100 | LR: 0.000200 | Train Loss: 0.003896 | Eval Loss: 0.003799 | PSNR: 24.2052 | SSIM: 0.9502
+      [BEST @ epoch 60] eval loss: 0.003689
+[conventional (19.26M/19.26M)] Epoch: 60/100 | LR: 0.000200 | Train Loss: 0.003647 | Eval Loss: 0.003689 | PSNR: 24.3325 | SSIM: 0.9499
+      [BEST @ epoch 65] eval loss: 0.003721
+[conventional (18.65M/19.26M)] Epoch: 65/100 | LR: 0.000175 | Train Loss: 0.003814 | Eval Loss: 0.003721 | PSNR: 24.2957 | SSIM: 0.9535
+      [BEST @ epoch 65] eval loss: 0.003607
+[conventional (19.26M/19.26M)] Epoch: 65/100 | LR: 0.000175 | Train Loss: 0.003572 | Eval Loss: 0.003607 | PSNR: 24.4298 | SSIM: 0.9527
+      [BEST @ epoch 70] eval loss: 0.003682
+[conventional (18.65M/19.26M)] Epoch: 70/100 | LR: 0.000150 | Train Loss: 0.003729 | Eval Loss: 0.003682 | PSNR: 24.3413 | SSIM: 0.9530
+      [BEST @ epoch 70] eval loss: 0.003574
+[conventional (19.26M/19.26M)] Epoch: 70/100 | LR: 0.000150 | Train Loss: 0.003498 | Eval Loss: 0.003574 | PSNR: 24.4702 | SSIM: 0.9533
+      [BEST @ epoch 75] eval loss: 0.003613
+[conventional (18.65M/19.26M)] Epoch: 75/100 | LR: 0.000125 | Train Loss: 0.003649 | Eval Loss: 0.003613 | PSNR: 24.4231 | SSIM: 0.9549
+      [BEST @ epoch 75] eval loss: 0.003533
+[conventional (19.26M/19.26M)] Epoch: 75/100 | LR: 0.000125 | Train Loss: 0.003427 | Eval Loss: 0.003533 | PSNR: 24.5206 | SSIM: 0.9551
+      [BEST @ epoch 80] eval loss: 0.003555
+[conventional (18.65M/19.26M)] Epoch: 80/100 | LR: 0.000100 | Train Loss: 0.003567 | Eval Loss: 0.003555 | PSNR: 24.4926 | SSIM: 0.9555
+      [BEST @ epoch 80] eval loss: 0.003453
+[conventional (19.26M/19.26M)] Epoch: 80/100 | LR: 0.000100 | Train Loss: 0.003356 | Eval Loss: 0.003453 | PSNR: 24.6191 | SSIM: 0.9548
+      [BEST @ epoch 85] eval loss: 0.003511
+[conventional (18.65M/19.26M)] Epoch: 85/100 | LR: 0.000075 | Train Loss: 0.003484 | Eval Loss: 0.003511 | PSNR: 24.5476 | SSIM: 0.9566
+      [BEST @ epoch 85] eval loss: 0.003425
+[conventional (19.26M/19.26M)] Epoch: 85/100 | LR: 0.000075 | Train Loss: 0.003287 | Eval Loss: 0.003425 | PSNR: 24.6550 | SSIM: 0.9567
+      [BEST @ epoch 90] eval loss: 0.003460
+[conventional (18.65M/19.26M)] Epoch: 90/100 | LR: 0.000050 | Train Loss: 0.003394 | Eval Loss: 0.003460 | PSNR: 24.6113 | SSIM: 0.9575
+      [BEST @ epoch 90] eval loss: 0.003370
+[conventional (19.26M/19.26M)] Epoch: 90/100 | LR: 0.000050 | Train Loss: 0.003210 | Eval Loss: 0.003370 | PSNR: 24.7260 | SSIM: 0.9569
+      [BEST @ epoch 95] eval loss: 0.003444
+[conventional (18.65M/19.26M)] Epoch: 95/100 | LR: 0.000025 | Train Loss: 0.003310 | Eval Loss: 0.003444 | PSNR: 24.6317 | SSIM: 0.9583
+      [BEST @ epoch 95] eval loss: 0.003337
+[conventional (19.26M/19.26M)] Epoch: 95/100 | LR: 0.000025 | Train Loss: 0.003140 | Eval Loss: 0.003337 | PSNR: 24.7684 | SSIM: 0.9582
+      [BEST @ epoch 100] eval loss: 0.003391
+[conventional (18.65M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.003239 | Eval Loss: 0.003391 | PSNR: 24.6987 | SSIM: 0.9592
+
+[INFO] Using best model @ epoch 100, test loss: 0.003395 | PSNR: 24.7011 | SSIM: 0.9597
+[INFO] Saved results to ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_fix_I_18646656/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run2/experiment_summary.json
+      [BEST @ epoch 100] eval loss: 0.003294
+[conventional (19.26M/19.26M)] Epoch: 100/100 | LR: 0.000000 | Train Loss: 0.003079 | Eval Loss: 0.003294 | PSNR: 24.8244 | SSIM: 0.9595
+
+[INFO] Using best model @ epoch 100, test loss: 0.003295 | PSNR: 24.8303 | SSIM: 0.9601
+[INFO] Saved results to ./results/mnist_denoising_std0.25/bs128_ep100_aug4/conventional_w_Win_I_19261312/latent784_hidden1150_1150_1150_1150_1150_1150_1150_1150_1150_1150/lr0.0005_run2/experiment_summary.json

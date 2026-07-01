@@ -1,0 +1,1185 @@
+==========================================
+Starting experiments with run_id=1
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=1e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:5
+cuda:5
+Initialize Win to Identity matrix
+cuda:5
+cuda:5
+Set W_in to non-trianable
+cuda:5
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 140,156,928
+Trainable parameters: 140,156,928
+Training with no W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_wo_Win_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run1
+Loading ImageNet-32 training data...
+  Loading batch 1...
+ConventionalMLP(
+  (in_fc): Linear(in_features=3072, out_features=3072, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 149,594,112
+Trainable parameters: 149,594,112
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_I_149594112/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run1
+Loading ImageNet-32 training data...
+  Loading batch 1...
+ConventionalMLP(
+  (in_fc): Linear(in_features=3072, out_features=3072, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 149,594,112
+Trainable parameters: 140,156,928
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_fix_I_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run1
+Loading ImageNet-32 training data...
+  Loading batch 1...
+ConventionalMLP(
+  (in_fc): Linear(in_features=3072, out_features=3072, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 149,594,112
+Trainable parameters: 140,156,928
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_fix_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run1
+Loading ImageNet-32 training data...
+  Loading batch 1...
+ConventionalMLP(
+  (in_fc): Linear(in_features=3072, out_features=3072, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 149,594,112
+Trainable parameters: 149,594,112
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_149594112/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run1
+Loading ImageNet-32 training data...
+  Loading batch 1...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 4...
+  Loading batch 3...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 5...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 5...
+  Loading batch 5...
+  Loading batch 6...
+  Loading batch 5...
+  Loading batch 6...
+  Loading batch 5...
+  Loading batch 6...
+  Loading batch 7...
+  Loading batch 6...
+  Loading batch 7...
+  Loading batch 6...
+  Loading batch 7...
+  Loading batch 8...
+  Loading batch 8...
+  Loading batch 8...
+  Loading batch 7...
+  Loading batch 7...
+  Loading batch 9...
+  Loading batch 9...
+  Loading batch 9...
+  Loading batch 8...
+  Loading batch 10...
+  Loading batch 8...
+  Loading batch 10...
+  Loading batch 10...
+  Loading batch 9...
+  Loading batch 9...
+  Loading batch 10...
+  Loading batch 10...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0001 -> 0.0 over 5006 steps
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0001 -> 0.0 over 5006 steps
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0001 -> 0.0 over 5006 steps
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0001 -> 0.0 over 5006 steps
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0001 -> 0.0 over 5006 steps
+[conventional (140.16M/149.59M)] Step: 500 | Epoch: 1/2 | LR: 0.000090 | Train Loss: 0.014230 | 5.8 steps/s
+[conventional (140.16M/149.59M)] Step: 500 | Epoch: 1/2 | LR: 0.000090 | Train Loss: 0.013650 | 5.5 steps/s
+[conventional (149.59M/149.59M)] Step: 500 | Epoch: 1/2 | LR: 0.000090 | Train Loss: 0.013578 | 5.3 steps/s
+[conventional (140.16M/140.16M)] Step: 500 | Epoch: 1/2 | LR: 0.000090 | Train Loss: 0.013633 | 4.8 steps/s
+[conventional (149.59M/149.59M)] Step: 500 | Epoch: 1/2 | LR: 0.000090 | Train Loss: 0.013507 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 1000 | Epoch: 1/2 | LR: 0.000080 | Train Loss: 0.010033 | 4.4 steps/s
+[conventional (140.16M/149.59M)] Step: 1000 | Epoch: 1/2 | LR: 0.000080 | Train Loss: 0.009173 | 4.4 steps/s
+[conventional (149.59M/149.59M)] Step: 1000 | Epoch: 1/2 | LR: 0.000080 | Train Loss: 0.009206 | 4.2 steps/s
+[conventional (140.16M/140.16M)] Step: 1000 | Epoch: 1/2 | LR: 0.000080 | Train Loss: 0.009170 | 4.4 steps/s
+[conventional (149.59M/149.59M)] Step: 1000 | Epoch: 1/2 | LR: 0.000080 | Train Loss: 0.009056 | 4.1 steps/s
+[conventional (140.16M/149.59M)] Step: 1500 | Epoch: 1/2 | LR: 0.000070 | Train Loss: 0.009298 | 4.4 steps/s
+[conventional (140.16M/149.59M)] Step: 1500 | Epoch: 1/2 | LR: 0.000070 | Train Loss: 0.008463 | 4.3 steps/s
+[conventional (149.59M/149.59M)] Step: 1500 | Epoch: 1/2 | LR: 0.000070 | Train Loss: 0.008473 | 4.1 steps/s
+[conventional (140.16M/140.16M)] Step: 1500 | Epoch: 1/2 | LR: 0.000070 | Train Loss: 0.008460 | 4.4 steps/s
+[conventional (149.59M/149.59M)] Step: 1500 | Epoch: 1/2 | LR: 0.000070 | Train Loss: 0.008343 | 4.2 steps/s
+[conventional (140.16M/149.59M)] Step: 2000 | Epoch: 1/2 | LR: 0.000060 | Train Loss: 0.008886 | 4.3 steps/s
+[conventional (140.16M/149.59M)] Step: 2000 | Epoch: 1/2 | LR: 0.000060 | Train Loss: 0.008086 | 4.4 steps/s
+[conventional (149.59M/149.59M)] Step: 2000 | Epoch: 1/2 | LR: 0.000060 | Train Loss: 0.008081 | 4.2 steps/s
+[conventional (140.16M/140.16M)] Step: 2000 | Epoch: 1/2 | LR: 0.000060 | Train Loss: 0.008085 | 4.4 steps/s
+[conventional (149.59M/149.59M)] Step: 2000 | Epoch: 1/2 | LR: 0.000060 | Train Loss: 0.007967 | 4.2 steps/s
+[conventional (140.16M/149.59M)] Step: 2500 | Epoch: 1/2 | LR: 0.000050 | Train Loss: 0.008625 | 4.3 steps/s
+[conventional (140.16M/149.59M)] Step: 2500 | Epoch: 1/2 | LR: 0.000050 | Train Loss: 0.007857 | 4.4 steps/s
+      [BEST @ step 2500] eval loss: 0.008785
+      [BEST @ step 2500] eval loss: 0.007908
+[conventional (149.59M/149.59M)] Step: 2500 | Epoch: 1/2 | LR: 0.000050 | Train Loss: 0.007826 | 4.3 steps/s
+[conventional (140.16M/140.16M)] Step: 2500 | Epoch: 1/2 | LR: 0.000050 | Train Loss: 0.007855 | 4.6 steps/s
+      [BEST @ step 2500] eval loss: 0.008260
+      [BEST @ step 2500] eval loss: 0.007892
+[conventional (149.59M/149.59M)] Step: 2500 | Epoch: 1/2 | LR: 0.000050 | Train Loss: 0.007728 | 4.4 steps/s
+      [BEST @ step 2500] eval loss: 0.007933
+[conventional (140.16M/149.59M)] Step: 3000 | Epoch: 2/2 | LR: 0.000040 | Train Loss: 0.008382 | 4.2 steps/s
+[conventional (140.16M/149.59M)] Step: 3000 | Epoch: 2/2 | LR: 0.000040 | Train Loss: 0.007642 | 4.2 steps/s
+[conventional (140.16M/140.16M)] Step: 3000 | Epoch: 2/2 | LR: 0.000040 | Train Loss: 0.007640 | 4.1 steps/s
+[conventional (149.59M/149.59M)] Step: 3000 | Epoch: 2/2 | LR: 0.000040 | Train Loss: 0.007600 | 3.9 steps/s
+[conventional (149.59M/149.59M)] Step: 3000 | Epoch: 2/2 | LR: 0.000040 | Train Loss: 0.007512 | 3.9 steps/s
+[conventional (140.16M/149.59M)] Step: 3500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.008204 | 4.4 steps/s
+[conventional (140.16M/149.59M)] Step: 3500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.007494 | 4.4 steps/s
+[conventional (140.16M/140.16M)] Step: 3500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.007493 | 4.4 steps/s
+[conventional (149.59M/149.59M)] Step: 3500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.007438 | 4.2 steps/s
+[conventional (149.59M/149.59M)] Step: 3500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.007359 | 4.2 steps/s
+[conventional (140.16M/149.59M)] Step: 4000 | Epoch: 2/2 | LR: 0.000020 | Train Loss: 0.008059 | 4.4 steps/s
+[conventional (140.16M/149.59M)] Step: 4000 | Epoch: 2/2 | LR: 0.000020 | Train Loss: 0.007369 | 4.4 steps/s
+[conventional (140.16M/140.16M)] Step: 4000 | Epoch: 2/2 | LR: 0.000020 | Train Loss: 0.007368 | 4.4 steps/s
+[conventional (149.59M/149.59M)] Step: 4000 | Epoch: 2/2 | LR: 0.000020 | Train Loss: 0.007305 | 4.2 steps/s
+[conventional (149.59M/149.59M)] Step: 4000 | Epoch: 2/2 | LR: 0.000020 | Train Loss: 0.007238 | 4.2 steps/s
+[conventional (140.16M/149.59M)] Step: 4500 | Epoch: 2/2 | LR: 0.000010 | Train Loss: 0.007947 | 4.4 steps/s
+[conventional (140.16M/149.59M)] Step: 4500 | Epoch: 2/2 | LR: 0.000010 | Train Loss: 0.007271 | 4.5 steps/s
+[conventional (140.16M/140.16M)] Step: 4500 | Epoch: 2/2 | LR: 0.000010 | Train Loss: 0.007270 | 4.5 steps/s
+[conventional (149.59M/149.59M)] Step: 4500 | Epoch: 2/2 | LR: 0.000010 | Train Loss: 0.007199 | 4.2 steps/s
+[conventional (149.59M/149.59M)] Step: 4500 | Epoch: 2/2 | LR: 0.000010 | Train Loss: 0.007139 | 4.2 steps/s
+[conventional (140.16M/149.59M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.007840 | 4.4 steps/s
+[conventional (140.16M/149.59M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.007179 | 4.4 steps/s
+      [BEST @ step 5000] eval loss: 0.007730
+      [BEST @ step 5000] eval loss: 0.007088
+
+[INFO] Using best model @ step: 5000, test loss: 0.007717 | PSNR: 21.1282 | SSIM: 0.6385
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_fix_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run1/experiment_summary.json
+[conventional (140.16M/140.16M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.007177 | 4.7 steps/s
+
+[INFO] Using best model @ step: 5000, test loss: 0.007080 | PSNR: 21.5026 | SSIM: 0.6581
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_fix_I_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run1/experiment_summary.json
+      [BEST @ step 5000] eval loss: 0.007088
+
+[INFO] Using best model @ step: 5000, test loss: 0.007077 | PSNR: 21.5044 | SSIM: 0.6581
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_wo_Win_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run1/experiment_summary.json
+[conventional (149.59M/149.59M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.007098 | 5.2 steps/s
+      [BEST @ step 5000] eval loss: 0.007026
+
+[INFO] Using best model @ step: 5000, test loss: 0.007013 | PSNR: 21.5436 | SSIM: 0.6623
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_149594112/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run1/experiment_summary.json
+[conventional (149.59M/149.59M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.007046 | 6.9 steps/s
+      [BEST @ step 5000] eval loss: 0.006980
+
+[INFO] Using best model @ step: 5000, test loss: 0.006970 | PSNR: 21.5706 | SSIM: 0.6617
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_I_149594112/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run1/experiment_summary.json
+==========================================
+Starting experiments with run_id=1
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=3e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:5
+Set W_in to non-trianable
+cuda:5
+cuda:5
+cuda:5
+Initialize Win to Identity matrix
+cuda:5
+Set W_in to non-trianable
+Initialize Win to Identity matrix
+ConventionalMLP(
+  (in_fc): Linear(in_features=3072, out_features=3072, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 149,594,112
+Trainable parameters: 140,156,928
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_fix_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run1
+Loading ImageNet-32 training data...
+  Loading batch 1...
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 140,156,928
+Trainable parameters: 140,156,928
+Training with no W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_wo_Win_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run1
+Loading ImageNet-32 training data...
+  Loading batch 1...
+ConventionalMLP(
+  (in_fc): Linear(in_features=3072, out_features=3072, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 149,594,112
+Trainable parameters: 149,594,112
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_149594112/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run1
+Loading ImageNet-32 training data...
+  Loading batch 1...
+ConventionalMLP(
+  (in_fc): Linear(in_features=3072, out_features=3072, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 149,594,112
+Trainable parameters: 149,594,112
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_I_149594112/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run1
+Loading ImageNet-32 training data...
+  Loading batch 1...
+ConventionalMLP(
+  (in_fc): Linear(in_features=3072, out_features=3072, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 149,594,112
+Trainable parameters: 140,156,928
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_fix_I_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run1
+Loading ImageNet-32 training data...
+  Loading batch 1...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 5...
+  Loading batch 5...
+  Loading batch 5...
+  Loading batch 5...
+  Loading batch 5...
+  Loading batch 6...
+  Loading batch 6...
+  Loading batch 6...
+  Loading batch 6...
+  Loading batch 6...
+  Loading batch 7...
+  Loading batch 7...
+  Loading batch 7...
+  Loading batch 7...
+  Loading batch 7...
+  Loading batch 8...
+  Loading batch 8...
+  Loading batch 8...
+  Loading batch 8...
+  Loading batch 8...
+  Loading batch 9...
+  Loading batch 9...
+  Loading batch 9...
+  Loading batch 9...
+  Loading batch 9...
+  Loading batch 10...
+  Loading batch 10...
+  Loading batch 10...
+  Loading batch 10...
+  Loading batch 10...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0003 -> 0.0 over 5006 steps
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0003 -> 0.0 over 5006 steps
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0003 -> 0.0 over 5006 steps
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0003 -> 0.0 over 5006 steps
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0003 -> 0.0 over 5006 steps
+[conventional (140.16M/140.16M)] Step: 500 | Epoch: 1/2 | LR: 0.000270 | Train Loss: 0.012669 | 4.8 steps/s
+[conventional (140.16M/149.59M)] Step: 500 | Epoch: 1/2 | LR: 0.000270 | Train Loss: 0.013513 | 4.8 steps/s
+[conventional (140.16M/149.59M)] Step: 500 | Epoch: 1/2 | LR: 0.000270 | Train Loss: 0.012662 | 4.8 steps/s
+[conventional (149.59M/149.59M)] Step: 500 | Epoch: 1/2 | LR: 0.000270 | Train Loss: 0.012803 | 4.7 steps/s
+[conventional (149.59M/149.59M)] Step: 500 | Epoch: 1/2 | LR: 0.000270 | Train Loss: 0.013071 | 4.6 steps/s
+[conventional (140.16M/140.16M)] Step: 1000 | Epoch: 1/2 | LR: 0.000240 | Train Loss: 0.008941 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 1000 | Epoch: 1/2 | LR: 0.000240 | Train Loss: 0.009816 | 4.4 steps/s
+[conventional (140.16M/149.59M)] Step: 1000 | Epoch: 1/2 | LR: 0.000240 | Train Loss: 0.008938 | 4.4 steps/s
+[conventional (149.59M/149.59M)] Step: 1000 | Epoch: 1/2 | LR: 0.000240 | Train Loss: 0.008874 | 4.3 steps/s
+[conventional (149.59M/149.59M)] Step: 1000 | Epoch: 1/2 | LR: 0.000240 | Train Loss: 0.009027 | 4.3 steps/s
+[conventional (140.16M/140.16M)] Step: 1500 | Epoch: 1/2 | LR: 0.000210 | Train Loss: 0.008373 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 1500 | Epoch: 1/2 | LR: 0.000210 | Train Loss: 0.008374 | 4.4 steps/s
+[conventional (140.16M/149.59M)] Step: 1500 | Epoch: 1/2 | LR: 0.000210 | Train Loss: 0.009175 | 4.4 steps/s
+[conventional (149.59M/149.59M)] Step: 1500 | Epoch: 1/2 | LR: 0.000210 | Train Loss: 0.008231 | 4.3 steps/s
+[conventional (149.59M/149.59M)] Step: 1500 | Epoch: 1/2 | LR: 0.000210 | Train Loss: 0.008356 | 4.3 steps/s
+[conventional (140.16M/140.16M)] Step: 2000 | Epoch: 1/2 | LR: 0.000180 | Train Loss: 0.008057 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 2000 | Epoch: 1/2 | LR: 0.000180 | Train Loss: 0.008060 | 4.4 steps/s
+[conventional (140.16M/149.59M)] Step: 2000 | Epoch: 1/2 | LR: 0.000180 | Train Loss: 0.008796 | 4.4 steps/s
+[conventional (149.59M/149.59M)] Step: 2000 | Epoch: 1/2 | LR: 0.000180 | Train Loss: 0.007879 | 4.3 steps/s
+[conventional (149.59M/149.59M)] Step: 2000 | Epoch: 1/2 | LR: 0.000180 | Train Loss: 0.007987 | 4.2 steps/s
+[conventional (140.16M/140.16M)] Step: 2500 | Epoch: 1/2 | LR: 0.000150 | Train Loss: 0.007798 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 2500 | Epoch: 1/2 | LR: 0.000150 | Train Loss: 0.007797 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 2500 | Epoch: 1/2 | LR: 0.000150 | Train Loss: 0.008499 | 4.5 steps/s
+      [BEST @ step 2500] eval loss: 0.007608
+      [BEST @ step 2500] eval loss: 0.007611
+      [BEST @ step 2500] eval loss: 0.008345
+[conventional (149.59M/149.59M)] Step: 2500 | Epoch: 1/2 | LR: 0.000150 | Train Loss: 0.007601 | 4.4 steps/s
+[conventional (149.59M/149.59M)] Step: 2500 | Epoch: 1/2 | LR: 0.000150 | Train Loss: 0.007693 | 4.5 steps/s
+      [BEST @ step 2500] eval loss: 0.007553
+      [BEST @ step 2500] eval loss: 0.007741
+[conventional (140.16M/140.16M)] Step: 3000 | Epoch: 2/2 | LR: 0.000120 | Train Loss: 0.007565 | 4.4 steps/s
+[conventional (140.16M/149.59M)] Step: 3000 | Epoch: 2/2 | LR: 0.000120 | Train Loss: 0.007567 | 4.2 steps/s
+[conventional (140.16M/149.59M)] Step: 3000 | Epoch: 2/2 | LR: 0.000120 | Train Loss: 0.008223 | 4.2 steps/s
+[conventional (149.59M/149.59M)] Step: 3000 | Epoch: 2/2 | LR: 0.000120 | Train Loss: 0.007436 | 4.0 steps/s
+[conventional (149.59M/149.59M)] Step: 3000 | Epoch: 2/2 | LR: 0.000120 | Train Loss: 0.007362 | 3.9 steps/s
+[conventional (140.16M/140.16M)] Step: 3500 | Epoch: 2/2 | LR: 0.000090 | Train Loss: 0.007372 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 3500 | Epoch: 2/2 | LR: 0.000090 | Train Loss: 0.007372 | 4.4 steps/s
+[conventional (140.16M/149.59M)] Step: 3500 | Epoch: 2/2 | LR: 0.000090 | Train Loss: 0.007998 | 4.4 steps/s
+[conventional (149.59M/149.59M)] Step: 3500 | Epoch: 2/2 | LR: 0.000090 | Train Loss: 0.007225 | 4.2 steps/s
+[conventional (149.59M/149.59M)] Step: 3500 | Epoch: 2/2 | LR: 0.000090 | Train Loss: 0.007163 | 4.3 steps/s
+[conventional (140.16M/140.16M)] Step: 4000 | Epoch: 2/2 | LR: 0.000060 | Train Loss: 0.007187 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 4000 | Epoch: 2/2 | LR: 0.000060 | Train Loss: 0.007783 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 4000 | Epoch: 2/2 | LR: 0.000060 | Train Loss: 0.007189 | 4.4 steps/s
+[conventional (149.59M/149.59M)] Step: 4000 | Epoch: 2/2 | LR: 0.000060 | Train Loss: 0.007040 | 4.3 steps/s
+[conventional (149.59M/149.59M)] Step: 4000 | Epoch: 2/2 | LR: 0.000060 | Train Loss: 0.006992 | 4.3 steps/s
+[conventional (140.16M/140.16M)] Step: 4500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.007015 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 4500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.007591 | 4.4 steps/s
+[conventional (140.16M/149.59M)] Step: 4500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.007017 | 4.4 steps/s
+[conventional (149.59M/149.59M)] Step: 4500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.006818 | 4.2 steps/s
+[conventional (149.59M/149.59M)] Step: 4500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.006855 | 4.2 steps/s
+[conventional (140.16M/140.16M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.006837 | 4.5 steps/s
+      [BEST @ step 5000] eval loss: 0.006711
+[conventional (140.16M/149.59M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.006838 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.007389 | 4.5 steps/s
+
+[INFO] Using best model @ step: 5000, test loss: 0.006703 | PSNR: 21.7401 | SSIM: 0.6732
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_wo_Win_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run1/experiment_summary.json
+      [BEST @ step 5000] eval loss: 0.006712
+      [BEST @ step 5000] eval loss: 0.007234
+
+[INFO] Using best model @ step: 5000, test loss: 0.006703 | PSNR: 21.7400 | SSIM: 0.6732
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_fix_I_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run1/experiment_summary.json
+
+[INFO] Using best model @ step: 5000, test loss: 0.007225 | PSNR: 21.4144 | SSIM: 0.6562
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_fix_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run1/experiment_summary.json
+[conventional (149.59M/149.59M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.006680 | 5.3 steps/s
+[conventional (149.59M/149.59M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.006655 | 5.2 steps/s
+      [BEST @ step 5000] eval loss: 0.006594
+      [BEST @ step 5000] eval loss: 0.006572
+
+[INFO] Using best model @ step: 5000, test loss: 0.006584 | PSNR: 21.8179 | SSIM: 0.6776
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_149594112/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run1/experiment_summary.json
+
+[INFO] Using best model @ step: 5000, test loss: 0.006563 | PSNR: 21.8312 | SSIM: 0.6775
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_I_149594112/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run1/experiment_summary.json
+==========================================
+Completed run_id=1
+==========================================
+==========================================
+Starting experiments with run_id=2
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=1e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:5
+cuda:5
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+cuda:5
+cuda:5
+Initialize Win to Identity matrix
+cuda:5
+Set W_in to non-trianable
+ConventionalMLP(
+  (in_fc): Linear(in_features=3072, out_features=3072, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 149,594,112
+Trainable parameters: 149,594,112
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_149594112/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run2
+Loading ImageNet-32 training data...
+  Loading batch 1...
+ConventionalMLP(
+  (in_fc): Linear(in_features=3072, out_features=3072, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 149,594,112
+Trainable parameters: 140,156,928
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_fix_I_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run2
+Loading ImageNet-32 training data...
+  Loading batch 1...
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 140,156,928
+Trainable parameters: 140,156,928
+Training with no W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_wo_Win_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run2
+Loading ImageNet-32 training data...
+  Loading batch 1...
+ConventionalMLP(
+  (in_fc): Linear(in_features=3072, out_features=3072, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 149,594,112
+Trainable parameters: 149,594,112
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_I_149594112/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run2
+Loading ImageNet-32 training data...
+  Loading batch 1...
+ConventionalMLP(
+  (in_fc): Linear(in_features=3072, out_features=3072, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 149,594,112
+Trainable parameters: 140,156,928
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_fix_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run2
+Loading ImageNet-32 training data...
+  Loading batch 1...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 5...
+  Loading batch 5...
+  Loading batch 5...
+  Loading batch 5...
+  Loading batch 5...
+  Loading batch 6...
+  Loading batch 6...
+  Loading batch 6...
+  Loading batch 6...
+  Loading batch 6...
+  Loading batch 7...
+  Loading batch 7...
+  Loading batch 7...
+  Loading batch 7...
+  Loading batch 7...
+  Loading batch 8...
+  Loading batch 8...
+  Loading batch 8...
+  Loading batch 8...
+  Loading batch 8...
+  Loading batch 9...
+  Loading batch 9...
+  Loading batch 9...
+  Loading batch 9...
+  Loading batch 9...
+  Loading batch 10...
+  Loading batch 10...
+  Loading batch 10...
+  Loading batch 10...
+  Loading batch 10...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0001 -> 0.0 over 5006 steps
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0001 -> 0.0 over 5006 steps
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0001 -> 0.0 over 5006 steps
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0001 -> 0.0 over 5006 steps
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0001 -> 0.0 over 5006 steps
+[conventional (140.16M/149.59M)] Step: 500 | Epoch: 1/2 | LR: 0.000090 | Train Loss: 0.013581 | 4.9 steps/s
+[conventional (140.16M/140.16M)] Step: 500 | Epoch: 1/2 | LR: 0.000090 | Train Loss: 0.013593 | 4.9 steps/s
+[conventional (140.16M/149.59M)] Step: 500 | Epoch: 1/2 | LR: 0.000090 | Train Loss: 0.014205 | 4.8 steps/s
+[conventional (149.59M/149.59M)] Step: 500 | Epoch: 1/2 | LR: 0.000090 | Train Loss: 0.013431 | 4.6 steps/s
+[conventional (149.59M/149.59M)] Step: 500 | Epoch: 1/2 | LR: 0.000090 | Train Loss: 0.013555 | 4.6 steps/s
+[conventional (140.16M/149.59M)] Step: 1000 | Epoch: 1/2 | LR: 0.000080 | Train Loss: 0.009182 | 4.5 steps/s
+[conventional (140.16M/140.16M)] Step: 1000 | Epoch: 1/2 | LR: 0.000080 | Train Loss: 0.009181 | 4.6 steps/s
+[conventional (140.16M/149.59M)] Step: 1000 | Epoch: 1/2 | LR: 0.000080 | Train Loss: 0.010041 | 4.5 steps/s
+[conventional (149.59M/149.59M)] Step: 1000 | Epoch: 1/2 | LR: 0.000080 | Train Loss: 0.009065 | 4.3 steps/s
+[conventional (149.59M/149.59M)] Step: 1000 | Epoch: 1/2 | LR: 0.000080 | Train Loss: 0.009225 | 4.3 steps/s
+[conventional (140.16M/149.59M)] Step: 1500 | Epoch: 1/2 | LR: 0.000070 | Train Loss: 0.008448 | 4.5 steps/s
+[conventional (140.16M/140.16M)] Step: 1500 | Epoch: 1/2 | LR: 0.000070 | Train Loss: 0.008450 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 1500 | Epoch: 1/2 | LR: 0.000070 | Train Loss: 0.009285 | 4.5 steps/s
+[conventional (149.59M/149.59M)] Step: 1500 | Epoch: 1/2 | LR: 0.000070 | Train Loss: 0.008324 | 4.3 steps/s
+[conventional (149.59M/149.59M)] Step: 1500 | Epoch: 1/2 | LR: 0.000070 | Train Loss: 0.008459 | 4.3 steps/s
+[conventional (140.16M/140.16M)] Step: 2000 | Epoch: 1/2 | LR: 0.000060 | Train Loss: 0.008070 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 2000 | Epoch: 1/2 | LR: 0.000060 | Train Loss: 0.008069 | 4.4 steps/s
+[conventional (140.16M/149.59M)] Step: 2000 | Epoch: 1/2 | LR: 0.000060 | Train Loss: 0.008864 | 4.5 steps/s
+[conventional (149.59M/149.59M)] Step: 2000 | Epoch: 1/2 | LR: 0.000060 | Train Loss: 0.007954 | 4.3 steps/s
+[conventional (149.59M/149.59M)] Step: 2000 | Epoch: 1/2 | LR: 0.000060 | Train Loss: 0.008064 | 4.4 steps/s
+[conventional (140.16M/140.16M)] Step: 2500 | Epoch: 1/2 | LR: 0.000050 | Train Loss: 0.007858 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 2500 | Epoch: 1/2 | LR: 0.000050 | Train Loss: 0.007856 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 2500 | Epoch: 1/2 | LR: 0.000050 | Train Loss: 0.008620 | 4.6 steps/s
+      [BEST @ step 2500] eval loss: 0.007667
+      [BEST @ step 2500] eval loss: 0.007669
+      [BEST @ step 2500] eval loss: 0.008375
+[conventional (149.59M/149.59M)] Step: 2500 | Epoch: 1/2 | LR: 0.000050 | Train Loss: 0.007724 | 4.5 steps/s
+[conventional (149.59M/149.59M)] Step: 2500 | Epoch: 1/2 | LR: 0.000050 | Train Loss: 0.007824 | 4.5 steps/s
+      [BEST @ step 2500] eval loss: 0.007563
+      [BEST @ step 2500] eval loss: 0.007674
+[conventional (140.16M/140.16M)] Step: 3000 | Epoch: 2/2 | LR: 0.000040 | Train Loss: 0.007638 | 4.4 steps/s
+[conventional (140.16M/149.59M)] Step: 3000 | Epoch: 2/2 | LR: 0.000040 | Train Loss: 0.007637 | 4.3 steps/s
+[conventional (140.16M/149.59M)] Step: 3000 | Epoch: 2/2 | LR: 0.000040 | Train Loss: 0.008378 | 4.3 steps/s
+[conventional (149.59M/149.59M)] Step: 3000 | Epoch: 2/2 | LR: 0.000040 | Train Loss: 0.007603 | 4.1 steps/s
+[conventional (149.59M/149.59M)] Step: 3000 | Epoch: 2/2 | LR: 0.000040 | Train Loss: 0.007513 | 4.0 steps/s
+[conventional (140.16M/140.16M)] Step: 3500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.007486 | 4.6 steps/s
+[conventional (140.16M/149.59M)] Step: 3500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.007486 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 3500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.008199 | 4.5 steps/s
+[conventional (149.59M/149.59M)] Step: 3500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.007432 | 4.4 steps/s
+[conventional (149.59M/149.59M)] Step: 3500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.007353 | 4.3 steps/s
+[conventional (140.16M/140.16M)] Step: 4000 | Epoch: 2/2 | LR: 0.000020 | Train Loss: 0.007362 | 4.6 steps/s
+[conventional (140.16M/149.59M)] Step: 4000 | Epoch: 2/2 | LR: 0.000020 | Train Loss: 0.007362 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 4000 | Epoch: 2/2 | LR: 0.000020 | Train Loss: 0.008055 | 4.5 steps/s
+[conventional (149.59M/149.59M)] Step: 4000 | Epoch: 2/2 | LR: 0.000020 | Train Loss: 0.007296 | 4.3 steps/s
+[conventional (149.59M/149.59M)] Step: 4000 | Epoch: 2/2 | LR: 0.000020 | Train Loss: 0.007227 | 4.3 steps/s
+[conventional (140.16M/140.16M)] Step: 4500 | Epoch: 2/2 | LR: 0.000010 | Train Loss: 0.007261 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 4500 | Epoch: 2/2 | LR: 0.000010 | Train Loss: 0.007261 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 4500 | Epoch: 2/2 | LR: 0.000010 | Train Loss: 0.007933 | 4.5 steps/s
+[conventional (149.59M/149.59M)] Step: 4500 | Epoch: 2/2 | LR: 0.000010 | Train Loss: 0.007188 | 4.3 steps/s
+[conventional (149.59M/149.59M)] Step: 4500 | Epoch: 2/2 | LR: 0.000010 | Train Loss: 0.007128 | 4.3 steps/s
+[conventional (140.16M/140.16M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.007191 | 4.6 steps/s
+[conventional (140.16M/149.59M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.007191 | 4.5 steps/s
+      [BEST @ step 5000] eval loss: 0.007084
+[conventional (140.16M/149.59M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.007854 | 4.6 steps/s
+      [BEST @ step 5000] eval loss: 0.007084
+
+[INFO] Using best model @ step: 5000, test loss: 0.007077 | PSNR: 21.5042 | SSIM: 0.6581
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_wo_Win_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run2/experiment_summary.json
+      [BEST @ step 5000] eval loss: 0.007728
+
+[INFO] Using best model @ step: 5000, test loss: 0.007076 | PSNR: 21.5045 | SSIM: 0.6582
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_fix_I_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run2/experiment_summary.json
+
+[INFO] Using best model @ step: 5000, test loss: 0.007715 | PSNR: 21.1292 | SSIM: 0.6386
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_fix_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run2/experiment_summary.json
+[conventional (149.59M/149.59M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.007110 | 5.3 steps/s
+[conventional (149.59M/149.59M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.007055 | 5.4 steps/s
+      [BEST @ step 5000] eval loss: 0.007019
+      [BEST @ step 5000] eval loss: 0.006972
+
+[INFO] Using best model @ step: 5000, test loss: 0.007009 | PSNR: 21.5460 | SSIM: 0.6625
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_149594112/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run2/experiment_summary.json
+
+[INFO] Using best model @ step: 5000, test loss: 0.006964 | PSNR: 21.5738 | SSIM: 0.6619
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_I_149594112/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0001_run2/experiment_summary.json
+==========================================
+Starting experiments with run_id=2
+==========================================
+Running: Conventional w/ W_in
+Running: Conventional w/ W_in, W_in = I, fix
+Running: Conventional w/ W_in, W_in = I, trainable
+Running: Conventional w/ W_in, W_in = random, fix
+Running: Conventional w/o W_in
+==========================================
+Completed all exp for lr=3e-4
+==========================================
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglassCurrent working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+Current working directory: /storage/ssd1/ArthurLee/Mediatek_research/hourglass-proj/code/hourglass
+cuda:5
+Initialize Win to Identity matrix
+cuda:5
+Initialize Win to Identity matrix
+Set W_in to non-trianable
+cuda:5
+cuda:5
+Set W_in to non-trianable
+cuda:5
+ConventionalMLP(
+  (in_fc): Linear(in_features=3072, out_features=3072, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 149,594,112
+Trainable parameters: 149,594,112
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_I_149594112/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run2
+Loading ImageNet-32 training data...
+  Loading batch 1...
+ConventionalMLP(
+  (in_fc): Linear(in_features=3072, out_features=3072, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 149,594,112
+Trainable parameters: 140,156,928
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_fix_I_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run2
+Loading ImageNet-32 training data...
+  Loading batch 1...
+ConventionalMLP(
+  (in_fc): Linear(in_features=3072, out_features=3072, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 149,594,112
+Trainable parameters: 140,156,928
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_fix_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run2
+Loading ImageNet-32 training data...
+  Loading batch 1...
+ConventionalMLP(
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 140,156,928
+Trainable parameters: 140,156,928
+Training with no W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_wo_Win_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run2
+Loading ImageNet-32 training data...
+  Loading batch 1...
+ConventionalMLP(
+  (in_fc): Linear(in_features=3072, out_features=3072, bias=False)
+  (blocks): ModuleList(
+    (0-5): 6 x MLPBlockReLU(
+      (norm): BatchNorm1d(3072, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+      (fc1): Linear(in_features=3072, out_features=3546, bias=False)
+      (act): ReLU()
+      (fc2): Linear(in_features=3546, out_features=3072, bias=False)
+      (skip_add): SkipAdd()
+    )
+  )
+  (out_fc): Linear(in_features=3072, out_features=3072, bias=False)
+)
+Total parameters: 149,594,112
+Trainable parameters: 149,594,112
+Training with W_in matrix!
+Experiment directory: ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_149594112/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run2
+Loading ImageNet-32 training data...
+  Loading batch 1...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 2...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 3...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 4...
+  Loading batch 5...
+  Loading batch 5...
+  Loading batch 5...
+  Loading batch 5...
+  Loading batch 6...
+  Loading batch 5...
+  Loading batch 6...
+  Loading batch 6...
+  Loading batch 6...
+  Loading batch 7...
+  Loading batch 7...
+  Loading batch 6...
+  Loading batch 7...
+  Loading batch 7...
+  Loading batch 8...
+  Loading batch 8...
+  Loading batch 8...
+  Loading batch 8...
+  Loading batch 7...
+  Loading batch 9...
+  Loading batch 9...
+  Loading batch 9...
+  Loading batch 8...
+  Loading batch 9...
+  Loading batch 10...
+  Loading batch 10...
+  Loading batch 9...
+  Loading batch 10...
+  Loading batch 10...
+  Loading batch 10...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0003 -> 0.0 over 5006 steps
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0003 -> 0.0 over 5006 steps
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0003 -> 0.0 over 5006 steps
+ImageNet-32 train loaded: 1281167 images, shape: (1281167, 3, 32, 32)
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0003 -> 0.0 over 5006 steps
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 eval split with 25000 samples
+Loading ImageNet-32 validation data...
+ImageNet-32 eval loaded: 50000 images, shape: (50000, 3, 32, 32)
+Created ImageNet-32 test split with 25000 samples
+
+[INFO] Training conventional MLP
+[INFO] Logging mode: step_based
+[INFO] LinearLR (step-based): 0.0003 -> 0.0 over 5006 steps
+[conventional (140.16M/149.59M)] Step: 500 | Epoch: 1/2 | LR: 0.000270 | Train Loss: 0.013401 | 5.0 steps/s
+[conventional (140.16M/140.16M)] Step: 500 | Epoch: 1/2 | LR: 0.000270 | Train Loss: 0.012585 | 5.0 steps/s
+[conventional (140.16M/149.59M)] Step: 500 | Epoch: 1/2 | LR: 0.000270 | Train Loss: 0.012568 | 4.9 steps/s
+[conventional (149.59M/149.59M)] Step: 500 | Epoch: 1/2 | LR: 0.000270 | Train Loss: 0.012695 | 4.6 steps/s
+[conventional (149.59M/149.59M)] Step: 500 | Epoch: 1/2 | LR: 0.000270 | Train Loss: 0.012915 | 4.6 steps/s
+[conventional (140.16M/140.16M)] Step: 1000 | Epoch: 1/2 | LR: 0.000240 | Train Loss: 0.008965 | 4.6 steps/s
+[conventional (140.16M/149.59M)] Step: 1000 | Epoch: 1/2 | LR: 0.000240 | Train Loss: 0.009837 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 1000 | Epoch: 1/2 | LR: 0.000240 | Train Loss: 0.008955 | 4.5 steps/s
+[conventional (149.59M/149.59M)] Step: 1000 | Epoch: 1/2 | LR: 0.000240 | Train Loss: 0.008890 | 4.4 steps/s
+[conventional (149.59M/149.59M)] Step: 1000 | Epoch: 1/2 | LR: 0.000240 | Train Loss: 0.009038 | 4.4 steps/s
+[conventional (140.16M/140.16M)] Step: 1500 | Epoch: 1/2 | LR: 0.000210 | Train Loss: 0.008369 | 4.6 steps/s
+[conventional (140.16M/149.59M)] Step: 1500 | Epoch: 1/2 | LR: 0.000210 | Train Loss: 0.009158 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 1500 | Epoch: 1/2 | LR: 0.000210 | Train Loss: 0.008367 | 4.5 steps/s
+[conventional (149.59M/149.59M)] Step: 1500 | Epoch: 1/2 | LR: 0.000210 | Train Loss: 0.008233 | 4.3 steps/s
+[conventional (149.59M/149.59M)] Step: 1500 | Epoch: 1/2 | LR: 0.000210 | Train Loss: 0.008353 | 4.3 steps/s
+[conventional (140.16M/140.16M)] Step: 2000 | Epoch: 1/2 | LR: 0.000180 | Train Loss: 0.008024 | 4.6 steps/s
+[conventional (140.16M/149.59M)] Step: 2000 | Epoch: 1/2 | LR: 0.000180 | Train Loss: 0.008771 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 2000 | Epoch: 1/2 | LR: 0.000180 | Train Loss: 0.008024 | 4.5 steps/s
+[conventional (149.59M/149.59M)] Step: 2000 | Epoch: 1/2 | LR: 0.000180 | Train Loss: 0.007845 | 4.3 steps/s
+[conventional (149.59M/149.59M)] Step: 2000 | Epoch: 1/2 | LR: 0.000180 | Train Loss: 0.007950 | 4.3 steps/s
+[conventional (140.16M/140.16M)] Step: 2500 | Epoch: 1/2 | LR: 0.000150 | Train Loss: 0.007804 | 4.6 steps/s
+[conventional (140.16M/149.59M)] Step: 2500 | Epoch: 1/2 | LR: 0.000150 | Train Loss: 0.008503 | 4.6 steps/s
+[conventional (140.16M/149.59M)] Step: 2500 | Epoch: 1/2 | LR: 0.000150 | Train Loss: 0.007800 | 4.6 steps/s
+      [BEST @ step 2500] eval loss: 0.007573
+      [BEST @ step 2500] eval loss: 0.008189
+      [BEST @ step 2500] eval loss: 0.007595
+[conventional (149.59M/149.59M)] Step: 2500 | Epoch: 1/2 | LR: 0.000150 | Train Loss: 0.007595 | 4.5 steps/s
+[conventional (149.59M/149.59M)] Step: 2500 | Epoch: 1/2 | LR: 0.000150 | Train Loss: 0.007681 | 4.6 steps/s
+      [BEST @ step 2500] eval loss: 0.007517
+      [BEST @ step 2500] eval loss: 0.007626
+[conventional (140.16M/140.16M)] Step: 3000 | Epoch: 2/2 | LR: 0.000120 | Train Loss: 0.007579 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 3000 | Epoch: 2/2 | LR: 0.000120 | Train Loss: 0.008234 | 4.4 steps/s
+[conventional (140.16M/149.59M)] Step: 3000 | Epoch: 2/2 | LR: 0.000120 | Train Loss: 0.007577 | 4.3 steps/s
+[conventional (149.59M/149.59M)] Step: 3000 | Epoch: 2/2 | LR: 0.000120 | Train Loss: 0.007383 | 4.1 steps/s
+[conventional (149.59M/149.59M)] Step: 3000 | Epoch: 2/2 | LR: 0.000120 | Train Loss: 0.007455 | 4.1 steps/s
+[conventional (140.16M/140.16M)] Step: 3500 | Epoch: 2/2 | LR: 0.000090 | Train Loss: 0.007366 | 4.6 steps/s
+[conventional (140.16M/149.59M)] Step: 3500 | Epoch: 2/2 | LR: 0.000090 | Train Loss: 0.007987 | 4.6 steps/s
+[conventional (140.16M/149.59M)] Step: 3500 | Epoch: 2/2 | LR: 0.000090 | Train Loss: 0.007364 | 4.6 steps/s
+[conventional (149.59M/149.59M)] Step: 3500 | Epoch: 2/2 | LR: 0.000090 | Train Loss: 0.007166 | 4.3 steps/s
+[conventional (149.59M/149.59M)] Step: 3500 | Epoch: 2/2 | LR: 0.000090 | Train Loss: 0.007224 | 4.3 steps/s
+[conventional (140.16M/140.16M)] Step: 4000 | Epoch: 2/2 | LR: 0.000060 | Train Loss: 0.007177 | 4.6 steps/s
+[conventional (140.16M/149.59M)] Step: 4000 | Epoch: 2/2 | LR: 0.000060 | Train Loss: 0.007773 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 4000 | Epoch: 2/2 | LR: 0.000060 | Train Loss: 0.007178 | 4.6 steps/s
+[conventional (149.59M/149.59M)] Step: 4000 | Epoch: 2/2 | LR: 0.000060 | Train Loss: 0.006980 | 4.4 steps/s
+[conventional (149.59M/149.59M)] Step: 4000 | Epoch: 2/2 | LR: 0.000060 | Train Loss: 0.007026 | 4.3 steps/s
+[conventional (140.16M/140.16M)] Step: 4500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.007005 | 4.6 steps/s
+[conventional (140.16M/149.59M)] Step: 4500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.007573 | 4.5 steps/s
+[conventional (140.16M/149.59M)] Step: 4500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.007004 | 4.5 steps/s
+[conventional (149.59M/149.59M)] Step: 4500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.006811 | 4.3 steps/s
+[conventional (149.59M/149.59M)] Step: 4500 | Epoch: 2/2 | LR: 0.000030 | Train Loss: 0.006844 | 4.4 steps/s
+[conventional (140.16M/140.16M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.006845 | 4.6 steps/s
+[conventional (140.16M/149.59M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.007398 | 4.6 steps/s
+      [BEST @ step 5000] eval loss: 0.006705
+[conventional (140.16M/149.59M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.006845 | 4.6 steps/s
+      [BEST @ step 5000] eval loss: 0.007228
+
+[INFO] Using best model @ step: 5000, test loss: 0.006697 | PSNR: 21.7440 | SSIM: 0.6733
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_wo_Win_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run2/experiment_summary.json
+      [BEST @ step 5000] eval loss: 0.006703
+
+[INFO] Using best model @ step: 5000, test loss: 0.007217 | PSNR: 21.4193 | SSIM: 0.6565
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_fix_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run2/experiment_summary.json
+
+[INFO] Using best model @ step: 5000, test loss: 0.006696 | PSNR: 21.7442 | SSIM: 0.6733
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_fix_I_140156928/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run2/experiment_summary.json
+[conventional (149.59M/149.59M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.006663 | 5.7 steps/s
+[conventional (149.59M/149.59M)] Step: 5000 | Epoch: 2/2 | LR: 0.000000 | Train Loss: 0.006685 | 5.8 steps/s
+      [BEST @ step 5000] eval loss: 0.006568
+      [BEST @ step 5000] eval loss: 0.006586
+
+[INFO] Using best model @ step: 5000, test loss: 0.006559 | PSNR: 21.8341 | SSIM: 0.6776
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_I_149594112/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run2/experiment_summary.json
+
+[INFO] Using best model @ step: 5000, test loss: 0.006577 | PSNR: 21.8222 | SSIM: 0.6779
+[INFO] Saved results to ./results/imagenet32_denoising_std0.25/bs512_ep2/conventional_w_Win_149594112/latent3072_hidden3546_3546_3546_3546_3546_3546/lr0.0003_run2/experiment_summary.json
+==========================================
+Completed run_id=2
+==========================================
+==========================================
+All experiments completed!
+==========================================

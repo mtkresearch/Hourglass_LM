@@ -1,0 +1,12 @@
+/data
+# results
+
+__pycache__/
+
+old
+
+
+**/visualization/
+**/gt_images/
+data.zip
+
