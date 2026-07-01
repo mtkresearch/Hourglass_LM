@@ -2,6 +2,7 @@
 This is the project repo for hourglass MLP, VIT, and LM.
 
 People: Yu-Ang Lee^, Guan-Ting Yi^, Tzu-Quan Lin^, Meng-Hsi Chen*, Feng-Ting Liao*, Da-shan Shiu
+
 ^: equal contribution
 *: co-lead
 
