@@ -1,0 +1,70 @@
+# Data configuration
+dataset:
+  # Replace with your dataset path
+  # blend: [/proj/gpu_d_09023/mtk53726/data_2-5B/data]
+  train_data_path: [YOUR_TRAIN_DATA_PATH]
+  valid_data_path: [dolma_common-crawl/data]
+  sequence_length: 4096
+
+# Training configuration
+train:
+  train_iters: 4297 # TODO: Need to change according to the size of the model
+  global_batch_size: 1024
+  micro_batch_size: 32
+  eval_iters: 0.9140625 # Need to change according to global_batch_size. Should be num_eval_samples/global_batch_size. For 234 eval samples and global_batch_size of 256, eval_iters should be 0.9140625 (234/256).
+  eval_interval: 1000
+
+# Optimizer configuration
+# TODO: Need to change according to the size of the model 
+optimizer:
+  lr: 0.00025
+  min_lr: 0.00006 # TODO Last step
+  weight_decay: 0.1
+  adam_beta1: 0.9
+  adam_beta2: 0.95
+  apply_wd_to_qk_layernorm: True
+
+# Learning rate scheduler
+# TODO: Need to change according to the size of the model 
+scheduler:
+  lr_warmup_iters: 25 # 95 to 100
+  lr_decay_style: cosine
+  # lr_warmup_init: # hard-coded in Megatron-Bridge/src/megatron/bridge/recipes/utils/optimizer_utils.py
+
+# Checkpoint configuration
+checkpoint:
+  # Directory to save checkpoints
+  save: YOUR_CHECKPOINT_SAVE_PATH
+  # Resume training from a checkpoint
+  load: YOUR_CHECKPOINT_SAVE_PATH
+  save_interval: 1000
+  most_recent_k: 3
+
+# Model configuration
+# Note: seq_length must match data.sequence_length
+model:
+  seq_length: 4096
+  tensor_model_parallel_sizef: 1 # TODO: Need to change according to the number of GPUs used for tensor parallelism
+  pipeline_model_parallel_size: 1 # TODO: Need to change according to the number of GPUs used for pipeline parallelism
+  context_parallel_size: 1
+  num_mlp_layers: 4
+  mlp_use_residual_proj: True
+  mlp_intermediate_sizes: [2016, 2016, 2016, 2016]
+  hidden_size: 2496
+  num_layers: 12
+  num_attention_heads: 16 # Make sure that it is same as num_query_groups for regular attention
+  num_query_groups: 16
+  qk_layernorm: True
+  init_method_std: 0.02
+  kv_channels: 96
+
+# Logging
+logger:
+  log_interval: 1
+  tensorboard_dir: YOUR_TENSORBOARD_LOG_DIR
+
+# Random seed
+rng:
+  seed: 6198
+
+mixed_precision: "bf16_with_fp8_current_scaling_mixed" # TODO: Change to "fp16" or "bf16" if not using FP8 or if your hardware does not support it
