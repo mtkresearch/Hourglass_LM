@@ -44,8 +44,9 @@ cp -r ../data/car_data/car_data/test  ../data/car_data/test
 Already provided as an image-folder tree by <https://github.com/YoongiKim/CIFAR-10-images>:
 
 ```bash
-git clone https://github.com/YoongiKim/CIFAR-10-images.git
-mv CIFAR-10-images ../data/CIFAR-10
+wget https://github.com/YoongiKim/CIFAR-10-images/archive/refs/heads/master.zip -O CIFAR-10-images.zip
+unzip -q CIFAR-10-images.zip
+mv CIFAR-10-images-master ../data/CIFAR-10
 ```
 
 ## CIFAR-100 (`cifar100`)
@@ -54,8 +55,9 @@ Image-folder version from <https://github.com/cyizhuo/CIFAR-100-dataset>
 (original data: <https://www.cs.toronto.edu/~kriz/cifar.html>):
 
 ```bash
-git clone https://github.com/cyizhuo/CIFAR-100-dataset.git
-mv CIFAR-100-dataset ../data/CIFAR-100
+wget https://github.com/cyizhuo/CIFAR-100-dataset/archive/refs/heads/main.zip -O CIFAR-100-dataset.zip
+unzip -q CIFAR-100-dataset.zip
+mv CIFAR-100-dataset-main ../data/CIFAR-100
 ```
 
 ## Oxford Flowers-102 (`flowers`)
