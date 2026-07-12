@@ -1,0 +1,17 @@
+# Core (PyTorch itself is installed separately with the matching CUDA wheel,
+# see README "Environment setup")
+timm==1.0.22
+hydra-core==1.3.2
+omegaconf==2.3.0
+wandb
+tqdm
+
+# FLOPs / latency profiling
+torch_flops==0.4.1
+tabulate
+
+# Dataset preparation (data_prep/*.py)
+scipy          # organize_flowers.py reads the official .mat label/split files
+datasets       # organize_imagenet-100.py pulls ilee0022/ImageNet100 from HuggingFace
+pillow
+numpy
