@@ -1,0 +1,28 @@
+seed: 42
+epochs: 300
+resume: null
+output_dir: ???
+
+
+logger:
+  project: hourglass-vit
+  group: debug
+  print_iter_freq: 100
+  save_epoch_freq: 50
+  eval_epoch_freq: 50
+  exp_name: ??
+
+
+dist:
+  backend: nccl
+  local_rank: 0
+
+
+defaults:
+  - data: ???
+  - model: ???
+
+
+hydra:
+  run:
+    dir: ${output_dir}
